@@ -1,0 +1,2568 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+    <property name="createdBy">Eclipse BIRT Designer バージョン 4.2.3.v20131216-0430 ビルド &lt;4.2.3.v20131216-0430></property>
+    <xml-property name="externalMetadata">
+        <external-datamarts>
+            <datamart-node location="file:/C:/local/ws/ws3/ajsfw/データオブジェクト/spendtype.data">
+                <reference-elements>Data Source;</reference-elements>
+                <datamart xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+                    <property name="createdBy">Eclipse BIRT Designer バージョン 4.2.3.v20131216-0430 ビルド &lt;4.2.3.v20131216-0430></property>
+                    <list-property name="userProperties">
+                        <structure>
+                            <property name="name">Data Cube.Data Set.x</property>
+                            <property name="type">integer</property>
+                            <property name="isVisible">false</property>
+                        </structure>
+                        <structure>
+                            <property name="name">Data Cube.Data Set.y</property>
+                            <property name="type">integer</property>
+                            <property name="isVisible">false</property>
+                        </structure>
+                    </list-property>
+                    <property name="Data Cube.Data Set.x">135</property>
+                    <property name="Data Cube.Data Set.y">80</property>
+                    <data-sources>
+                        <oda-data-source extensionID="org.eclipse.datatools.connectivity.oda.flatfile" name="Data Source" id="2">
+                            <property name="HOME">C:\data</property>
+                            <property name="DELIMTYPE">COMMA</property>
+                            <property name="CHARSET">UTF-8</property>
+                            <property name="INCLCOLUMNNAME">YES</property>
+                            <property name="INCLTYPELINE">YES</property>
+                            <property name="TRAILNULLCOLS">NO</property>
+                        </oda-data-source>
+                    </data-sources>
+                    <data-sets>
+                        <oda-data-set extensionID="org.eclipse.datatools.connectivity.oda.flatfile.dataSet" name="Data Set" id="3">
+                            <list-property name="columnHints">
+                                <structure>
+                                    <property name="columnName">Account</property>
+                                    <text-property name="heading">Account</text-property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">Amount</property>
+                                    <text-property name="heading">Amount</text-property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">Amt</property>
+                                    <text-property name="heading">Amt</text-property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">Merchant</property>
+                                    <text-property name="heading">Merchant</text-property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">Reference #</property>
+                                    <text-property name="heading">Reference #</text-property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">spend category</property>
+                                    <text-property name="heading">spend category</text-property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">Date</property>
+                                    <text-property name="heading">Date</text-property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">type</property>
+                                    <text-property name="heading">type</text-property>
+                                </structure>
+                            </list-property>
+                            <list-property name="filter">
+                                <structure>
+                                    <property name="operator">ne</property>
+                                    <expression name="expr" type="javascript">row["type"]</expression>
+                                    <simple-property-list name="value1">
+                                        <value type="javascript">"INTEREST"</value>
+                                    </simple-property-list>
+                                </structure>
+                            </list-property>
+                            <structure name="cachedMetaData">
+                                <list-property name="resultSet">
+                                    <structure>
+                                        <property name="position">1</property>
+                                        <property name="name">Account</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">2</property>
+                                        <property name="name">Amount</property>
+                                        <property name="dataType">float</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">3</property>
+                                        <property name="name">Amt</property>
+                                        <property name="dataType">float</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">4</property>
+                                        <property name="name">Merchant</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">5</property>
+                                        <property name="name">Reference #</property>
+                                        <property name="dataType">float</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">6</property>
+                                        <property name="name">spend category</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">7</property>
+                                        <property name="name">Date</property>
+                                        <property name="dataType">date</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">8</property>
+                                        <property name="name">type</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                </list-property>
+                            </structure>
+                            <property name="dataSource">Data Source</property>
+                            <list-property name="resultSet">
+                                <structure>
+                                    <property name="position">1</property>
+                                    <property name="name">Account</property>
+                                    <property name="nativeName">Account</property>
+                                    <property name="dataType">string</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">2</property>
+                                    <property name="name">Amount</property>
+                                    <property name="nativeName">Amount</property>
+                                    <property name="dataType">float</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">3</property>
+                                    <property name="name">Amt</property>
+                                    <property name="nativeName">Amt</property>
+                                    <property name="dataType">float</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">4</property>
+                                    <property name="name">Merchant</property>
+                                    <property name="nativeName">Merchant</property>
+                                    <property name="dataType">string</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">5</property>
+                                    <property name="name">Reference #</property>
+                                    <property name="nativeName">Reference #</property>
+                                    <property name="dataType">float</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">6</property>
+                                    <property name="name">spend category</property>
+                                    <property name="nativeName">spend category</property>
+                                    <property name="dataType">string</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">7</property>
+                                    <property name="name">Date</property>
+                                    <property name="nativeName">Date</property>
+                                    <property name="dataType">date</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">8</property>
+                                    <property name="name">type</property>
+                                    <property name="nativeName">type</property>
+                                    <property name="dataType">string</property>
+                                </structure>
+                            </list-property>
+                            <xml-property name="queryText"><![CDATA[select "Account", "Amount", "Amt", "Merchant", "Reference #", "spend category", "Date", "type" from SPEND.csv : {"Account","Account",STRING;"Amount","Amount",DOUBLE;"Amt","Amt",DOUBLE;"Merchant","Merchant",STRING;"Reference #","Reference #",DOUBLE;"spend category","spend category",STRING;"Date","Date",DATE;"type","type",STRING}]]></xml-property>
+                            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>1.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>Account</design:name>
+            <design:position>1</design:position>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Account</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>Amount</design:name>
+            <design:position>2</design:position>
+            <design:nativeDataTypeCode>8</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Amount</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>Description</design:name>
+            <design:position>3</design:position>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Description</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>Reference #</design:name>
+            <design:position>4</design:position>
+            <design:nativeDataTypeCode>8</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Reference #</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>spend category</design:name>
+            <design:position>5</design:position>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>spend category</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>Date</design:name>
+            <design:position>6</design:position>
+            <design:nativeDataTypeCode>91</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Date</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>type</design:name>
+            <design:position>7</design:position>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>type</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+                        </oda-data-set>
+                        <oda-data-set extensionID="org.eclipse.datatools.connectivity.oda.flatfile.dataSet" name="Limit" id="27">
+                            <list-property name="columnHints">
+                                <structure>
+                                    <property name="columnName">Account</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="heading">Account</text-property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">Bal</property>
+                                    <property name="analysis">measure</property>
+                                    <text-property name="heading">Bal</text-property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">Limit</property>
+                                    <property name="analysis">measure</property>
+                                    <text-property name="heading">Limit</text-property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                            </list-property>
+                            <structure name="cachedMetaData">
+                                <list-property name="resultSet">
+                                    <structure>
+                                        <property name="position">1</property>
+                                        <property name="name">Account</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">2</property>
+                                        <property name="name">Bal</property>
+                                        <property name="dataType">float</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">3</property>
+                                        <property name="name">Limit</property>
+                                        <property name="dataType">float</property>
+                                    </structure>
+                                </list-property>
+                            </structure>
+                            <property name="dataSource">Data Source</property>
+                            <list-property name="resultSet">
+                                <structure>
+                                    <property name="position">1</property>
+                                    <property name="name">Account</property>
+                                    <property name="nativeName">Account</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">2</property>
+                                    <property name="name">Bal</property>
+                                    <property name="nativeName">Bal</property>
+                                    <property name="dataType">float</property>
+                                    <property name="nativeDataType">8</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">3</property>
+                                    <property name="name">Limit</property>
+                                    <property name="nativeName">Limit</property>
+                                    <property name="dataType">float</property>
+                                    <property name="nativeDataType">8</property>
+                                </structure>
+                            </list-property>
+                            <xml-property name="queryText"><![CDATA[select "Account", "Bal", "Limit" from "limit.csv" : {"Account","Account",STRING;"Bal","Bal",BIGDECIMAL;"Limit","Limit",BIGDECIMAL}]]></xml-property>
+                            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Account</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Account</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Bal</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>8</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Bal</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Limit</design:name>
+              <design:position>3</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>8</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Limit</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+                        </oda-data-set>
+                    </data-sets>
+                    <cubes>
+                        <tabular-cube name="Data Cube" id="4">
+                            <property name="dimensions">
+                                <tabular-dimension name="Group" id="7">
+                                    <property name="isTimeType">true</property>
+                                    <property name="defaultHierarchy">NewTabularHierarchy</property>
+                                    <property name="hierarchies">
+                                        <tabular-hierarchy name="NewTabularHierarchy" id="8">
+                                            <property name="levels">
+                                                <tabular-level name="Year" id="9">
+                                                    <property name="dataType">integer</property>
+                                                    <property name="dateTimeLevelType">year</property>
+                                                    <list-property name="attributes">
+                                                        <structure>
+                                                            <property name="name">DateTime</property>
+                                                            <property name="dataType">date-time</property>
+                                                        </structure>
+                                                    </list-property>
+                                                    <property name="columnName">Date</property>
+                                                </tabular-level>
+                                                <tabular-level name="Month" id="10">
+                                                    <property name="dataType">integer</property>
+                                                    <property name="dateTimeLevelType">month</property>
+                                                    <property name="dateTimeFormat">MMM</property>
+                                                    <list-property name="attributes">
+                                                        <structure>
+                                                            <property name="name">DateTime</property>
+                                                            <property name="dataType">date-time</property>
+                                                        </structure>
+                                                    </list-property>
+                                                    <property name="columnName">Date</property>
+                                                </tabular-level>
+                                                <tabular-level name="Day Of Month" id="11">
+                                                    <property name="dataType">integer</property>
+                                                    <property name="dateTimeLevelType">day-of-month</property>
+                                                    <list-property name="attributes">
+                                                        <structure>
+                                                            <property name="name">DateTime</property>
+                                                            <property name="dataType">date-time</property>
+                                                        </structure>
+                                                    </list-property>
+                                                    <property name="columnName">Date</property>
+                                                </tabular-level>
+                                            </property>
+                                        </tabular-hierarchy>
+                                    </property>
+                                </tabular-dimension>
+                                <tabular-dimension name="Spend Category" id="12">
+                                    <property name="defaultHierarchy">NewTabularHierarchy1</property>
+                                    <property name="hierarchies">
+                                        <tabular-hierarchy name="NewTabularHierarchy1" id="13">
+                                            <property name="levels">
+                                                <tabular-level name="Category" id="14">
+                                                    <property name="dataType">string</property>
+                                                    <property name="levelType">dynamic</property>
+                                                    <property name="columnName">spend category</property>
+                                                </tabular-level>
+                                                <tabular-level name="Merchant" id="26">
+                                                    <property name="dataType">string</property>
+                                                    <property name="columnName">Merchant</property>
+                                                </tabular-level>
+                                            </property>
+                                        </tabular-hierarchy>
+                                    </property>
+                                </tabular-dimension>
+                                <tabular-dimension name="Spend Type" id="16">
+                                    <property name="defaultHierarchy">NewTabularHierarchy2</property>
+                                    <property name="hierarchies">
+                                        <tabular-hierarchy name="NewTabularHierarchy2" id="17">
+                                            <property name="levels">
+                                                <tabular-level name="Type" id="18">
+                                                    <property name="dataType">string</property>
+                                                    <property name="levelType">dynamic</property>
+                                                    <property name="columnName">type</property>
+                                                </tabular-level>
+                                            </property>
+                                        </tabular-hierarchy>
+                                    </property>
+                                </tabular-dimension>
+                                <tabular-dimension name="Accounts" id="19">
+                                    <property name="defaultHierarchy">NewTabularHierarchy3</property>
+                                    <property name="hierarchies">
+                                        <tabular-hierarchy name="NewTabularHierarchy3" id="20">
+                                            <property name="levels">
+                                                <tabular-level name="Account" id="21">
+                                                    <property name="dataType">string</property>
+                                                    <property name="columnName">Account</property>
+                                                </tabular-level>
+                                            </property>
+                                        </tabular-hierarchy>
+                                    </property>
+                                </tabular-dimension>
+                            </property>
+                            <property name="measureGroups">
+                                <tabular-measure-group name="Spend Measure" id="24">
+                                    <property name="measures">
+                                        <tabular-measure name="Amt" id="25">
+                                            <property name="function">sum</property>
+                                            <property name="isCalculated">false</property>
+                                            <expression name="measureExpression" type="javascript">dataSetRow["Amt"]</expression>
+                                            <property name="dataType">float</property>
+                                            <property name="isVisible">true</property>
+                                            <structure name="format">
+                                                <property name="category">Currency</property>
+                                                <property name="pattern">$#,##0.00;$(#,##0.00){RoundingMode=HALF_UP}</property>
+                                            </structure>
+                                        </tabular-measure>
+                                    </property>
+                                </tabular-measure-group>
+                            </property>
+                            <property name="dataSet">Data Set</property>
+                        </tabular-cube>
+                    </cubes>
+                </datamart>
+            </datamart-node>
+        </external-datamarts>
+    </xml-property>
+    <property name="units">in</property>
+    <property name="iconFile">/templates/blank_report.gif</property>
+    <property name="bidiLayoutOrientation">ltr</property>
+    <property name="imageDPI">96</property>
+    <parameters>
+        <scalar-parameter name="pCat" id="82">
+            <property name="valueType">static</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <simple-property-list name="defaultValue">
+                <value type="constant">自動車</value>
+            </simple-property-list>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+    </parameters>
+    <data-sources>
+        <data-mart-data-source name="Data Source" id="356">
+            <property name="datamartURL">データオブジェクト/spendtype</property>
+            <property name="accessType">latest</property>
+        </data-mart-data-source>
+    </data-sources>
+    <data-sets>
+        <data-mart-data-set name="Data Set" id="357">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">Account</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">Account</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Bal</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="heading">Bal</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Limit</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="heading">Limit</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+            </list-property>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">Account</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">Bal</property>
+                        <property name="dataType">float</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">Limit</property>
+                        <property name="dataType">float</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Data Source</property>
+            <property name="dataObject">Limit</property>
+            <list-property name="selectedColumns">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">Account</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">Bal</property>
+                    <property name="dataType">float</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">Limit</property>
+                    <property name="dataType">float</property>
+                </structure>
+            </list-property>
+        </data-mart-data-set>
+    </data-sets>
+    <cubes>
+        <data-mart-cube name="Data Object Cube" id="11">
+            <property name="dataSource">Data Source</property>
+            <property name="dataObject">Data Cube</property>
+        </data-mart-cube>
+    </cubes>
+    <styles>
+        <style name="report" id="4">
+            <property name="fontFamily">sans-serif</property>
+            <property name="fontSize">10pt</property>
+        </style>
+        <style name="crosstab-cell" id="5">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+        <style name="crosstab" id="6">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+    </styles>
+    <themes>
+        <report-item-theme type="Chart" name="SpendTypeTheme" id="349">
+            <xml-property name="customValues"><![CDATA[<type>1</type><ActuateChart version="2.5.3">
+ <ChartWithAxes version="2.5.3" type="Bar Chart" subType="Side-by-side" dimension="0" reverseCategory="false">
+  <description value="">
+   <font>
+    <alignment/>
+   </font>
+  </description>
+  <block>
+   <children _type="TitleBlock" visible="false">
+    <outline>
+     <color _nil="1"/>
+    </outline>
+    <label>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </label>
+   </children>
+   <children _type="Plot">
+    <outline>
+     <color _nil="1"/>
+    </outline>
+    <clientArea>
+     <background _type="Gradient" direction="90.0">
+      <startColor _body=",255,236,245,255"/>
+      <endColor _body=",255,255,255,255"/>
+     </background>
+     <outline visible="true">
+      <color _body=",255,128,128,128"/>
+     </outline>
+    </clientArea>
+   </children>
+   <children _type="Legend" visible="false" itemType="1">
+    <outline>
+     <color _nil="1"/>
+    </outline>
+    <clientArea>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </clientArea>
+    <separator>
+     <color _nil="1"/>
+    </separator>
+    <title>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </title>
+   </children>
+   <bounds _body="0.0,0.0,212.0,130.0"/>
+   <insets _body="0.0,3.0,18.0,3.0"/>
+   <outline>
+    <color _nil="1"/>
+   </outline>
+   <background _body=",0,255,255,255"/>
+  </block>
+  <extendedProperties name="enable.area.alt" value="false"/>
+  <extendedProperties name="enable.drill.category" value="true"/>
+  <extendedProperties name="enable.drill.series" value="true"/>
+  <extendedProperties name="jschart.zoom" value="y"/>
+  <extendedProperties name="jschart.client.script" value="beforeGeneration: function(options)&amp;#13;&amp;#10;{&amp;#13;&amp;#10;    //You can change options here.&amp;#13;&amp;#10;    options.plotOptions = {&amp;#13;&amp;#10;&amp;#13;&amp;#10;        column: {&amp;#13;&amp;#10;        pointPadding: -0.2&amp;#13;&amp;#10;        }&amp;#13;&amp;#10;    };&amp;#13;&amp;#10;},"/>
+  <extendedProperties name="jschart.glass.style" value="true"/>
+  <emptyMessage>
+   <caption value="&amp;#x3053;&amp;#x306e;&amp;#x30b0;&amp;#x30e9;&amp;#x30d5;&amp;#x306b;&amp;#x306f;&amp;#x30c7;&amp;#x30fc;&amp;#x30bf;&amp;#x304c;&amp;#x3042;&amp;#x308a;&amp;#x307e;&amp;#x305b;&amp;#x3093;&amp;#x3002;"/>
+   <background _body=",64,127,127,127"/>
+   <outline>
+    <color _body=",128,127,127,127"/>
+   </outline>
+  </emptyMessage>
+  <axes categoryAxis="false">
+   <title>
+    <background _nil="1"/>
+    <outline>
+     <color _nil="1"/>
+    </outline>
+   </title>
+   <associatedAxes primaryAxis="true">
+    <title>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </title>
+    <seriesDefinitions>
+     <query definition=""/>
+     <seriesPalette>
+      <entries _body=",255,0,0,128"/>
+      <entries _body=",255,255,102,0"/>
+      <entries _body=",255,219,0,0"/>
+      <entries _body=",255,51,153,102"/>
+      <entries _body=",255,124,124,0"/>
+      <entries _body=",255,128,0,128"/>
+      <entries _body=",255,255,204,0"/>
+      <entries _body=",255,0,128,128"/>
+      <entries _body=",255,192,192,192"/>
+      <entries _body=",255,255,255,128"/>
+      <entries _body=",255,128,192,128"/>
+      <entries _body=",255,7,146,94"/>
+      <entries _body=",255,0,128,255"/>
+      <entries _body=",255,255,128,192"/>
+      <entries _body=",255,0,255,255"/>
+      <entries _body=",255,255,128,128"/>
+      <entries _body=",255,0,128,192"/>
+      <entries _body=",255,128,128,192"/>
+      <entries _body=",255,255,0,255"/>
+      <entries _body=",255,128,64,64"/>
+      <entries _body=",255,255,128,64"/>
+      <entries _body=",255,80,240,120"/>
+      <entries _body=",255,0,64,128"/>
+      <entries _body=",255,128,0,64"/>
+      <entries _body=",255,255,0,128"/>
+      <entries _body=",255,128,128,64"/>
+      <entries _body=",255,128,128,128"/>
+      <entries _body=",255,255,128,255"/>
+      <entries _body=",255,0,64,0"/>
+      <entries _body=",255,0,0,0"/>
+      <entries _body=",255,255,255,255"/>
+      <entries _body=",255,255,128,0"/>
+     </seriesPalette>
+     <series _type="BarSeries" seriesIdentifier="&amp;#x7cfb;&amp;#x5217; 1" stacked="false" riser="0">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataDefinition definition="data[&amp;quot;Summary Field/Amt&amp;quot;]">
+       <grouping/>
+      </dataDefinition>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <triggers condition="6">
+       <action type="1">
+        <value _type="TooltipValue" text="" delay="200"/>
+       </action>
+      </triggers>
+      <curveFitting _nil="1"/>
+     </series>
+     <series _type="LineSeries" seriesIdentifier="">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+      <markers>
+       <outline/>
+      </markers>
+      <lineAttributes>
+       <color _nil="1"/>
+      </lineAttributes>
+     </series>
+     <series _type="AreaSeries" seriesIdentifier="">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+      <markers>
+       <outline/>
+      </markers>
+      <lineAttributes>
+       <color _nil="1"/>
+      </lineAttributes>
+     </series>
+     <series _type="PieSeries" seriesIdentifier="">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <title>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </title>
+     </series>
+     <series _type="DialSeries" seriesIdentifier="">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <dial>
+       <lineAttributes>
+        <color _nil="1"/>
+       </lineAttributes>
+       <majorGrid>
+        <lineAttributes>
+         <color _nil="1"/>
+        </lineAttributes>
+        <tickAttributes>
+         <color _nil="1"/>
+        </tickAttributes>
+       </majorGrid>
+       <minorGrid>
+        <lineAttributes>
+         <color _nil="1"/>
+        </lineAttributes>
+        <tickAttributes>
+         <color _nil="1"/>
+        </tickAttributes>
+       </minorGrid>
+       <label>
+        <background _nil="1"/>
+        <outline>
+         <color _nil="1"/>
+        </outline>
+       </label>
+      </dial>
+      <needle>
+       <lineAttributes>
+        <color _nil="1"/>
+       </lineAttributes>
+      </needle>
+     </series>
+     <series _type="ScatterSeries" seriesIdentifier="">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+      <markers>
+       <outline/>
+      </markers>
+      <lineAttributes>
+       <color _nil="1"/>
+      </lineAttributes>
+     </series>
+     <series _type="StockSeries" seriesIdentifier="">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+     </series>
+     <series _type="BubbleSeries" seriesIdentifier="">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+      <markers>
+       <outline/>
+      </markers>
+      <lineAttributes>
+       <color _nil="1"/>
+      </lineAttributes>
+      <accLineAttributes>
+       <color _nil="1"/>
+      </accLineAttributes>
+     </series>
+     <series _type="DifferenceSeries" seriesIdentifier="">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <markers>
+       <outline/>
+      </markers>
+      <lineAttributes>
+       <color _nil="1"/>
+      </lineAttributes>
+      <negativeMarkers>
+       <outline/>
+      </negativeMarkers>
+      <negativeLineAttributes>
+       <color _nil="1"/>
+      </negativeLineAttributes>
+     </series>
+     <series _type="GanttSeries" seriesIdentifier="">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+      <connectionLine>
+       <color _nil="1"/>
+      </connectionLine>
+      <outline>
+       <color _nil="1"/>
+      </outline>
+      <decorationLabel>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </decorationLabel>
+     </series>
+     <series _type="RadarSeries" seriesIdentifier="">
+      <label>
+       <caption>
+        <font>
+         <alignment/>
+        </font>
+       </caption>
+       <outline/>
+       <insets/>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <marker>
+       <outline/>
+      </marker>
+      <lineAttributes/>
+      <webLineAttributes/>
+      <webLabel>
+       <caption>
+        <font>
+         <alignment/>
+        </font>
+       </caption>
+       <outline/>
+       <insets/>
+      </webLabel>
+      <catLabel>
+       <caption>
+        <font>
+         <alignment/>
+        </font>
+       </caption>
+       <outline/>
+       <insets/>
+      </catLabel>
+     </series>
+     <grouping _nil="1"/>
+    </seriesDefinitions>
+    <lineAttributes>
+     <color _nil="1"/>
+    </lineAttributes>
+    <label>
+     <caption>
+      <font name="Arial" size="7.0"/>
+     </caption>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </label>
+    <majorGrid>
+     <lineAttributes visible="true">
+      <color _body=",255,192,192,192"/>
+     </lineAttributes>
+     <tickAttributes>
+      <color _nil="1"/>
+     </tickAttributes>
+    </majorGrid>
+    <minorGrid>
+     <lineAttributes visible="false">
+      <color _nil="1"/>
+     </lineAttributes>
+     <tickAttributes>
+      <color _nil="1"/>
+     </tickAttributes>
+    </minorGrid>
+    <scale step="120.0"/>
+    <origin>
+     <value _nil="1"/>
+    </origin>
+   </associatedAxes>
+   <ancillaryAxes>
+    <title>
+     <caption value="Z &amp;#x8ef8;&amp;#x306e;&amp;#x30bf;&amp;#x30a4;&amp;#x30c8;&amp;#x30eb;"/>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </title>
+    <seriesDefinitions>
+     <query definition=""/>
+     <seriesPalette>
+      <entries _body=",255,80,166,218"/>
+      <entries _body=",255,242,88,106"/>
+      <entries _body=",255,232,172,57"/>
+      <entries _body=",255,128,255,128"/>
+      <entries _body=",255,64,128,128"/>
+      <entries _body=",255,128,128,192"/>
+      <entries _body=",255,170,85,85"/>
+      <entries _body=",255,128,128,0"/>
+      <entries _body=",255,192,192,192"/>
+      <entries _body=",255,255,255,128"/>
+      <entries _body=",255,128,192,128"/>
+      <entries _body=",255,7,146,94"/>
+      <entries _body=",255,0,128,255"/>
+      <entries _body=",255,255,128,192"/>
+      <entries _body=",255,0,255,255"/>
+      <entries _body=",255,255,128,128"/>
+      <entries _body=",255,0,128,192"/>
+      <entries _body=",255,128,128,192"/>
+      <entries _body=",255,255,0,255"/>
+      <entries _body=",255,128,64,64"/>
+      <entries _body=",255,255,128,64"/>
+      <entries _body=",255,80,240,120"/>
+      <entries _body=",255,0,64,128"/>
+      <entries _body=",255,128,0,64"/>
+      <entries _body=",255,255,0,128"/>
+      <entries _body=",255,128,128,64"/>
+      <entries _body=",255,128,128,128"/>
+      <entries _body=",255,255,128,255"/>
+      <entries _body=",255,0,64,0"/>
+      <entries _body=",255,0,0,0"/>
+      <entries _body=",255,255,255,255"/>
+      <entries _body=",255,255,128,0"/>
+     </seriesPalette>
+     <series seriesIdentifier="">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+     </series>
+    </seriesDefinitions>
+    <lineAttributes>
+     <color _nil="1"/>
+    </lineAttributes>
+    <label>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </label>
+    <majorGrid>
+     <lineAttributes>
+      <color _nil="1"/>
+     </lineAttributes>
+     <tickAttributes>
+      <color _nil="1"/>
+     </tickAttributes>
+    </majorGrid>
+    <minorGrid>
+     <lineAttributes>
+      <color _nil="1"/>
+     </lineAttributes>
+     <tickAttributes>
+      <color _nil="1"/>
+     </tickAttributes>
+    </minorGrid>
+    <origin>
+     <value _type="NumberDataElement" value="0.0"/>
+    </origin>
+   </ancillaryAxes>
+   <seriesDefinitions>
+    <query definition=""/>
+    <seriesPalette>
+     <entries _body=",255,0,0,128"/>
+     <entries _body=",255,255,102,0"/>
+     <entries _body=",255,219,0,0"/>
+     <entries _body=",255,51,153,102"/>
+     <entries _body=",255,124,124,0"/>
+     <entries _body=",255,128,0,128"/>
+     <entries _body=",255,255,204,0"/>
+     <entries _body=",255,0,128,128"/>
+     <entries _body=",255,192,192,192"/>
+     <entries _body=",255,255,255,128"/>
+     <entries _body=",255,128,192,128"/>
+     <entries _body=",255,7,146,94"/>
+     <entries _body=",255,0,128,255"/>
+     <entries _body=",255,255,128,192"/>
+     <entries _body=",255,0,255,255"/>
+     <entries _body=",255,255,128,128"/>
+     <entries _body=",255,0,128,192"/>
+     <entries _body=",255,128,128,192"/>
+     <entries _body=",255,255,0,255"/>
+     <entries _body=",255,128,64,64"/>
+     <entries _body=",255,255,128,64"/>
+     <entries _body=",255,80,240,120"/>
+     <entries _body=",255,0,64,128"/>
+     <entries _body=",255,128,0,64"/>
+     <entries _body=",255,255,0,128"/>
+     <entries _body=",255,128,128,64"/>
+     <entries _body=",255,128,128,128"/>
+     <entries _body=",255,255,128,255"/>
+     <entries _body=",255,0,64,0"/>
+     <entries _body=",255,0,0,0"/>
+     <entries _body=",255,255,255,255"/>
+     <entries _body=",255,255,128,0"/>
+    </seriesPalette>
+    <series seriesIdentifier="">
+     <label>
+      <background _nil="1"/>
+      <outline>
+       <color _nil="1"/>
+      </outline>
+     </label>
+     <dataDefinition definition="data[&amp;quot;Spend Category/Merchant&amp;quot;]"/>
+     <dataPoint separator=", ">
+      <components type="1"/>
+     </dataPoint>
+     <curveFitting _nil="1"/>
+    </series>
+    <grouping _nil="1"/>
+   </seriesDefinitions>
+   <lineAttributes>
+    <color _nil="1"/>
+   </lineAttributes>
+   <label>
+    <caption>
+     <font name="Arial" size="7.0"/>
+    </caption>
+    <background _nil="1"/>
+    <outline>
+     <color _nil="1"/>
+    </outline>
+   </label>
+   <majorGrid>
+    <lineAttributes>
+     <color _nil="1"/>
+    </lineAttributes>
+    <tickAttributes>
+     <color _nil="1"/>
+    </tickAttributes>
+   </majorGrid>
+   <minorGrid>
+    <lineAttributes>
+     <color _nil="1"/>
+    </lineAttributes>
+    <tickAttributes>
+     <color _nil="1"/>
+    </tickAttributes>
+   </minorGrid>
+   <origin>
+    <value _nil="1"/>
+   </origin>
+  </axes>
+  <rotation>
+   <angles/>
+  </rotation>
+ </ChartWithAxes>
+</ActuateChart>]]></xml-property>
+        </report-item-theme>
+    </themes>
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="2">
+            <property name="type">custom</property>
+            <property name="backgroundColor">#FF8080</property>
+            <property name="height">11in</property>
+            <property name="width">11in</property>
+            <page-footer>
+                <text id="3">
+                    <property name="contentType">html</property>
+                    <text-property name="content"><![CDATA[<value-of>new Date()</value-of>]]></text-property>
+                </text>
+            </page-footer>
+        </simple-master-page>
+    </page-setup>
+    <body>
+        <extended-item extensionName="Chart" id="317">
+            <property name="cube">Data Object Cube</property>
+            <xml-property name="xmlRepresentation"><![CDATA[<ActuateChart version="2.6.1">
+ <ChartWithAxes version="2.6.1" type="Area Chart" subType="Overlay">
+  <block>
+   <children _type="TitleBlock" visible="false">
+    <outline>
+     <color _nil="1"/>
+    </outline>
+    <label>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </label>
+   </children>
+   <children _type="Plot">
+    <outline>
+     <color _nil="1"/>
+    </outline>
+    <clientArea>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </clientArea>
+   </children>
+   <children _type="Legend" visible="false">
+    <outline>
+     <color _nil="1"/>
+    </outline>
+    <clientArea>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </clientArea>
+    <separator>
+     <color _nil="1"/>
+    </separator>
+    <title>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </title>
+   </children>
+   <bounds _body="0.0,0.0,212.0,130.0"/>
+   <outline>
+    <color _nil="1"/>
+   </outline>
+  </block>
+  <extendedProperties name="enable.area.alt" value="false"/>
+  <extendedProperties name="enable.drill.category" value="true"/>
+  <extendedProperties name="enable.drill.series" value="true"/>
+  <extendedProperties name="jschart.zoom" value="xy"/>
+  <extendedProperties name="keep.hierarchy.category" value="false"/>
+  <extendedProperties name="keep.hierarchy.series" value="false"/>
+  <extendedProperties name="jschart.series.shadow" value="true"/>
+  <sampleData>
+   <baseSampleData dataSetRepresentation="6,4,12,8,10"/>
+   <orthogonalSampleData dataSetRepresentation="6,4,12,8,10" seriesDefinitionIndex="0"/>
+  </sampleData>
+  <emptyMessage>
+   <caption value="This chart contains no data."/>
+   <background _body=",64,127,127,127"/>
+   <outline>
+    <color _body=",128,127,127,127"/>
+   </outline>
+  </emptyMessage>
+  <axes type="0">
+   <title visible="false">
+    <caption value="Day of Month">
+     <font size="8.0" bold="true"/>
+    </caption>
+    <background _nil="1"/>
+    <outline>
+     <color _nil="1"/>
+    </outline>
+   </title>
+   <associatedAxes primaryAxis="true" percent="false">
+    <title>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </title>
+    <seriesDefinitions>
+     <query definition=""/>
+     <seriesPalette>
+      <entries _body=",255,0,0,128"/>
+      <entries _body=",255,242,88,106"/>
+      <entries _body=",255,232,172,57"/>
+      <entries _body=",255,128,255,128"/>
+      <entries _body=",255,64,128,128"/>
+      <entries _body=",255,128,128,192"/>
+      <entries _body=",255,170,85,85"/>
+      <entries _body=",255,128,128,0"/>
+      <entries _body=",255,192,192,192"/>
+      <entries _body=",255,255,255,128"/>
+      <entries _body=",255,128,192,128"/>
+      <entries _body=",255,7,146,94"/>
+      <entries _body=",255,0,128,255"/>
+      <entries _body=",255,255,128,192"/>
+      <entries _body=",255,0,255,255"/>
+      <entries _body=",255,255,128,128"/>
+      <entries _body=",255,0,128,192"/>
+      <entries _body=",255,128,128,192"/>
+      <entries _body=",255,255,0,255"/>
+      <entries _body=",255,128,64,64"/>
+      <entries _body=",255,255,128,64"/>
+      <entries _body=",255,80,240,120"/>
+      <entries _body=",255,0,64,128"/>
+      <entries _body=",255,128,0,64"/>
+      <entries _body=",255,255,0,128"/>
+      <entries _body=",255,128,128,64"/>
+      <entries _body=",255,128,128,128"/>
+      <entries _body=",255,255,128,255"/>
+      <entries _body=",255,0,64,0"/>
+      <entries _body=",255,0,0,0"/>
+      <entries _body=",255,255,255,255"/>
+      <entries _body=",255,255,128,0"/>
+     </seriesPalette>
+     <series _type="AreaSeries" seriesIdentifier="&#x652f;&#x6255;&#x984d;" stacked="false">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataDefinition definition="data[&quot;Summary Field/Amt&quot;]">
+       <grouping/>
+      </dataDefinition>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <triggers condition="6">
+       <action type="1">
+        <value _type="TooltipValue" text="" delay="200"/>
+       </action>
+      </triggers>
+      <curveFitting _nil="1"/>
+      <markers>
+       <outline/>
+      </markers>
+      <lineAttributes>
+       <color _nil="1"/>
+      </lineAttributes>
+     </series>
+    </seriesDefinitions>
+    <lineAttributes>
+     <color _nil="1"/>
+    </lineAttributes>
+    <label>
+     <caption>
+      <font size="7.0"/>
+     </caption>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </label>
+    <majorGrid>
+     <lineAttributes visible="true">
+      <color _body=",255,234,234,234"/>
+     </lineAttributes>
+     <tickAttributes>
+      <color _nil="1"/>
+     </tickAttributes>
+    </majorGrid>
+    <minorGrid>
+     <lineAttributes>
+      <color _nil="1"/>
+     </lineAttributes>
+     <tickAttributes>
+      <color _nil="1"/>
+     </tickAttributes>
+    </minorGrid>
+    <origin>
+     <value _nil="1"/>
+    </origin>
+   </associatedAxes>
+   <seriesDefinitions>
+    <query definition=""/>
+    <seriesPalette>
+     <entries _body=",255,0,0,128"/>
+     <entries _body=",255,242,88,106"/>
+     <entries _body=",255,232,172,57"/>
+     <entries _body=",255,128,255,128"/>
+     <entries _body=",255,64,128,128"/>
+     <entries _body=",255,128,128,192"/>
+     <entries _body=",255,170,85,85"/>
+     <entries _body=",255,128,128,0"/>
+     <entries _body=",255,192,192,192"/>
+     <entries _body=",255,255,255,128"/>
+     <entries _body=",255,128,192,128"/>
+     <entries _body=",255,7,146,94"/>
+     <entries _body=",255,0,128,255"/>
+     <entries _body=",255,255,128,192"/>
+     <entries _body=",255,0,255,255"/>
+     <entries _body=",255,255,128,128"/>
+     <entries _body=",255,0,128,192"/>
+     <entries _body=",255,128,128,192"/>
+     <entries _body=",255,255,0,255"/>
+     <entries _body=",255,128,64,64"/>
+     <entries _body=",255,255,128,64"/>
+     <entries _body=",255,80,240,120"/>
+     <entries _body=",255,0,64,128"/>
+     <entries _body=",255,128,0,64"/>
+     <entries _body=",255,255,0,128"/>
+     <entries _body=",255,128,128,64"/>
+     <entries _body=",255,128,128,128"/>
+     <entries _body=",255,255,128,255"/>
+     <entries _body=",255,0,64,0"/>
+     <entries _body=",255,0,0,0"/>
+     <entries _body=",255,255,255,255"/>
+     <entries _body=",255,255,128,0"/>
+    </seriesPalette>
+    <series seriesIdentifier="">
+     <label>
+      <background _nil="1"/>
+      <outline>
+       <color _nil="1"/>
+      </outline>
+     </label>
+     <dataDefinition definition="data[&quot;Group/Day Of Month&quot;]"/>
+     <dataPoint separator=", ">
+      <components type="1"/>
+     </dataPoint>
+     <curveFitting _nil="1"/>
+    </series>
+    <grouping groupType="0"/>
+   </seriesDefinitions>
+   <lineAttributes>
+    <color _nil="1"/>
+   </lineAttributes>
+   <label>
+    <caption>
+     <font size="7.0"/>
+    </caption>
+    <background _nil="1"/>
+    <outline>
+     <color _nil="1"/>
+    </outline>
+   </label>
+   <majorGrid>
+    <lineAttributes>
+     <color _nil="1"/>
+    </lineAttributes>
+    <tickAttributes>
+     <color _nil="1"/>
+    </tickAttributes>
+   </majorGrid>
+   <minorGrid>
+    <lineAttributes>
+     <color _nil="1"/>
+    </lineAttributes>
+    <tickAttributes>
+     <color _nil="1"/>
+    </tickAttributes>
+   </minorGrid>
+   <origin>
+    <value _nil="1"/>
+   </origin>
+  </axes>
+  <rotation>
+   <angles/>
+  </rotation>
+ </ChartWithAxes>
+</ActuateChart>
+]]></xml-property>
+            <property name="outputFormat">JS</property>
+            <property name="cubeFilter">
+                <filter-condition-element>
+                    <expression name="expr" type="javascript">data["Spend Category/Category"]</expression>
+                    <property name="operator">eq</property>
+                    <simple-property-list name="value1">
+                        <value type="javascript">params["pCat"].value</value>
+                    </simple-property-list>
+                </filter-condition-element>
+            </property>
+            <property name="inheritColumns">false</property>
+            <property name="height">1.74in</property>
+            <property name="width">9.729166666666666in</property>
+            <expression name="bookmark" type="javascript">"line2"</expression>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">Group/Year</property>
+                    <expression name="expression" type="javascript">dimension["Group"]["Year"]</expression>
+                    <property name="dataType">integer</property>
+                </structure>
+                <structure>
+                    <property name="name">Group/Year/DateTime</property>
+                    <expression name="expression" type="javascript">dimension["Group"]["Year"]["DateTime"]</expression>
+                    <property name="dataType">date-time</property>
+                </structure>
+                <structure>
+                    <property name="name">Group/Month</property>
+                    <expression name="expression" type="javascript">dimension["Group"]["Month"]</expression>
+                    <property name="dataType">integer</property>
+                </structure>
+                <structure>
+                    <property name="name">Group/Month/DateTime</property>
+                    <expression name="expression" type="javascript">dimension["Group"]["Month"]["DateTime"]</expression>
+                    <property name="dataType">date-time</property>
+                </structure>
+                <structure>
+                    <property name="name">Group/Day Of Month</property>
+                    <expression name="expression" type="javascript">dimension["Group"]["Day Of Month"]</expression>
+                    <property name="dataType">integer</property>
+                </structure>
+                <structure>
+                    <property name="name">Group/Day Of Month/DateTime</property>
+                    <expression name="expression" type="javascript">dimension["Group"]["Day Of Month"]["DateTime"]</expression>
+                    <property name="dataType">date-time</property>
+                </structure>
+                <structure>
+                    <property name="name">Spend Category/Category</property>
+                    <expression name="expression" type="javascript">dimension["Spend Category"]["Category"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Spend Category/Merchant</property>
+                    <expression name="expression" type="javascript">dimension["Spend Category"]["Merchant"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Spend Type/Type</property>
+                    <expression name="expression" type="javascript">dimension["Spend Type"]["Type"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Accounts/Account</property>
+                    <expression name="expression" type="javascript">dimension["Accounts"]["Account"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Summary Field/Amt</property>
+                    <expression name="expression" type="javascript">measure["Amt"]</expression>
+                    <property name="dataType">float</property>
+                    <property name="aggregateFunction">SUM</property>
+                </structure>
+            </list-property>
+        </extended-item>
+        <extended-item extensionName="FlashGadgets" id="33">
+            <xml-property name="xmlRepresentation"><![CDATA[<ActuateChart version="1.0">
+ <Gadget backgroundColor="ffffff" backgroundTransparency="0" borderColor="000000" borderThickness="2" borderTransparency="255" colorScheme="0" colorSchemeBaseColor="000000" prefix="" showBorder="false" showGaugeLabels="false" showValueAboveNeedle="false" subType="" suffix="" title="" turnOffAnimation="false" turnOffDefaultAnimination="false" type="Meter" version="1.0.0">
+  <gadgetPartsSupportingEffects _body="background"/>
+  <gadgetPartsSupportingEffects _body="dial"/>
+  <gadgetPartsSupportingEffects _body="gauge"/>
+  <gadgetPartsSupportingEffects _body="pivot"/>
+  <gadgetPartsSupportingEffects _body="value"/>
+  <gadgetPartsSupportingEffects _body="tickmarks"/>
+  <gadgetPartsSupportingEffects _body="tickvalues"/>
+  <gadgetPartsSupportingEffects _body="limitvalues"/>
+  <gadgetPartsSupportingEffects _body="trendpoints"/>
+  <gadgetPartsSupportingEffects _body="trendvalues"/>
+  <gadgetPartsSupportingEffects _body="trendmarkers"/>
+  <gadgetPartsSupportingEffects _body="tooltip"/>
+  <scale autoAdjustMajorTickMarks="true" majorTickMarksCount="6" max="15000" min="0" minorTickMarksCount="4"/>
+  <region color="9acc00" endValue="12000.0" label="A" startValue="0.0" transparency="255"/>
+  <region color="ffcc00" endValue="14000.0" label="B" startValue="12000.0" transparency="255"/>
+  <region color="fd490d" endValue="15000.0" label="C" startValue="14000.0" transparency="255"/>
+  <thresholds isDashed="false" isTrendZone="false" length="40" lineWidth="4" markerRadius="4" showMarker="false" showValue="false" showValueOnTop="true" transparency="255"/>
+  <ticks maxLabel="" minLabel="" placeTicksInside="false" placeValuesInside="false" showLimits="true" showTickMarks="true" showTickValues="true" ticksBelowGauge="true" ticksOnRight="false">
+   <major height="8" width="1"/>
+   <minor height="3" width="1"/>
+  </ticks>
+  <toolTip showToolTip="true"/>
+  <valueDefinition query="row[&quot;Bal&quot;]"/>
+  <linearGauge showNeedleAbove="false" showNeedleValue="true" showRoundCorners="true">
+   <needle borderColor="000000" borderTransparency="255" borderWidth="1" fillColor="000000" fillTransparency="255" shape="0" size="10" tooltipShowValue="true"/>
+  </linearGauge>
+  <meter centerX="38" centerY="73" endAngle="0" innerRadius="10" outerRadius="68" showDialValue="true" showValueAboveNeedle="true" startAngle="180">
+   <needles baseWidth="5" rearExtension="0" showValue="true" size="55" topWidth="0"/>
+   <needleBasePivot borderColor="000000" borderThickness="1" borderTransparency="80" fillColor="c0c0c0" showBorder="true" size="8" useGradient="true">
+    <gradient angle="-90" endColor="808080" pattern="1" startColor="c0c0c0"/>
+   </needleBasePivot>
+  </meter>
+ </Gadget>
+</ActuateChart>
+]]></xml-property>
+            <property name="inheritColumns">false</property>
+            <property name="outputFormat">JS</property>
+            <property name="height">1.6041666666666667in</property>
+            <property name="width">2.6458333333333335in</property>
+            <expression name="bookmark" type="javascript">"limit"</expression>
+            <property name="dataSet">Data Set</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">Account</property>
+                    <expression name="expression" type="javascript">dataSetRow["Account"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Bal</property>
+                    <expression name="expression" type="javascript">dataSetRow["Bal"]</expression>
+                    <property name="dataType">float</property>
+                </structure>
+                <structure>
+                    <property name="name">Limit</property>
+                    <expression name="expression" type="javascript">dataSetRow["Limit"]</expression>
+                    <property name="dataType">float</property>
+                </structure>
+            </list-property>
+        </extended-item>
+        <extended-item extensionName="Chart" id="338">
+            <property name="cube">Data Object Cube</property>
+            <xml-property name="xmlRepresentation"><![CDATA[<ActuateChart version="2.6.1">
+ <ChartWithAxes version="2.6.1" type="Bar Chart" subType="Side-by-side" dimension="0" reverseCategory="false">
+  <description value="">
+   <font>
+    <alignment/>
+   </font>
+  </description>
+  <block>
+   <children _type="TitleBlock" visible="false">
+    <outline>
+     <color _nil="1"/>
+    </outline>
+    <label>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </label>
+   </children>
+   <children _type="Plot">
+    <outline>
+     <color _nil="1"/>
+    </outline>
+    <clientArea>
+     <background _type="Gradient" direction="90.0">
+      <startColor _body=",255,236,245,255"/>
+      <endColor _body=",255,255,255,255"/>
+     </background>
+     <outline visible="true">
+      <color _body=",255,128,128,128"/>
+     </outline>
+    </clientArea>
+   </children>
+   <children _type="Legend" visible="false" itemType="1">
+    <outline>
+     <color _nil="1"/>
+    </outline>
+    <clientArea>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </clientArea>
+    <separator>
+     <color _nil="1"/>
+    </separator>
+    <title>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </title>
+   </children>
+   <bounds _body="0.0,0.0,212.0,130.0"/>
+   <insets _body="0.0,3.0,18.0,3.0"/>
+   <outline>
+    <color _nil="1"/>
+   </outline>
+   <background _body=",0,255,255,255"/>
+  </block>
+  <extendedProperties name="enable.area.alt" value="false"/>
+  <extendedProperties name="enable.drill.category" value="true"/>
+  <extendedProperties name="enable.drill.series" value="true"/>
+  <extendedProperties name="jschart.zoom" value="y"/>
+  <extendedProperties name="jschart.client.script" value="beforeGeneration: function(options)&#13;&#10;{&#13;&#10;    //You can change options here.&#13;&#10;    options.plotOptions = {&#13;&#10;&#13;&#10;        column: {&#13;&#10;        pointPadding: -0.2&#13;&#10;        }&#13;&#10;    };&#13;&#10;},"/>
+  <extendedProperties name="jschart.glass.style" value="true"/>
+  <extendedProperties name="keep.hierarchy.category" value="false"/>
+  <extendedProperties name="keep.hierarchy.series" value="false"/>
+  <extendedProperties name="jschart.series.shadow" value="true"/>
+  <sampleData>
+   <baseSampleData dataSetRepresentation="A, B, C"/>
+   <orthogonalSampleData dataSetRepresentation="5,4,12" seriesDefinitionIndex="0"/>
+  </sampleData>
+  <emptyMessage>
+   <caption value="&#x3053;&#x306e;&#x30b0;&#x30e9;&#x30d5;&#x306b;&#x306f;&#x30c7;&#x30fc;&#x30bf;&#x304c;&#x3042;&#x308a;&#x307e;&#x305b;&#x3093;&#x3002;"/>
+   <background _body=",64,127,127,127"/>
+   <outline>
+    <color _body=",128,127,127,127"/>
+   </outline>
+  </emptyMessage>
+  <axes categoryAxis="false">
+   <title>
+    <background _nil="1"/>
+    <outline>
+     <color _nil="1"/>
+    </outline>
+   </title>
+   <associatedAxes primaryAxis="true">
+    <title>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </title>
+    <seriesDefinitions>
+     <query definition=""/>
+     <seriesPalette>
+      <entries _body=",255,0,0,128"/>
+      <entries _body=",255,255,102,0"/>
+      <entries _body=",255,219,0,0"/>
+      <entries _body=",255,51,153,102"/>
+      <entries _body=",255,124,124,0"/>
+      <entries _body=",255,128,0,128"/>
+      <entries _body=",255,255,204,0"/>
+      <entries _body=",255,0,128,128"/>
+      <entries _body=",255,192,192,192"/>
+      <entries _body=",255,255,255,128"/>
+      <entries _body=",255,128,192,128"/>
+      <entries _body=",255,7,146,94"/>
+      <entries _body=",255,0,128,255"/>
+      <entries _body=",255,255,128,192"/>
+      <entries _body=",255,0,255,255"/>
+      <entries _body=",255,255,128,128"/>
+      <entries _body=",255,0,128,192"/>
+      <entries _body=",255,128,128,192"/>
+      <entries _body=",255,255,0,255"/>
+      <entries _body=",255,128,64,64"/>
+      <entries _body=",255,255,128,64"/>
+      <entries _body=",255,80,240,120"/>
+      <entries _body=",255,0,64,128"/>
+      <entries _body=",255,128,0,64"/>
+      <entries _body=",255,255,0,128"/>
+      <entries _body=",255,128,128,64"/>
+      <entries _body=",255,128,128,128"/>
+      <entries _body=",255,255,128,255"/>
+      <entries _body=",255,0,64,0"/>
+      <entries _body=",255,0,0,0"/>
+      <entries _body=",255,255,255,255"/>
+      <entries _body=",255,255,128,0"/>
+     </seriesPalette>
+     <series _type="BarSeries" seriesIdentifier="&#x652f;&#x6255;&#x984d;" stacked="false" riser="0">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataDefinition definition="data[&quot;Summary Field/Amt&quot;]">
+       <grouping/>
+      </dataDefinition>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <triggers condition="6">
+       <action type="1">
+        <value _type="TooltipValue" text="" delay="200"/>
+       </action>
+      </triggers>
+      <triggers condition="2">
+       <action type="0">
+        <value _type="MultiURLValues" tooltip="&#x8a73;&#x7d30;&#x60c5;&#x5831;&#x8868;&#x793a;">
+         <uRLValues baseUrl="&lt;structure&gt;&#10;    &lt;property name=&quot;linkType&quot;&gt;drill-through&lt;/property&gt;&#10;    &lt;property name=&quot;reportName&quot;&gt;MySpendDetail.RPTDESIGN&lt;/property&gt;&#10;    &lt;property name=&quot;targetWindow&quot;&gt;_blank&lt;/property&gt;&#10;    &lt;property name=&quot;targetFileType&quot;&gt;report-design&lt;/property&gt;&#10;    &lt;list-property name=&quot;paramBindings&quot;&gt;&#10;        &lt;structure&gt;&#10;            &lt;property name=&quot;paramName&quot;&gt;SpendCategory&lt;/property&gt;&#10;            &lt;simple-property-list name=&quot;expression&quot;&gt;&#10;                &lt;value type=&quot;javascript&quot;&gt;categoryData&lt;/value&gt;&#10;            &lt;/simple-property-list&gt;&#10;        &lt;/structure&gt;&#10;    &lt;/list-property&gt;&#10;&lt;/structure&gt;&#10;" baseParameterName="" valueParameterName="" seriesParameterName="">
+          <label>
+           <caption value="&#x652f;&#x51fa;&#x5c65;&#x6b74;"/>
+          </label>
+         </uRLValues>
+         <uRLValues baseUrl="&lt;structure&gt;&#10;    &lt;property name=&quot;linkType&quot;&gt;hyperlink&lt;/property&gt;&#10;    &lt;expression name=&quot;uri&quot; type=&quot;constant&quot;&gt;https://www.google.co.jp/search?&amp;amp;hl=ja&amp;amp;ie=UTF-8&lt;/expression&gt;&#10;    &lt;property name=&quot;targetWindow&quot;&gt;_blank&lt;/property&gt;&#10;&lt;/structure&gt;&#10;" baseParameterName="q" valueParameterName="" seriesParameterName="">
+          <label>
+           <caption value="Google"/>
+          </label>
+         </uRLValues>
+         <propertiesMap key="MenuItem" value="color:Black;fontSize:10pt;paddingLeft:10px;paddingRight:10px;paddingTop:2px;paddingBottom:2px"/>
+         <propertiesMap key="Menu" value="zIndex:99999;backgroundColor:#FAFFF8;width:auto;height:auto;border:1px solid #333333;filter:progid:DXImageTransform.Microsoft.Shadow(Color:#333333,Direction=120,strength=5)"/>
+         <propertiesMap key="OnMouseOut" value="backgroundColor:#FAFFF8;color:#000000"/>
+         <propertiesMap key="OnMouseOver" value="backgroundColor:#245DDB;color:#FFFFFF"/>
+        </value>
+       </action>
+      </triggers>
+      <curveFitting _nil="1"/>
+     </series>
+    </seriesDefinitions>
+    <lineAttributes>
+     <color _nil="1"/>
+    </lineAttributes>
+    <label>
+     <caption>
+      <font name="Arial" size="7.0"/>
+     </caption>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </label>
+    <majorGrid>
+     <lineAttributes visible="true">
+      <color _body=",255,192,192,192"/>
+     </lineAttributes>
+     <tickAttributes>
+      <color _nil="1"/>
+     </tickAttributes>
+    </majorGrid>
+    <minorGrid>
+     <lineAttributes visible="false">
+      <color _nil="1"/>
+     </lineAttributes>
+     <tickAttributes>
+      <color _nil="1"/>
+     </tickAttributes>
+    </minorGrid>
+    <scale step="120.0"/>
+    <origin>
+     <value _nil="1"/>
+    </origin>
+   </associatedAxes>
+   <seriesDefinitions sorting="1">
+    <query definition=""/>
+    <seriesPalette>
+     <entries _body=",255,0,0,128"/>
+     <entries _body=",255,255,102,0"/>
+     <entries _body=",255,219,0,0"/>
+     <entries _body=",255,51,153,102"/>
+     <entries _body=",255,124,124,0"/>
+     <entries _body=",255,128,0,128"/>
+     <entries _body=",255,255,204,0"/>
+     <entries _body=",255,0,128,128"/>
+     <entries _body=",255,192,192,192"/>
+     <entries _body=",255,255,255,128"/>
+     <entries _body=",255,128,192,128"/>
+     <entries _body=",255,7,146,94"/>
+     <entries _body=",255,0,128,255"/>
+     <entries _body=",255,255,128,192"/>
+     <entries _body=",255,0,255,255"/>
+     <entries _body=",255,255,128,128"/>
+     <entries _body=",255,0,128,192"/>
+     <entries _body=",255,128,128,192"/>
+     <entries _body=",255,255,0,255"/>
+     <entries _body=",255,128,64,64"/>
+     <entries _body=",255,255,128,64"/>
+     <entries _body=",255,80,240,120"/>
+     <entries _body=",255,0,64,128"/>
+     <entries _body=",255,128,0,64"/>
+     <entries _body=",255,255,0,128"/>
+     <entries _body=",255,128,128,64"/>
+     <entries _body=",255,128,128,128"/>
+     <entries _body=",255,255,128,255"/>
+     <entries _body=",255,0,64,0"/>
+     <entries _body=",255,0,0,0"/>
+     <entries _body=",255,255,255,255"/>
+     <entries _body=",255,255,128,0"/>
+    </seriesPalette>
+    <series seriesIdentifier="">
+     <label>
+      <background _nil="1"/>
+      <outline>
+       <color _nil="1"/>
+      </outline>
+     </label>
+     <dataDefinition definition="data[&quot;Spend Category/Merchant&quot;]"/>
+     <dataPoint separator=", ">
+      <components type="1"/>
+     </dataPoint>
+     <curveFitting _nil="1"/>
+    </series>
+    <sortKey definition="data[&quot;Summary Field/Amt&quot;]"/>
+   </seriesDefinitions>
+   <lineAttributes>
+    <color _nil="1"/>
+   </lineAttributes>
+   <label>
+    <caption>
+     <font name="Arial" size="7.0"/>
+    </caption>
+    <background _nil="1"/>
+    <outline>
+     <color _nil="1"/>
+    </outline>
+   </label>
+   <majorGrid>
+    <lineAttributes>
+     <color _nil="1"/>
+    </lineAttributes>
+    <tickAttributes>
+     <color _nil="1"/>
+    </tickAttributes>
+   </majorGrid>
+   <minorGrid>
+    <lineAttributes>
+     <color _nil="1"/>
+    </lineAttributes>
+    <tickAttributes>
+     <color _nil="1"/>
+    </tickAttributes>
+   </minorGrid>
+   <origin>
+    <value _nil="1"/>
+   </origin>
+  </axes>
+  <rotation>
+   <angles/>
+  </rotation>
+ </ChartWithAxes>
+</ActuateChart>
+]]></xml-property>
+            <property name="outputFormat">JS</property>
+            <list-property name="action">
+                <structure>
+                    <property name="targetWindow">_blank</property>
+                    <property name="linkType">hyperlink</property>
+                    <expression name="uri" type="constant">https://www.google.co.jp/search?&amp;hl=ja&amp;ie=UTF-8</expression>
+                </structure>
+            </list-property>
+            <property name="cubeFilter">
+                <filter-condition-element>
+                    <expression name="expr" type="javascript">data["Spend Category/Category"]</expression>
+                    <property name="operator">eq</property>
+                    <simple-property-list name="value1">
+                        <value type="javascript">params["pCat"].value</value>
+                    </simple-property-list>
+                </filter-condition-element>
+            </property>
+            <property name="inheritColumns">false</property>
+            <property name="height">1.7604166666666667in</property>
+            <property name="width">7.666666666666667in</property>
+            <expression name="bookmark" type="javascript">"barcat"</expression>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">Group/Year</property>
+                    <expression name="expression" type="javascript">dimension["Group"]["Year"]</expression>
+                    <property name="dataType">integer</property>
+                </structure>
+                <structure>
+                    <property name="name">Group/Year/DateTime</property>
+                    <expression name="expression" type="javascript">dimension["Group"]["Year"]["DateTime"]</expression>
+                    <property name="dataType">date-time</property>
+                </structure>
+                <structure>
+                    <property name="name">Group/Month</property>
+                    <expression name="expression" type="javascript">dimension["Group"]["Month"]</expression>
+                    <property name="dataType">integer</property>
+                </structure>
+                <structure>
+                    <property name="name">Group/Month/DateTime</property>
+                    <expression name="expression" type="javascript">dimension["Group"]["Month"]["DateTime"]</expression>
+                    <property name="dataType">date-time</property>
+                </structure>
+                <structure>
+                    <property name="name">Group/Day Of Month</property>
+                    <expression name="expression" type="javascript">dimension["Group"]["Day Of Month"]</expression>
+                    <property name="dataType">integer</property>
+                </structure>
+                <structure>
+                    <property name="name">Group/Day Of Month/DateTime</property>
+                    <expression name="expression" type="javascript">dimension["Group"]["Day Of Month"]["DateTime"]</expression>
+                    <property name="dataType">date-time</property>
+                </structure>
+                <structure>
+                    <property name="name">Spend Category/Category</property>
+                    <expression name="expression" type="javascript">dimension["Spend Category"]["Category"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Spend Category/Merchant</property>
+                    <expression name="expression" type="javascript">dimension["Spend Category"]["Merchant"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Spend Type/Type</property>
+                    <expression name="expression" type="javascript">dimension["Spend Type"]["Type"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Accounts/Account</property>
+                    <expression name="expression" type="javascript">dimension["Accounts"]["Account"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Summary Field/Amt</property>
+                    <expression name="expression" type="javascript">measure["Amt"]</expression>
+                    <property name="dataType">float</property>
+                    <property name="aggregateFunction">SUM</property>
+                </structure>
+            </list-property>
+        </extended-item>
+        <extended-item extensionName="Chart" id="341">
+            <property name="cube">Data Object Cube</property>
+            <xml-property name="xmlRepresentation"><![CDATA[<ActuateChart version="2.6.1">
+ <ChartWithAxes version="2.6.1" type="Bar Chart" subType="Side-by-side" orientation="0">
+  <block>
+   <children _type="TitleBlock" visible="false">
+    <outline>
+     <color _nil="1"/>
+    </outline>
+    <label>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </label>
+   </children>
+   <children _type="Plot">
+    <outline>
+     <color _nil="1"/>
+    </outline>
+    <clientArea>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </clientArea>
+   </children>
+   <children _type="Legend" visible="false" itemType="1">
+    <outline>
+     <color _nil="1"/>
+    </outline>
+    <clientArea>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </clientArea>
+    <separator>
+     <color _nil="1"/>
+    </separator>
+    <title>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </title>
+   </children>
+   <bounds _body="0.0,0.0,212.0,130.0"/>
+   <outline>
+    <color _nil="1"/>
+   </outline>
+  </block>
+  <extendedProperties name="enable.area.alt" value="false"/>
+  <extendedProperties name="enable.drill.category" value="true"/>
+  <extendedProperties name="enable.drill.series" value="true"/>
+  <extendedProperties name="jschart.glass.style" value="true"/>
+  <extendedProperties name="jschart.client.script" value=""/>
+  <extendedProperties name="keep.hierarchy.category" value="false"/>
+  <extendedProperties name="keep.hierarchy.series" value="false"/>
+  <extendedProperties name="jschart.series.shadow" value="true"/>
+  <sampleData>
+   <baseSampleData dataSetRepresentation="A, B, C"/>
+   <orthogonalSampleData dataSetRepresentation="5,4,12" seriesDefinitionIndex="0"/>
+  </sampleData>
+  <emptyMessage>
+   <caption value="&#x3053;&#x306e;&#x30b0;&#x30e9;&#x30d5;&#x306b;&#x306f;&#x30c7;&#x30fc;&#x30bf;&#x304c;&#x3042;&#x308a;&#x307e;&#x305b;&#x3093;&#x3002;"/>
+   <background _body=",64,127,127,127"/>
+   <outline>
+    <color _body=",128,127,127,127"/>
+   </outline>
+  </emptyMessage>
+  <axes>
+   <title>
+    <background _nil="1"/>
+    <outline>
+     <color _nil="1"/>
+    </outline>
+   </title>
+   <associatedAxes primaryAxis="true">
+    <title>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </title>
+    <seriesDefinitions>
+     <query definition=""/>
+     <series _type="BarSeries" seriesIdentifier="&#x652f;&#x6255;&#x984d;" stacked="false" riser="0">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataDefinition definition="data[&quot;Summary Field/Amt&quot;]">
+       <grouping/>
+      </dataDefinition>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <triggers condition="6">
+       <action type="1">
+        <value _type="TooltipValue" text="" delay="200"/>
+       </action>
+      </triggers>
+      <curveFitting _nil="1"/>
+     </series>
+    </seriesDefinitions>
+    <lineAttributes>
+     <color _nil="1"/>
+    </lineAttributes>
+    <label>
+     <caption>
+      <font name="Arial" size="7.0"/>
+     </caption>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </label>
+    <majorGrid>
+     <lineAttributes>
+      <color _nil="1"/>
+     </lineAttributes>
+     <tickAttributes>
+      <color _nil="1"/>
+     </tickAttributes>
+    </majorGrid>
+    <minorGrid>
+     <lineAttributes>
+      <color _nil="1"/>
+     </lineAttributes>
+     <tickAttributes>
+      <color _nil="1"/>
+     </tickAttributes>
+    </minorGrid>
+    <origin>
+     <value _nil="1"/>
+    </origin>
+   </associatedAxes>
+   <seriesDefinitions sorting="1">
+    <query definition=""/>
+    <series seriesIdentifier="">
+     <label>
+      <background _nil="1"/>
+      <outline>
+       <color _nil="1"/>
+      </outline>
+     </label>
+     <dataDefinition definition="data[&quot;Spend Type/Type&quot;]"/>
+     <dataPoint separator=", ">
+      <components type="1"/>
+     </dataPoint>
+     <curveFitting _nil="1"/>
+    </series>
+    <sortKey definition="data[&quot;Summary Field/Amt&quot;]"/>
+   </seriesDefinitions>
+   <lineAttributes>
+    <color _nil="1"/>
+   </lineAttributes>
+   <label>
+    <caption>
+     <font name="Arial" size="7.0"/>
+    </caption>
+    <background _nil="1"/>
+    <outline>
+     <color _nil="1"/>
+    </outline>
+   </label>
+   <majorGrid>
+    <lineAttributes>
+     <color _nil="1"/>
+    </lineAttributes>
+    <tickAttributes>
+     <color _nil="1"/>
+    </tickAttributes>
+   </majorGrid>
+   <minorGrid>
+    <lineAttributes>
+     <color _nil="1"/>
+    </lineAttributes>
+    <tickAttributes>
+     <color _nil="1"/>
+    </tickAttributes>
+   </minorGrid>
+   <origin>
+    <value _nil="1"/>
+   </origin>
+  </axes>
+  <rotation>
+   <angles/>
+  </rotation>
+ </ChartWithAxes>
+</ActuateChart>
+]]></xml-property>
+            <property name="outputFormat">JS</property>
+            <property name="cubeFilter">
+                <filter-condition-element>
+                    <expression name="expr" type="javascript">data["Spend Category/Category"]</expression>
+                    <property name="operator">eq</property>
+                    <simple-property-list name="value1">
+                        <value type="javascript">params["pCat"].value</value>
+                    </simple-property-list>
+                </filter-condition-element>
+            </property>
+            <property name="inheritColumns">true</property>
+            <property name="height">1.6458333333333333in</property>
+            <property name="width">3.4270833333333335in</property>
+            <expression name="bookmark" type="javascript">"method2"</expression>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">Group/Year</property>
+                    <expression name="expression" type="javascript">dimension["Group"]["Year"]</expression>
+                    <property name="dataType">integer</property>
+                </structure>
+                <structure>
+                    <property name="name">Group/Year/DateTime</property>
+                    <expression name="expression" type="javascript">dimension["Group"]["Year"]["DateTime"]</expression>
+                    <property name="dataType">date-time</property>
+                </structure>
+                <structure>
+                    <property name="name">Group/Month</property>
+                    <expression name="expression" type="javascript">dimension["Group"]["Month"]</expression>
+                    <property name="dataType">integer</property>
+                </structure>
+                <structure>
+                    <property name="name">Group/Month/DateTime</property>
+                    <expression name="expression" type="javascript">dimension["Group"]["Month"]["DateTime"]</expression>
+                    <property name="dataType">date-time</property>
+                </structure>
+                <structure>
+                    <property name="name">Group/Day Of Month</property>
+                    <expression name="expression" type="javascript">dimension["Group"]["Day Of Month"]</expression>
+                    <property name="dataType">integer</property>
+                </structure>
+                <structure>
+                    <property name="name">Group/Day Of Month/DateTime</property>
+                    <expression name="expression" type="javascript">dimension["Group"]["Day Of Month"]["DateTime"]</expression>
+                    <property name="dataType">date-time</property>
+                </structure>
+                <structure>
+                    <property name="name">Spend Category/Category</property>
+                    <expression name="expression" type="javascript">dimension["Spend Category"]["Category"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Spend Category/Merchant</property>
+                    <expression name="expression" type="javascript">dimension["Spend Category"]["Merchant"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Spend Type/Type</property>
+                    <expression name="expression" type="javascript">dimension["Spend Type"]["Type"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Accounts/Account</property>
+                    <expression name="expression" type="javascript">dimension["Accounts"]["Account"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Summary Field/Amt</property>
+                    <expression name="expression" type="javascript">measure["Amt"]</expression>
+                    <property name="dataType">float</property>
+                    <property name="aggregateFunction">SUM</property>
+                </structure>
+            </list-property>
+            <property name="theme">SpendTypeTheme</property>
+        </extended-item>
+        <extended-item extensionName="Chart" id="343">
+            <property name="cube">Data Object Cube</property>
+            <xml-property name="xmlRepresentation"><![CDATA[<ActuateChart version="2.6.1">
+ <ChartWithAxes version="2.6.1" type="Bar Chart" subType="Side-by-side">
+  <block>
+   <children _type="TitleBlock">
+    <outline>
+     <color _nil="1"/>
+    </outline>
+    <label>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </label>
+   </children>
+   <children _type="Plot">
+    <outline>
+     <color _nil="1"/>
+    </outline>
+    <clientArea>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </clientArea>
+   </children>
+   <children _type="Legend" itemType="1">
+    <outline>
+     <color _nil="1"/>
+    </outline>
+    <clientArea>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </clientArea>
+    <separator>
+     <color _nil="1"/>
+    </separator>
+    <title>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </title>
+   </children>
+   <bounds _body="0.0,0.0,212.0,130.0"/>
+   <outline>
+    <color _nil="1"/>
+   </outline>
+  </block>
+  <extendedProperties name="enable.area.alt" value="false"/>
+  <extendedProperties name="enable.drill.category" value="true"/>
+  <extendedProperties name="enable.drill.series" value="true"/>
+  <extendedProperties name="keep.hierarchy.category" value="false"/>
+  <extendedProperties name="keep.hierarchy.series" value="false"/>
+  <extendedProperties name="jschart.series.shadow" value="true"/>
+  <sampleData>
+   <baseSampleData dataSetRepresentation="A, B, C"/>
+   <orthogonalSampleData dataSetRepresentation="5,4,12" seriesDefinitionIndex="0"/>
+  </sampleData>
+  <emptyMessage>
+   <caption value="&#x3053;&#x306e;&#x30b0;&#x30e9;&#x30d5;&#x306b;&#x306f;&#x30c7;&#x30fc;&#x30bf;&#x304c;&#x3042;&#x308a;&#x307e;&#x305b;&#x3093;&#x3002;"/>
+   <background _body=",64,127,127,127"/>
+   <outline>
+    <color _body=",128,127,127,127"/>
+   </outline>
+  </emptyMessage>
+  <axes>
+   <title>
+    <background _nil="1"/>
+    <outline>
+     <color _nil="1"/>
+    </outline>
+   </title>
+   <associatedAxes primaryAxis="true">
+    <title>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </title>
+    <seriesDefinitions>
+     <query definition=""/>
+     <series _type="BarSeries" seriesIdentifier="&#x652f;&#x6255;&#x984d;" riser="0">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataDefinition definition="data[&quot;Summary Field/Amt&quot;]">
+       <grouping/>
+      </dataDefinition>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <triggers condition="6">
+       <action type="1">
+        <value _type="TooltipValue" text="" delay="200"/>
+       </action>
+      </triggers>
+      <curveFitting _nil="1"/>
+     </series>
+    </seriesDefinitions>
+    <lineAttributes>
+     <color _nil="1"/>
+    </lineAttributes>
+    <label>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </label>
+    <majorGrid>
+     <lineAttributes>
+      <color _nil="1"/>
+     </lineAttributes>
+     <tickAttributes>
+      <color _nil="1"/>
+     </tickAttributes>
+    </majorGrid>
+    <minorGrid>
+     <lineAttributes>
+      <color _nil="1"/>
+     </lineAttributes>
+     <tickAttributes>
+      <color _nil="1"/>
+     </tickAttributes>
+    </minorGrid>
+    <origin>
+     <value _nil="1"/>
+    </origin>
+   </associatedAxes>
+   <seriesDefinitions sorting="1">
+    <query definition=""/>
+    <series seriesIdentifier="">
+     <label>
+      <background _nil="1"/>
+      <outline>
+       <color _nil="1"/>
+      </outline>
+     </label>
+     <dataDefinition definition="data[&quot;Accounts/Account&quot;]"/>
+     <dataPoint separator=", ">
+      <components type="1"/>
+     </dataPoint>
+     <curveFitting _nil="1"/>
+    </series>
+    <sortKey definition="data[&quot;Summary Field/Amt&quot;]"/>
+   </seriesDefinitions>
+   <lineAttributes>
+    <color _nil="1"/>
+   </lineAttributes>
+   <label>
+    <background _nil="1"/>
+    <outline>
+     <color _nil="1"/>
+    </outline>
+   </label>
+   <majorGrid>
+    <lineAttributes>
+     <color _nil="1"/>
+    </lineAttributes>
+    <tickAttributes>
+     <color _nil="1"/>
+    </tickAttributes>
+   </majorGrid>
+   <minorGrid>
+    <lineAttributes>
+     <color _nil="1"/>
+    </lineAttributes>
+    <tickAttributes>
+     <color _nil="1"/>
+    </tickAttributes>
+   </minorGrid>
+   <origin>
+    <value _nil="1"/>
+   </origin>
+  </axes>
+  <rotation>
+   <angles/>
+  </rotation>
+ </ChartWithAxes>
+</ActuateChart>
+]]></xml-property>
+            <property name="outputFormat">JS</property>
+            <property name="cubeFilter">
+                <filter-condition-element>
+                    <expression name="expr" type="javascript">data["Spend Category/Category"]</expression>
+                    <property name="operator">eq</property>
+                    <simple-property-list name="value1">
+                        <value type="javascript">params["pCat"].value</value>
+                    </simple-property-list>
+                </filter-condition-element>
+            </property>
+            <property name="inheritColumns">false</property>
+            <property name="height">1.6354166666666667in</property>
+            <property name="width">3.6458333333333335in</property>
+            <expression name="bookmark" type="javascript">"acc2"</expression>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">Group/Year</property>
+                    <expression name="expression" type="javascript">dimension["Group"]["Year"]</expression>
+                    <property name="dataType">integer</property>
+                </structure>
+                <structure>
+                    <property name="name">Group/Year/DateTime</property>
+                    <expression name="expression" type="javascript">dimension["Group"]["Year"]["DateTime"]</expression>
+                    <property name="dataType">date-time</property>
+                </structure>
+                <structure>
+                    <property name="name">Group/Month</property>
+                    <expression name="expression" type="javascript">dimension["Group"]["Month"]</expression>
+                    <property name="dataType">integer</property>
+                </structure>
+                <structure>
+                    <property name="name">Group/Month/DateTime</property>
+                    <expression name="expression" type="javascript">dimension["Group"]["Month"]["DateTime"]</expression>
+                    <property name="dataType">date-time</property>
+                </structure>
+                <structure>
+                    <property name="name">Group/Day Of Month</property>
+                    <expression name="expression" type="javascript">dimension["Group"]["Day Of Month"]</expression>
+                    <property name="dataType">integer</property>
+                </structure>
+                <structure>
+                    <property name="name">Group/Day Of Month/DateTime</property>
+                    <expression name="expression" type="javascript">dimension["Group"]["Day Of Month"]["DateTime"]</expression>
+                    <property name="dataType">date-time</property>
+                </structure>
+                <structure>
+                    <property name="name">Spend Category/Category</property>
+                    <expression name="expression" type="javascript">dimension["Spend Category"]["Category"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Spend Category/Merchant</property>
+                    <expression name="expression" type="javascript">dimension["Spend Category"]["Merchant"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Spend Type/Type</property>
+                    <expression name="expression" type="javascript">dimension["Spend Type"]["Type"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Accounts/Account</property>
+                    <expression name="expression" type="javascript">dimension["Accounts"]["Account"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Summary Field/Amt</property>
+                    <expression name="expression" type="javascript">measure["Amt"]</expression>
+                    <property name="dataType">float</property>
+                    <property name="aggregateFunction">SUM</property>
+                </structure>
+            </list-property>
+            <property name="theme">SpendTypeTheme</property>
+        </extended-item>
+    </body>
+</report>

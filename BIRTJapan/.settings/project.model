@@ -1,0 +1,1054 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.actuate.istudio.analysis.model:Project xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.actuate.istudio.analysis.model="http:///com.actuate.istudio.analysis.model.ecore" name="BIRTJapan">
+  <files xsi:type="com.actuate.istudio.analysis.model:DataDesign" name="ajdemo.datadesign" path="/BIRTJapan/データオブジェクト/ajdemo.datadesign">
+    <dataSets name="セールスデータ">
+      <columns name="地域"/>
+      <columns name="代理店"/>
+      <columns name="販売員名"/>
+      <columns name="販売実績"/>
+      <columns name="計画値"/>
+      <columns name="達成率"/>
+    </dataSets>
+    <dataSets name="顧客マスタ">
+      <columns name="顧客ID"/>
+      <columns name="顧客名"/>
+      <columns name="顧客名カナ"/>
+      <columns name="性別"/>
+      <columns name="生年月日"/>
+      <columns name="既未婚"/>
+      <columns name="都道府県ID"/>
+      <columns name="都道府県"/>
+      <columns name="地方"/>
+      <columns name="職業"/>
+    </dataSets>
+    <dataSets name="商品マスタ">
+      <columns name="商品ID"/>
+      <columns name="商品カテゴリ"/>
+      <columns name="商品名"/>
+    </dataSets>
+    <dataSets name="売上データ">
+      <columns name="年"/>
+      <columns name="四半期"/>
+      <columns name="地域"/>
+      <columns name="代理店"/>
+      <columns name="営業担当"/>
+      <columns name="顧客ID"/>
+      <columns name="商品ID"/>
+      <columns name="売上"/>
+      <columns name="計画値"/>
+    </dataSets>
+    <dataSets name="売上分析データセット">
+      <columns name="顧客名"/>
+      <columns name="顧客名カナ"/>
+      <columns name="性別"/>
+      <columns name="生年月日"/>
+      <columns name="既未婚"/>
+      <columns name="都道府県ID"/>
+      <columns name="都道府県"/>
+      <columns name="地方"/>
+      <columns name="職業"/>
+      <columns name="年"/>
+      <columns name="四半期"/>
+      <columns name="地域"/>
+      <columns name="代理店"/>
+      <columns name="営業担当"/>
+      <columns name="売上"/>
+      <columns name="計画値"/>
+      <columns name="商品ID"/>
+      <columns name="商品カテゴリ"/>
+      <columns name="商品名"/>
+    </dataSets>
+    <dataSets name="マンスリーレポート">
+      <columns name="年"/>
+      <columns name="四半期"/>
+      <columns name="売上"/>
+      <columns name="計画値"/>
+    </dataSets>
+  </files>
+  <files xsi:type="com.actuate.istudio.analysis.model:RptDesign" name="term_goal.RPTDESIGN" path="/BIRTJapan/レポートデザイン/term_goal.RPTDESIGN">
+    <dataMap key="//@files.17" value="1"/>
+    <dataSets name="データセット">
+      <columns name="Customer"/>
+      <columns name="Goal"/>
+      <columns name="Actual"/>
+    </dataSets>
+  </files>
+  <files xsi:type="com.actuate.istudio.analysis.model:Data" name="bestbank.data" path="/BIRTJapan/データオブジェクト/bestbank.data">
+    <targetReportsMap key="//@files.10" value="1"/>
+    <targetReportsMap key="//@files.12" value="1"/>
+  </files>
+  <files xsi:type="com.actuate.istudio.analysis.model:RptDesign" name="マンスリーレポート.rptdesign" path="/BIRTJapan/マンスリーレポート.rptdesign">
+    <dataMap key="//@files.21" value="1"/>
+    <linkedFromReportsMap key="//@files.38" value="1"/>
+    <linkedFromReportsMap key="//@files.39" value="1"/>
+    <linkedFromReportsMap key="//@files.40" value="1"/>
+    <linkedFromReportsMap key="//@files.36" value="2"/>
+    <dataSets name="マンスリーレポート">
+      <columns name="年"/>
+      <columns name="四半期"/>
+      <columns name="売上"/>
+      <columns name="計画値"/>
+    </dataSets>
+  </files>
+  <files xsi:type="com.actuate.istudio.analysis.model:RptDesign" name="My Portfolio.rptdesign" path="/BIRTJapan/レポートデザイン/My Portfolio.rptdesign">
+    <dataMap key="//@files.6" value="1"/>
+    <dataMap key="//@files.17" value="1"/>
+    <dataSets name="Asset_csv">
+      <columns name="Accounts"/>
+      <columns name="Current Qty"/>
+      <columns name="Original Qty"/>
+      <columns name="Original Value"/>
+      <columns name="Value"/>
+    </dataSets>
+    <dataSets name="Finances_csv">
+      <columns name="Account Categories"/>
+      <columns name="Current Value"/>
+      <columns name="Original Value"/>
+    </dataSets>
+    <dataSets name="Portfolio_csv">
+      <columns name="%Change"/>
+      <columns name="Asset Class"/>
+      <columns name="Aggregation"/>
+      <columns name="Current Price"/>
+      <columns name="Current Value"/>
+      <columns name="Current Volume"/>
+      <columns name="grandtotal"/>
+      <columns name="LineTotal"/>
+      <columns name="Original Purchase Cost"/>
+      <columns name="PercentChg"/>
+      <columns name="Stock Name"/>
+    </dataSets>
+    <dataSets name="Asset">
+      <columns name="Accounts"/>
+      <columns name="Current Qty"/>
+      <columns name="Original Qty"/>
+      <columns name="Original Value"/>
+      <columns name="Value"/>
+    </dataSets>
+    <dataSets name="Finances">
+      <columns name="Account Categories"/>
+      <columns name="Current Value"/>
+      <columns name="Original Value"/>
+    </dataSets>
+    <dataSets name="Portfolio">
+      <columns name="%Change"/>
+      <columns name="Asset Class"/>
+      <columns name="Aggregation"/>
+      <columns name="Current Price"/>
+      <columns name="Current Value"/>
+      <columns name="Current Volume"/>
+      <columns name="grandtotal"/>
+      <columns name="LineTotal"/>
+      <columns name="Original Purchase Cost"/>
+      <columns name="PercentChg"/>
+      <columns name="Stock Name"/>
+    </dataSets>
+  </files>
+  <files xsi:type="com.actuate.istudio.analysis.model:DataDesign" name="spendtype.datadesign" path="/BIRTJapan/データオブジェクト/spendtype.datadesign">
+    <dataSets name="Data Set">
+      <columns name="Account"/>
+      <columns name="Amount"/>
+      <columns name="Amt"/>
+      <columns name="Merchant"/>
+      <columns name="Reference #"/>
+      <columns name="spend category"/>
+      <columns name="Date"/>
+      <columns name="type"/>
+    </dataSets>
+    <dataSets name="Limit">
+      <columns name="Account"/>
+      <columns name="Bal"/>
+      <columns name="Limit"/>
+    </dataSets>
+  </files>
+  <files xsi:type="com.actuate.istudio.analysis.model:Data" name="spendtype.data" path="/BIRTJapan/データオブジェクト/spendtype.data">
+    <targetReportsMap key="//@files.13" value="1"/>
+    <targetReportsMap key="//@files.26" value="1"/>
+    <targetReportsMap key="//@files.4" value="1"/>
+    <targetDashboardsMap key="//@files.24" value="1"/>
+  </files>
+  <files xsi:type="com.actuate.istudio.analysis.model:RptDesign" name="State_Drilldown_MyWealth_vs_Geo.RPTDESIGN" path="/BIRTJapan/WM/State_Drilldown_MyWealth_vs_Geo.RPTDESIGN">
+    <dataSets name="Data Set">
+      <columns name="Per_capita_income"/>
+      <columns name="State"/>
+      <columns name="County_ID"/>
+    </dataSets>
+  </files>
+  <files xsi:type="com.actuate.istudio.analysis.model:RptDesign" name="マイアラート.rptdesign" path="/BIRTJapan/レポートデザイン/マイアラート.rptdesign"/>
+  <files xsi:type="com.actuate.istudio.analysis.model:DataDesign" name="wm.datadesign" path="/BIRTJapan/データオブジェクト/wm.datadesign">
+    <dataSets name="ratio">
+      <columns name="Cust"/>
+      <columns name="L"/>
+      <columns name="A"/>
+      <columns name="Me"/>
+      <columns name="dummy"/>
+    </dataSets>
+    <dataSets name="retirement">
+      <columns name="Customer"/>
+      <columns name="Total"/>
+      <columns name="sortkey"/>
+    </dataSets>
+    <dataSets name="households">
+      <columns name="CustID"/>
+      <columns name="Customer"/>
+      <columns name="Total"/>
+      <columns name="sortkey"/>
+    </dataSets>
+    <dataSets name="age">
+      <columns name="Customer"/>
+      <columns name="Total"/>
+    </dataSets>
+    <dataSets name="Asset_csv">
+      <columns name="Accounts"/>
+      <columns name="Current Qty"/>
+      <columns name="Original Qty"/>
+      <columns name="Original Value"/>
+      <columns name="Value"/>
+    </dataSets>
+    <dataSets name="Finances_csv">
+      <columns name="Account Categories"/>
+      <columns name="Current Value"/>
+      <columns name="Original Value"/>
+    </dataSets>
+    <dataSets name="Portfolio_csv">
+      <columns name="%Change"/>
+      <columns name="Asset Class"/>
+      <columns name="Aggregation"/>
+      <columns name="Current Price"/>
+      <columns name="Current Value"/>
+      <columns name="Current Volume"/>
+      <columns name="grandtotal"/>
+      <columns name="LineTotal"/>
+      <columns name="Original Purchase Cost"/>
+      <columns name="PercentChg"/>
+      <columns name="Stock Name"/>
+    </dataSets>
+    <dataSets name="map">
+      <columns name="State_Abbr"/>
+      <columns name="Per_capita_income"/>
+    </dataSets>
+    <dataSets name="funnel">
+      <columns name="Customer"/>
+      <columns name="Goal"/>
+      <columns name="Percent"/>
+    </dataSets>
+    <dataSets name="qtygoals">
+      <columns name="Customer"/>
+      <columns name="Number_of_Goals"/>
+    </dataSets>
+    <dataSets name="WorldTrip">
+      <columns name="Customer"/>
+      <columns name="Country_Abbr"/>
+      <columns name="highlite"/>
+    </dataSets>
+    <dataSets name="pyr">
+      <columns name="Customer"/>
+      <columns name="Goal"/>
+      <columns name="Cost"/>
+    </dataSets>
+    <dataSets name="Account Overview">
+      <columns name="ACCT_ID"/>
+      <columns name="ACCT_NAME"/>
+      <columns name="startamount"/>
+      <columns name="currentamount"/>
+    </dataSets>
+    <dataSets name="Account Over View Table">
+      <columns name="ACCT_ID"/>
+      <columns name="ACCT_NAME"/>
+      <columns name="startamount"/>
+      <columns name="currentamount"/>
+      <columns name="B001_ACCT_NET_WR_AM"/>
+      <columns name="MNTH_END_YYYYMM"/>
+    </dataSets>
+    <dataSets name="goal">
+      <columns name="Customer"/>
+      <columns name="Goal"/>
+      <columns name="Actual"/>
+    </dataSets>
+    <dataSets name="TransactionHistory">
+      <columns name="ACCT_ID"/>
+      <columns name="ACCT_NAME"/>
+      <columns name="TRAN_EXEC_DT"/>
+      <columns name="TRAN_SUBOR_TYPE_CD_DESC_TX"/>
+      <columns name="TRAN_EXEC_PRICE_PER_SHR_AM"/>
+      <columns name="TRAN_SHR_QY"/>
+      <columns name="TRAN_AM"/>
+    </dataSets>
+    <dataSets name="Index3Years">
+      <columns name="Date"/>
+      <columns name="DJI"/>
+      <columns name="NASDAQ"/>
+      <columns name="S&amp;P"/>
+      <columns name="Me"/>
+      <columns name="DJISTART" expression="row[&quot;DJI&quot;]"/>
+      <columns name="NASDAQSTART" expression="row[&quot;NASDAQ&quot;]"/>
+      <columns name="S&amp;PStart" expression="row[&quot;S&amp;P&quot;]"/>
+      <columns name="MeStart" expression="row[&quot;Me&quot;]"/>
+      <columns name="Dateplus" expression="BirtDateTime.addYear(row[&quot;Date&quot;], 3)"/>
+    </dataSets>
+    <dataSets name="Positions">
+      <columns name="ACCT_ID"/>
+      <columns name="ACCT_NAME"/>
+      <columns name="ISS_PRICE_AM"/>
+      <columns name="TRADE_DATE_QY"/>
+      <columns name="ITEM_ISS_NM"/>
+      <columns name="ISS_SHRT_DESC_TX"/>
+      <columns name="Total"/>
+    </dataSets>
+  </files>
+  <files xsi:type="com.actuate.istudio.analysis.model:RptDesign" name="bestbank.RPTDESIGN" path="/BIRTJapan/WM/bestbank.RPTDESIGN">
+    <dataMap key="//@files.2" value="1"/>
+    <dataSets name="AllCustomers">
+      <columns name="customer_id"/>
+      <columns name="ACCOUNTNUMBER"/>
+      <columns name="INTERNALREF"/>
+      <columns name="FORNAME"/>
+      <columns name="SURNAME"/>
+      <columns name="ADDRESS1"/>
+      <columns name="ADDRESS2"/>
+      <columns name="ADDRESS3"/>
+      <columns name="ADDRESS4"/>
+      <columns name="POSTCODE"/>
+      <columns name="STARTDATE"/>
+      <columns name="ENDDATE"/>
+      <columns name="PREVIOUSBALANCE"/>
+      <columns name="PAYMENTSANDCREDITS"/>
+      <columns name="PURCHASESANDDEBTS"/>
+      <columns name="CASHADVANCES"/>
+      <columns name="FINANCECHARGES"/>
+      <columns name="NEWBALANCE"/>
+      <columns name="MINIMUMPAYMENT"/>
+      <columns name="DUEDATE"/>
+      <columns name="TOTALCREDIT"/>
+      <columns name="CREDITAVAILABLE"/>
+      <columns name="CREDITFORCASH"/>
+      <columns name="CASHAVAILABLE"/>
+      <columns name="CUSTSERVICENUMBER"/>
+      <columns name="COLLECTOUTSIDENA"/>
+      <columns name="SELFSERVICE"/>
+      <columns name="TELEPHONEBANKING"/>
+      <columns name="WEBSITE"/>
+      <columns name="CORPADD1"/>
+      <columns name="CORPADD2"/>
+      <columns name="CORPADD3"/>
+      <columns name="CORPADD4"/>
+      <columns name="CORPPOST"/>
+      <columns name="fullname"/>
+    </dataSets>
+    <dataSets name="CategorizedCharges">
+      <columns name="CHARGEDATE"/>
+      <columns name="CHARGEDESCRIPTION"/>
+      <columns name="CHARGEAMOUNT"/>
+      <columns name="rwc"/>
+      <columns name="GenericCatDesc"/>
+      <columns name="name"/>
+      <columns name="Category"/>
+    </dataSets>
+    <dataSets name="Chart">
+      <columns name="DATE"/>
+      <columns name="VALUE"/>
+      <columns name="Month"/>
+    </dataSets>
+    <dataSets name="Payments">
+      <columns name="PAYMENTDATE"/>
+      <columns name="PAYMENTAMOUNT"/>
+      <columns name="PAYMENTDESCRIPTION"/>
+    </dataSets>
+  </files>
+  <files xsi:type="com.actuate.istudio.analysis.model:RptDesign" name="Roadmap2.rptdesign" path="/BIRTJapan/WM/Roadmap2.rptdesign">
+    <dataSets name="Data Set">
+      <columns name="birthyear"/>
+      <columns name="yearmonth"/>
+      <columns name="totalnetworth"/>
+      <columns name="retirementage"/>
+      <columns name="retirementamt"/>
+      <columns name="projectednetworth"/>
+      <columns name="plotdate"/>
+      <columns name="lifeeventnote"/>
+    </dataSets>
+    <dataSets name="Data Set CSV">
+      <columns name="BIRTH_YEAR"/>
+      <columns name="MNTH_END_YYYYMM"/>
+      <columns name="totalnetworth"/>
+      <columns name="retirementage"/>
+      <columns name="retirementamt"/>
+    </dataSets>
+  </files>
+  <files xsi:type="com.actuate.istudio.analysis.model:RptDesign" name="bestbankj.rptdesign" path="/BIRTJapan/レポートデザイン/bestbankj.rptdesign">
+    <dataMap key="//@files.23" value="1"/>
+    <dataMap key="//@files.2" value="1"/>
+    <dataSets name="Meisai">
+      <columns name="利用日"/>
+      <columns name="ご利用店名及び商品名"/>
+      <columns name="本人・家族区分"/>
+      <columns name="支払区分名称"/>
+      <columns name="締前入金区分"/>
+      <columns name="利用金額"/>
+      <columns name="備考"/>
+    </dataSets>
+    <dataSets name="MeisaiSummary">
+      <columns name="種別"/>
+      <columns name="3_14現在の残高"/>
+      <columns name="4_14現在のご入金"/>
+      <columns name="今回ご利用金額"/>
+      <columns name="4_14現在の残高"/>
+      <columns name="今回ご請求額"/>
+      <columns name="今回お支払い後残高"/>
+      <columns name="うち手数料_利息"/>
+      <columns name="区分"/>
+    </dataSets>
+    <dataSets name="AllCustomers">
+      <columns name="customer_id"/>
+      <columns name="ACCOUNTNUMBER"/>
+      <columns name="INTERNALREF"/>
+      <columns name="FORNAME"/>
+      <columns name="SURNAME"/>
+      <columns name="ADDRESS1"/>
+      <columns name="ADDRESS2"/>
+      <columns name="ADDRESS3"/>
+      <columns name="ADDRESS4"/>
+      <columns name="POSTCODE"/>
+      <columns name="STARTDATE"/>
+      <columns name="ENDDATE"/>
+      <columns name="PREVIOUSBALANCE"/>
+      <columns name="PAYMENTSANDCREDITS"/>
+      <columns name="PURCHASESANDDEBTS"/>
+      <columns name="CASHADVANCES"/>
+      <columns name="FINANCECHARGES"/>
+      <columns name="NEWBALANCE"/>
+      <columns name="MINIMUMPAYMENT"/>
+      <columns name="DUEDATE"/>
+      <columns name="TOTALCREDIT"/>
+      <columns name="CREDITAVAILABLE"/>
+      <columns name="CREDITFORCASH"/>
+      <columns name="CASHAVAILABLE"/>
+      <columns name="CUSTSERVICENUMBER"/>
+      <columns name="COLLECTOUTSIDENA"/>
+      <columns name="SELFSERVICE"/>
+      <columns name="TELEPHONEBANKING"/>
+      <columns name="WEBSITE"/>
+      <columns name="CORPADD1"/>
+      <columns name="CORPADD2"/>
+      <columns name="CORPADD3"/>
+      <columns name="CORPADD4"/>
+      <columns name="CORPPOST"/>
+      <columns name="fullname"/>
+    </dataSets>
+  </files>
+  <files xsi:type="com.actuate.istudio.analysis.model:RptDesign" name="spend_type_html5.RPTDESIGN" path="/BIRTJapan/WM/spend_type_html5.RPTDESIGN">
+    <dataMap key="//@files.6" value="1"/>
+    <dataSets name="Data Set">
+      <columns name="Account"/>
+      <columns name="Bal"/>
+      <columns name="Limit"/>
+    </dataSets>
+  </files>
+  <files xsi:type="com.actuate.istudio.analysis.model:RptDesign" name="splash.rptdesign" path="/BIRTJapan/レポートデザイン/splash.rptdesign"/>
+  <files xsi:type="com.actuate.istudio.analysis.model:RptDesign" name="Positions.RPTDESIGN" path="/BIRTJapan/レポートデザイン/Positions.RPTDESIGN">
+    <dataMap key="//@files.17" value="1"/>
+    <linkedFromReportsMap key="//@files.37" value="1"/>
+    <dataSets name="Positions">
+      <columns name="ACCT_ID"/>
+      <columns name="ACCT_NAME"/>
+      <columns name="ISS_PRICE_AM"/>
+      <columns name="TRADE_DATE_QY"/>
+      <columns name="ITEM_ISS_NM"/>
+      <columns name="ISS_SHRT_DESC_TX"/>
+      <columns name="Total"/>
+    </dataSets>
+  </files>
+  <files xsi:type="com.actuate.istudio.analysis.model:DataDesign" name="ajsfw.datadesign" path="/BIRTJapan/データオブジェクト/ajsfw.datadesign">
+    <dataSets name="Meisai">
+      <columns name="利用日"/>
+      <columns name="ご利用店名及び商品名"/>
+      <columns name="本人・家族区分"/>
+      <columns name="支払区分名称"/>
+      <columns name="締前入金区分"/>
+      <columns name="利用金額"/>
+      <columns name="備考"/>
+    </dataSets>
+    <dataSets name="MeisaiSummary">
+      <columns name="区分"/>
+      <columns name="種別"/>
+      <columns name="3_14現在の残高"/>
+      <columns name="4_14現在のご入金"/>
+      <columns name="今回ご利用金額"/>
+      <columns name="4_14現在の残高"/>
+      <columns name="今回ご請求額"/>
+      <columns name="今回お支払い後残高"/>
+      <columns name="うち手数料_利息"/>
+    </dataSets>
+  </files>
+  <files xsi:type="com.actuate.istudio.analysis.model:Data" name="wm.data" path="/BIRTJapan/データオブジェクト/wm.data">
+    <targetReportsMap key="//@files.20" value="1"/>
+    <targetReportsMap key="//@files.22" value="1"/>
+    <targetReportsMap key="//@files.28" value="1"/>
+    <targetReportsMap key="//@files.29" value="1"/>
+    <targetReportsMap key="//@files.34" value="1"/>
+    <targetReportsMap key="//@files.35" value="1"/>
+    <targetReportsMap key="//@files.37" value="1"/>
+    <targetReportsMap key="//@files.1" value="1"/>
+    <targetReportsMap key="//@files.4" value="1"/>
+    <targetReportsMap key="//@files.15" value="1"/>
+    <targetDashboardsMap key="//@files.24" value="1"/>
+  </files>
+  <files xsi:type="com.actuate.istudio.analysis.model:RptDesign" name="spend_type.RPTDESIGN" path="/BIRTJapan/WM/spend_type.RPTDESIGN">
+    <dataSets name="Data Set">
+      <columns name="Account"/>
+      <columns name="Bal"/>
+      <columns name="Limit"/>
+    </dataSets>
+  </files>
+  <files xsi:type="com.actuate.istudio.analysis.model:RptLibrary" name="ajdemo.rptlibrary" path="/BIRTJapan/レポートライブラリ/ajdemo.rptlibrary">
+    <dataMap key="//@files.21" value="1"/>
+    <dataSets name="セールスデータ">
+      <columns name="地域"/>
+      <columns name="代理店"/>
+      <columns name="販売員名"/>
+      <columns name="販売実績"/>
+      <columns name="計画値"/>
+      <columns name="達成率"/>
+    </dataSets>
+    <dataSets name="顧客マスタ">
+      <columns name="顧客ID"/>
+      <columns name="顧客名"/>
+      <columns name="顧客名カナ"/>
+      <columns name="性別"/>
+      <columns name="生年月日"/>
+      <columns name="既未婚"/>
+      <columns name="都道府県ID"/>
+      <columns name="都道府県"/>
+      <columns name="地方"/>
+      <columns name="職業"/>
+    </dataSets>
+    <dataSets name="商品マスタ">
+      <columns name="商品ID"/>
+      <columns name="商品カテゴリ"/>
+      <columns name="商品名"/>
+    </dataSets>
+    <dataSets name="売上データ">
+      <columns name="年"/>
+      <columns name="四半期"/>
+      <columns name="地域"/>
+      <columns name="代理店"/>
+      <columns name="営業担当"/>
+      <columns name="顧客ID"/>
+      <columns name="商品ID"/>
+      <columns name="売上"/>
+      <columns name="計画値"/>
+    </dataSets>
+    <dataSets name="売上分析データセット">
+      <columns name="顧客名"/>
+      <columns name="顧客名カナ"/>
+      <columns name="性別"/>
+      <columns name="生年月日"/>
+      <columns name="既未婚"/>
+      <columns name="都道府県ID"/>
+      <columns name="都道府県"/>
+      <columns name="地方"/>
+      <columns name="職業"/>
+      <columns name="年"/>
+      <columns name="四半期"/>
+      <columns name="地域"/>
+      <columns name="代理店"/>
+      <columns name="営業担当"/>
+      <columns name="売上"/>
+      <columns name="計画値"/>
+      <columns name="商品ID"/>
+      <columns name="商品カテゴリ"/>
+      <columns name="商品名"/>
+    </dataSets>
+    <dataSets name="マンスリーレポート">
+      <columns name="年"/>
+      <columns name="四半期"/>
+      <columns name="売上"/>
+      <columns name="計画値"/>
+    </dataSets>
+  </files>
+  <files xsi:type="com.actuate.istudio.analysis.model:RptDesign" name="My Wealth vs Indices.rptdesign" path="/BIRTJapan/レポートデザイン/My Wealth vs Indices.rptdesign">
+    <dataMap key="//@files.17" value="1"/>
+    <dataSets name="Index3Years">
+      <columns name="Date"/>
+      <columns name="DJI"/>
+      <columns name="NASDAQ"/>
+      <columns name="S&amp;P"/>
+      <columns name="Me"/>
+      <columns name="DJISTART"/>
+      <columns name="NASDAQSTART"/>
+      <columns name="S&amp;PStart"/>
+      <columns name="MeStart"/>
+      <columns name="Dateplus"/>
+    </dataSets>
+  </files>
+  <files xsi:type="com.actuate.istudio.analysis.model:Data" name="ajdemo.data" path="/BIRTJapan/データオブジェクト/ajdemo.data">
+    <targetReportsMap key="//@files.36" value="1"/>
+    <targetReportsMap key="//@files.38" value="1"/>
+    <targetReportsMap key="//@files.39" value="1"/>
+    <targetReportsMap key="//@files.40" value="1"/>
+    <targetReportsMap key="//@files.3" value="1"/>
+    <targetLibrariesMap key="//@files.19" value="1"/>
+  </files>
+  <files xsi:type="com.actuate.istudio.analysis.model:RptDesign" name="InvestGoals.rptdesign" path="/BIRTJapan/レポートデザイン/InvestGoals.rptdesign">
+    <dataMap key="//@files.17" value="1"/>
+    <dataSets name="funnel">
+      <columns name="Customer"/>
+      <columns name="Goal"/>
+      <columns name="Percent"/>
+    </dataSets>
+    <dataSets name="qtygoals">
+      <columns name="Customer"/>
+      <columns name="Number_of_Goals"/>
+    </dataSets>
+    <dataSets name="WorldTrip">
+      <columns name="Customer"/>
+      <columns name="Country_Abbr"/>
+      <columns name="highlite"/>
+    </dataSets>
+    <dataSets name="pyr">
+      <columns name="Customer"/>
+      <columns name="Goal"/>
+      <columns name="Cost"/>
+    </dataSets>
+  </files>
+  <files xsi:type="com.actuate.istudio.analysis.model:Data" name="ajsfw.data" path="/BIRTJapan/データオブジェクト/ajsfw.data">
+    <targetReportsMap key="//@files.12" value="1"/>
+  </files>
+  <files xsi:type="com.actuate.istudio.analysis.model:Dashboard" name="SFWealthダッシュボード.dashboard" path="/BIRTJapan/SFWealthダッシュボード.dashboard">
+    <dataMap key="//@files.6" value="1"/>
+    <dataMap key="//@files.17" value="1"/>
+  </files>
+  <files xsi:type="com.actuate.istudio.analysis.model:RptLibrary" name="ThemesReportItems.rptlibrary" path="/BIRTJapan/レポートデザイン/ThemesReportItems.rptlibrary"/>
+  <files xsi:type="com.actuate.istudio.analysis.model:RptDesign" name="MySpendDetail.RPTDESIGN" path="/BIRTJapan/WM/MySpendDetail.RPTDESIGN">
+    <dataMap key="//@files.6" value="1"/>
+    <dataSets name="Data Set">
+      <columns name="Account"/>
+      <columns name="Amount"/>
+      <columns name="Amt"/>
+      <columns name="Merchant"/>
+      <columns name="Reference #"/>
+      <columns name="spend category"/>
+      <columns name="Date"/>
+      <columns name="type"/>
+    </dataSets>
+  </files>
+  <files xsi:type="com.actuate.istudio.analysis.model:RptDesign" name="Roadmap.rptdesign" path="/BIRTJapan/WM/Roadmap.rptdesign">
+    <dataSets name="Data Set">
+      <columns name="birthyear"/>
+      <columns name="yearmonth"/>
+      <columns name="totalnetworth"/>
+      <columns name="retirementage"/>
+      <columns name="retirementamt"/>
+      <columns name="projectednetworth"/>
+      <columns name="plotdate"/>
+      <columns name="lifeeventnote"/>
+    </dataSets>
+    <dataSets name="Data Set Static">
+      <columns name="BIRTH_YEAR"/>
+      <columns name="MNTH_END_YYYYMM"/>
+      <columns name="totalnetworth"/>
+      <columns name="retirementage"/>
+      <columns name="retirementamt"/>
+    </dataSets>
+  </files>
+  <files xsi:type="com.actuate.istudio.analysis.model:RptDesign" name="TransactionHistory.rptdesign" path="/BIRTJapan/レポートデザイン/TransactionHistory.rptdesign">
+    <dataMap key="//@files.17" value="1"/>
+    <dataSets name="データセット">
+      <columns name="ACCT_ID"/>
+      <columns name="ACCT_NAME"/>
+      <columns name="TRAN_EXEC_DT"/>
+      <columns name="TRAN_SUBOR_TYPE_CD_DESC_TX"/>
+      <columns name="TRAN_EXEC_PRICE_PER_SHR_AM"/>
+      <columns name="TRAN_SHR_QY"/>
+      <columns name="TRAN_AM"/>
+    </dataSets>
+  </files>
+  <files xsi:type="com.actuate.istudio.analysis.model:RptDesign" name="VsIndex.RPTDESIGN" path="/BIRTJapan/レポートデザイン/VsIndex.RPTDESIGN">
+    <dataMap key="//@files.17" value="1"/>
+    <dataSets name="map">
+      <columns name="State_Abbr"/>
+      <columns name="Per_capita_income"/>
+    </dataSets>
+    <dataSets name="ratio">
+      <columns name="Cust"/>
+      <columns name="L"/>
+      <columns name="A"/>
+      <columns name="Me"/>
+      <columns name="dummy"/>
+    </dataSets>
+    <dataSets name="households">
+      <columns name="CustID"/>
+      <columns name="Customer"/>
+      <columns name="Total"/>
+      <columns name="sortkey"/>
+    </dataSets>
+    <dataSets name="retirement">
+      <columns name="Customer"/>
+      <columns name="Total"/>
+      <columns name="sortkey"/>
+    </dataSets>
+    <dataSets name="age">
+      <columns name="Customer"/>
+      <columns name="Total"/>
+    </dataSets>
+  </files>
+  <files xsi:type="com.actuate.istudio.analysis.model:Dashboard" name="ダッシュボード.dashboard" path="/BIRTJapan/ダッシュボード.dashboard">
+    <dataMap key="//@files.31" value="1"/>
+  </files>
+  <files xsi:type="com.actuate.istudio.analysis.model:Data" name="データオブジェクト.data" path="/BIRTJapan/データオブジェクト/データオブジェクト.data">
+    <targetDashboardsMap key="//@files.30" value="1"/>
+  </files>
+  <files xsi:type="com.actuate.istudio.analysis.model:DataDesign" name="データオブジェクト.datadesign" path="/BIRTJapan/データオブジェクト/データオブジェクト.datadesign">
+    <dataSets name="売上データセット">
+      <columns name="年"/>
+      <columns name="四半期"/>
+      <columns name="地域"/>
+      <columns name="代理店"/>
+      <columns name="営業担当"/>
+      <columns name="顧客ID"/>
+      <columns name="商品ID"/>
+      <columns name="売上"/>
+      <columns name="計画値"/>
+    </dataSets>
+    <dataSets name="商品データセット">
+      <columns name="商品ID"/>
+      <columns name="商品カテゴリ"/>
+      <columns name="商品名"/>
+    </dataSets>
+    <dataSets name="顧客データセット">
+      <columns name="顧客ID"/>
+      <columns name="顧客名"/>
+      <columns name="顧客名カナ"/>
+      <columns name="性別"/>
+      <columns name="生年月日"/>
+      <columns name="既未婚"/>
+      <columns name="都道府県ID"/>
+      <columns name="都道府県"/>
+      <columns name="地方"/>
+      <columns name="職業"/>
+    </dataSets>
+  </files>
+  <files xsi:type="com.actuate.istudio.analysis.model:DataDesign" name="bestbank.datadesign" path="/BIRTJapan/データオブジェクト/bestbank.datadesign">
+    <dataSets name="AllCustomers">
+      <columns name="customer_id"/>
+      <columns name="ACCOUNTNUMBER"/>
+      <columns name="INTERNALREF"/>
+      <columns name="FORNAME"/>
+      <columns name="SURNAME"/>
+      <columns name="ADDRESS1"/>
+      <columns name="ADDRESS2"/>
+      <columns name="ADDRESS3"/>
+      <columns name="ADDRESS4"/>
+      <columns name="POSTCODE"/>
+      <columns name="STARTDATE"/>
+      <columns name="ENDDATE"/>
+      <columns name="PREVIOUSBALANCE"/>
+      <columns name="PAYMENTSANDCREDITS"/>
+      <columns name="PURCHASESANDDEBTS"/>
+      <columns name="CASHADVANCES"/>
+      <columns name="FINANCECHARGES"/>
+      <columns name="NEWBALANCE"/>
+      <columns name="MINIMUMPAYMENT"/>
+      <columns name="DUEDATE"/>
+      <columns name="TOTALCREDIT"/>
+      <columns name="CREDITAVAILABLE"/>
+      <columns name="CREDITFORCASH"/>
+      <columns name="CASHAVAILABLE"/>
+      <columns name="CUSTSERVICENUMBER"/>
+      <columns name="COLLECTOUTSIDENA"/>
+      <columns name="SELFSERVICE"/>
+      <columns name="TELEPHONEBANKING"/>
+      <columns name="WEBSITE"/>
+      <columns name="CORPADD1"/>
+      <columns name="CORPADD2"/>
+      <columns name="CORPADD3"/>
+      <columns name="CORPADD4"/>
+      <columns name="CORPPOST"/>
+      <columns name="fullname" expression="row[&quot;FORNAME&quot;] + &quot; &quot; + row[&quot;SURNAME&quot;]"/>
+    </dataSets>
+    <dataSets name="Payments">
+      <columns name="PAYMENTDATE"/>
+      <columns name="PAYMENTAMOUNT"/>
+      <columns name="PAYMENTDESCRIPTION"/>
+    </dataSets>
+    <dataSets name="Charges">
+      <columns name="CHARGEDATE"/>
+      <columns name="CHARGEDESCRIPTION"/>
+      <columns name="CHARGEAMOUNT"/>
+      <columns name="rwc" expression="row[&quot;CHARGEDATE&quot;]"/>
+      <columns name="GenericCatDesc" expression="(row[&quot;CHARGEDESCRIPTION&quot;].indexOf(&quot;#&quot;) > 0) ? row[&quot;CHARGEDESCRIPTION&quot;].substring(0, (row[&quot;CHARGEDESCRIPTION&quot;].indexOf(&quot;#&quot;) - 1)) : row[&quot;CHARGEDESCRIPTION&quot;]"/>
+    </dataSets>
+    <dataSets name="ChargeCategories">
+      <columns name="name"/>
+      <columns name="Category"/>
+    </dataSets>
+    <dataSets name="CategorizedCharges">
+      <columns name="CHARGEDATE"/>
+      <columns name="CHARGEDESCRIPTION"/>
+      <columns name="CHARGEAMOUNT"/>
+      <columns name="rwc"/>
+      <columns name="GenericCatDesc"/>
+      <columns name="name"/>
+      <columns name="Category"/>
+    </dataSets>
+    <dataSets name="Chart">
+      <columns name="DATE"/>
+      <columns name="VALUE"/>
+      <columns name="Month" expression="BirtDateTime.month(row[&quot;DATE&quot;],2)"/>
+    </dataSets>
+  </files>
+  <files xsi:type="com.actuate.istudio.analysis.model:RptDesign" name="Account Overview Bubble.RPTDESIGN" path="/BIRTJapan/WM/Account Overview Bubble.RPTDESIGN">
+    <dataMap key="//@files.17" value="1"/>
+    <dataSets name="Account Overview">
+      <columns name="ACCT_ID"/>
+      <columns name="ACCT_NAME"/>
+      <columns name="startamount"/>
+      <columns name="currentamount"/>
+    </dataSets>
+  </files>
+  <files xsi:type="com.actuate.istudio.analysis.model:RptDesign" name="Account Overview.RPTDESIGN" path="/BIRTJapan/WM/Account Overview.RPTDESIGN">
+    <dataMap key="//@files.17" value="1"/>
+    <dataSets name="Account Overview">
+      <columns name="ACCT_ID"/>
+      <columns name="ACCT_NAME"/>
+      <columns name="startamount"/>
+      <columns name="currentamount"/>
+    </dataSets>
+  </files>
+  <files xsi:type="com.actuate.istudio.analysis.model:RptDesign" name="販売実績レポート.rptdesign" path="/BIRTJapan/販売実績レポート.rptdesign">
+    <dataMap key="//@files.21" value="1"/>
+    <linkedToReportsMap key="430" value="//@files.39"/>
+    <linkedToReportsMap key="431" value="//@files.3"/>
+    <linkedToReportsMap key="192" value="//@files.40"/>
+    <linkedToReportsMap key="565" value="//@files.39"/>
+    <linkedToReportsMap key="564" value="//@files.3"/>
+    <linkedFromReportsMap key="//@files.38" value="2"/>
+    <linkedFromReportsMap key="//@files.39" value="2"/>
+    <linkedFromReportsMap key="//@files.40" value="2"/>
+    <dataSets name="売上分析データセット">
+      <columns name="顧客名"/>
+      <columns name="顧客名カナ"/>
+      <columns name="性別"/>
+      <columns name="生年月日"/>
+      <columns name="既未婚"/>
+      <columns name="都道府県ID"/>
+      <columns name="都道府県"/>
+      <columns name="地方"/>
+      <columns name="職業"/>
+      <columns name="年"/>
+      <columns name="四半期"/>
+      <columns name="地域"/>
+      <columns name="代理店"/>
+      <columns name="営業担当"/>
+      <columns name="売上"/>
+      <columns name="計画値"/>
+      <columns name="商品ID"/>
+      <columns name="商品カテゴリ"/>
+      <columns name="商品名"/>
+    </dataSets>
+  </files>
+  <files xsi:type="com.actuate.istudio.analysis.model:RptDesign" name="Account Overview Table.RPTDESIGN" path="/BIRTJapan/レポートデザイン/Account Overview Table.RPTDESIGN">
+    <dataMap key="//@files.17" value="1"/>
+    <linkedToReportsMap key="145" value="//@files.15"/>
+    <dataSets name="Account Overview Table">
+      <columns name="ACCT_ID"/>
+      <columns name="ACCT_NAME"/>
+      <columns name="startamount"/>
+      <columns name="currentamount"/>
+      <columns name="B001_ACCT_NET_WR_AM"/>
+      <columns name="MNTH_END_YYYYMM"/>
+    </dataSets>
+  </files>
+  <files xsi:type="com.actuate.istudio.analysis.model:RptDesign" name="セールスレポート（地図）.rptdesign" path="/BIRTJapan/セールスレポート（地図）.rptdesign">
+    <dataMap key="//@files.21" value="1"/>
+    <linkedToReportsMap key="428" value="//@files.36"/>
+    <linkedToReportsMap key="429" value="//@files.36"/>
+    <linkedToReportsMap key="431" value="//@files.3"/>
+    <dataSets name="セールスデータ">
+      <columns name="地域"/>
+      <columns name="代理店"/>
+      <columns name="販売員名"/>
+      <columns name="販売実績"/>
+      <columns name="計画値"/>
+      <columns name="達成率"/>
+    </dataSets>
+    <dataSets name="顧客マスタ">
+      <columns name="顧客ID"/>
+      <columns name="顧客名"/>
+      <columns name="顧客名カナ"/>
+      <columns name="性別"/>
+      <columns name="生年月日"/>
+      <columns name="既未婚"/>
+      <columns name="都道府県ID"/>
+      <columns name="都道府県"/>
+      <columns name="地方"/>
+      <columns name="職業"/>
+    </dataSets>
+    <dataSets name="商品マスタ">
+      <columns name="商品ID"/>
+      <columns name="商品カテゴリ"/>
+      <columns name="商品名"/>
+    </dataSets>
+    <dataSets name="売上データ">
+      <columns name="年"/>
+      <columns name="四半期"/>
+      <columns name="地域"/>
+      <columns name="代理店"/>
+      <columns name="営業担当"/>
+      <columns name="顧客ID"/>
+      <columns name="商品ID"/>
+      <columns name="売上"/>
+      <columns name="計画値"/>
+    </dataSets>
+    <dataSets name="売上分析データセット">
+      <columns name="顧客名"/>
+      <columns name="顧客名カナ"/>
+      <columns name="性別"/>
+      <columns name="生年月日"/>
+      <columns name="既未婚"/>
+      <columns name="都道府県ID"/>
+      <columns name="都道府県"/>
+      <columns name="地方"/>
+      <columns name="職業"/>
+      <columns name="年"/>
+      <columns name="四半期"/>
+      <columns name="地域"/>
+      <columns name="代理店"/>
+      <columns name="営業担当"/>
+      <columns name="売上"/>
+      <columns name="計画値"/>
+      <columns name="商品ID"/>
+      <columns name="商品カテゴリ"/>
+      <columns name="商品名"/>
+    </dataSets>
+  </files>
+  <files xsi:type="com.actuate.istudio.analysis.model:RptDesign" name="セールスレポート.rptdesign" path="/BIRTJapan/セールスレポート.rptdesign">
+    <dataMap key="//@files.21" value="1"/>
+    <linkedToReportsMap key="428" value="//@files.36"/>
+    <linkedToReportsMap key="429" value="//@files.36"/>
+    <linkedToReportsMap key="431" value="//@files.3"/>
+    <linkedFromReportsMap key="//@files.40" value="1"/>
+    <linkedFromReportsMap key="//@files.36" value="2"/>
+    <dataSets name="セールスデータ">
+      <columns name="地域"/>
+      <columns name="代理店"/>
+      <columns name="販売員名"/>
+      <columns name="販売実績"/>
+      <columns name="計画値"/>
+      <columns name="達成率"/>
+    </dataSets>
+    <dataSets name="顧客マスタ">
+      <columns name="顧客ID"/>
+      <columns name="顧客名"/>
+      <columns name="顧客名カナ"/>
+      <columns name="性別"/>
+      <columns name="生年月日"/>
+      <columns name="既未婚"/>
+      <columns name="都道府県ID"/>
+      <columns name="都道府県"/>
+      <columns name="地方"/>
+      <columns name="職業"/>
+    </dataSets>
+    <dataSets name="商品マスタ">
+      <columns name="商品ID"/>
+      <columns name="商品カテゴリ"/>
+      <columns name="商品名"/>
+    </dataSets>
+    <dataSets name="売上データ">
+      <columns name="年"/>
+      <columns name="四半期"/>
+      <columns name="地域"/>
+      <columns name="代理店"/>
+      <columns name="営業担当"/>
+      <columns name="顧客ID"/>
+      <columns name="商品ID"/>
+      <columns name="売上"/>
+      <columns name="計画値"/>
+    </dataSets>
+    <dataSets name="売上分析データセット">
+      <columns name="顧客名"/>
+      <columns name="顧客名カナ"/>
+      <columns name="性別"/>
+      <columns name="生年月日"/>
+      <columns name="既未婚"/>
+      <columns name="都道府県ID"/>
+      <columns name="都道府県"/>
+      <columns name="地方"/>
+      <columns name="職業"/>
+      <columns name="年"/>
+      <columns name="四半期"/>
+      <columns name="地域"/>
+      <columns name="代理店"/>
+      <columns name="営業担当"/>
+      <columns name="売上"/>
+      <columns name="計画値"/>
+      <columns name="商品ID"/>
+      <columns name="商品カテゴリ"/>
+      <columns name="商品名"/>
+    </dataSets>
+  </files>
+  <files xsi:type="com.actuate.istudio.analysis.model:RptDesign" name="セールスレポート明細.rptdesign" path="/BIRTJapan/セールスレポート明細.rptdesign">
+    <dataMap key="//@files.21" value="1"/>
+    <linkedToReportsMap key="428" value="//@files.36"/>
+    <linkedToReportsMap key="429" value="//@files.36"/>
+    <linkedToReportsMap key="430" value="//@files.39"/>
+    <linkedToReportsMap key="431" value="//@files.3"/>
+    <linkedFromReportsMap key="//@files.36" value="1"/>
+    <dataSets name="セールスデータ">
+      <columns name="地域"/>
+      <columns name="代理店"/>
+      <columns name="販売員名"/>
+      <columns name="販売実績"/>
+      <columns name="計画値"/>
+      <columns name="達成率"/>
+    </dataSets>
+    <dataSets name="顧客マスタ">
+      <columns name="顧客ID"/>
+      <columns name="顧客名"/>
+      <columns name="顧客名カナ"/>
+      <columns name="性別"/>
+      <columns name="生年月日"/>
+      <columns name="既未婚"/>
+      <columns name="都道府県ID"/>
+      <columns name="都道府県"/>
+      <columns name="地方"/>
+      <columns name="職業"/>
+    </dataSets>
+    <dataSets name="商品マスタ">
+      <columns name="商品ID"/>
+      <columns name="商品カテゴリ"/>
+      <columns name="商品名"/>
+    </dataSets>
+    <dataSets name="売上データ">
+      <columns name="年"/>
+      <columns name="四半期"/>
+      <columns name="地域"/>
+      <columns name="代理店"/>
+      <columns name="営業担当"/>
+      <columns name="顧客ID"/>
+      <columns name="商品ID"/>
+      <columns name="売上"/>
+      <columns name="計画値"/>
+    </dataSets>
+    <dataSets name="売上分析データセット">
+      <columns name="顧客名"/>
+      <columns name="顧客名カナ"/>
+      <columns name="性別"/>
+      <columns name="生年月日"/>
+      <columns name="既未婚"/>
+      <columns name="都道府県ID"/>
+      <columns name="都道府県"/>
+      <columns name="地方"/>
+      <columns name="職業"/>
+      <columns name="年"/>
+      <columns name="四半期"/>
+      <columns name="地域"/>
+      <columns name="代理店"/>
+      <columns name="営業担当"/>
+      <columns name="売上"/>
+      <columns name="計画値"/>
+      <columns name="商品ID"/>
+      <columns name="商品カテゴリ"/>
+      <columns name="商品名"/>
+    </dataSets>
+  </files>
+</com.actuate.istudio.analysis.model:Project>

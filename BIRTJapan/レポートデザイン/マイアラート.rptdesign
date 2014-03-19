@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+    <property name="createdBy">Eclipse BIRT Designer バージョン 4.2.3.v20131216-0430 ビルド &lt;4.2.3.v20131216-0430></property>
+    <property name="units">in</property>
+    <property name="iconFile">/templates/blank_report.gif</property>
+    <property name="bidiLayoutOrientation">ltr</property>
+    <property name="imageDPI">96</property>
+    <list-property name="libraries">
+        <structure>
+            <property name="fileName">/ThemesReportItems3.rptlibrary</property>
+            <property name="namespace">ThemesReportItems3</property>
+        </structure>
+    </list-property>
+    <styles>
+        <style name="report" id="4">
+            <property name="fontFamily">sans-serif</property>
+            <property name="fontSize">10pt</property>
+        </style>
+        <style name="crosstab-cell" id="5">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+        <style name="crosstab" id="6">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+    </styles>
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="2">
+            <page-footer>
+                <text id="3">
+                    <property name="contentType">html</property>
+                    <text-property name="content"><![CDATA[<value-of>new Date()</value-of>]]></text-property>
+                </text>
+            </page-footer>
+        </simple-master-page>
+    </page-setup>
+    <body>
+        <grid id="8">
+            <property name="width">3.5625in</property>
+            <column id="9">
+                <property name="width">3.5625in</property>
+            </column>
+            <row id="10">
+                <cell id="11">
+                    <text id="7">
+                        <property name="contentType">html</property>
+                        <text-property name="content"><![CDATA[<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<title>SF銀行デモ</title>
+	<meta name="vs_showGrid" content="False">
+	<META http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+	<link rel="stylesheet" href="actuate.css">
+</head>
+<body>
+<div class="texts">
+	<fieldset id="FIELDSET1">
+		<legend>クレジット明細書</legend>
+		<img src="globeDocument.gif" class="image">
+		<div class="day">クレジット明細書:</div>
+		<FORM name="guideform">
+			<SELECT name="guidelinks">
+				<option SELECTED value="/iportal/executereport.do?__executableName=%2fApplications%2fBIRT%20Japan%2f%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%2fbestbankj%2eRPTDESIGN&amp;invokeSubmit=true">今月</option>
+				<option value="/iportal/servlet/DownloadFile?command=saveas&amp;amp;name=%2fApplications%2fBIRT%20Japan%2f%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%2fbestbankj%2epdf">先月
+				</option>
+				<option value="/iportal/servlet/DownloadFile?command=saveas&amp;amp;name=%2fApplications%2fBIRT%20Japan%2f%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%2fbestbankj%2epdf">2013年3月</option>
+				<option value="/iportal/servlet/DownloadFile?command=saveas&amp;amp;name=%2fApplications%2fBIRT%20Japan%2f%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%2fbestbankj%2epdf">2013年2月</option>
+				<option value="/iportal/servlet/DownloadFile?command=saveas&amp;amp;name=%2fApplications%2fBIRT%20Japan%2f%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%2fbestbankj%2epdf">2013年1月</option>
+				<option value="/iportal/servlet/DownloadFile?command=saveas&amp;amp;name=%2fApplications%2fBIRT%20Japan%2f%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%2fbestbankj%2epdf">2012年12月</option>
+				<option value="/iportal/servlet/DownloadFile?command=saveas&amp;amp;name=%2fApplications%2fBIRT%20Japan%2f%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%2fbestbankj%2epdf">2012年11月</option>
+				<option value="/iportal/servlet/DownloadFile?command=saveas&amp;amp;name=%2fApplications%2fBIRT%20Japan%2f%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%2fbestbankj%2epdf">2012年10月</option>
+			</SELECT>
+			&amp;nbsp;&amp;nbsp; <INPUT type="button" name="go" value="Go!"
+			                    onClick="window.open(document.guideform.guidelinks.options[document.guideform.guidelinks.selectedIndex].value);">
+		</FORM>
+	</fieldset>
+	<TABLE id="Table1" height="137" cellSpacing="0" cellPadding="0" width="845" border="0">
+		<TR>
+			<TD>
+			<BR>
+本日<BR>
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;・ストックトラッカー - 設定済みの条件は<BR>
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;IBMにマッチしました。<A href="http://www.nasdaq.com/symbol/ibm/stock-chart" target="_parent">見積もりの取得</A><BR>
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;・投資ポートフォリオサマリー - <A href="/iportal/executereport.do?__executableName=%2fApplications%2fBIRT%20Japan%2f%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%2fMy%20Portfolio%2erptdesign&amp;amp;invokeSubmit=true" target="_new">Go</A><BR>
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;・HELOCの与信枠<BR>
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;・新レート - 30Kあたり6% (3時間前)<BR>
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;・電気料金が支払われました。 - $22.91 (6時間前)<BR>
+<BR>
+昨日<BR>
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;・新規ガス代請求 - $13.76<BR>
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;・住宅ローン支払い - $1,325.98<BR>
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;・新規水道代請求 - $8.63<BR>
+<BR>
+おととい<BR>
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;・ATM引き出し - $426.49<BR>
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;・携帯電話請求 - $96.73<BR>
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;・Credit Offer - 10,000マイルボーナス<BR>
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;・VISA支払い - $2,616.04<BR>
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;・新規ケーブル請求 - $18.63<BR>
+</TD>
+		</TR>
+	</TABLE>
+	<DIV>&amp;nbsp;</DIV>
+</div>
+</body>
+</html>]]></text-property>
+                    </text>
+                </cell>
+            </row>
+        </grid>
+    </body>
+</report>

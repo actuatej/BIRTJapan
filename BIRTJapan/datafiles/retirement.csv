@@ -1,0 +1,5 @@
+Customer,Total,sortkey
+STRING,DOUBLE,DOUBLE
+< 2M,218601,1
+2M ～ 5M,365160,2
+> 5M,451627,3

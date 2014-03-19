@@ -1,0 +1,2171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+    <property name="createdBy">Eclipse BIRT Designer バージョン 4.2.3.v20131216-0430 ビルド &lt;4.2.3.v20131216-0430></property>
+    <xml-property name="externalMetadata">
+        <external-datamarts>
+            <datamart-node location="file:/C:/local/ws/ws3/ajdemo/データオブジェクト/ajdemo.data">
+                <reference-elements>ajdemo;</reference-elements>
+                <datamart xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+                    <property name="createdBy">Eclipse BIRT Designer バージョン 4.2.3.v20131216-0430 ビルド &lt;4.2.3.v20131216-0430></property>
+                    <list-property name="userProperties">
+                        <structure>
+                            <property name="name">719.マンスリーレポート.x</property>
+                            <property name="type">integer</property>
+                            <property name="isVisible">false</property>
+                        </structure>
+                        <structure>
+                            <property name="name">719.マンスリーレポート.y</property>
+                            <property name="type">integer</property>
+                            <property name="isVisible">false</property>
+                        </structure>
+                        <structure>
+                            <property name="name">719.マンスリーレポート.width</property>
+                            <property name="type">integer</property>
+                            <property name="isVisible">false</property>
+                        </structure>
+                        <structure>
+                            <property name="name">719.マンスリーレポート.height</property>
+                            <property name="type">integer</property>
+                            <property name="isVisible">false</property>
+                        </structure>
+                        <structure>
+                            <property name="name">719.売上データ.x</property>
+                            <property name="type">integer</property>
+                            <property name="isVisible">false</property>
+                        </structure>
+                        <structure>
+                            <property name="name">719.売上データ.y</property>
+                            <property name="type">integer</property>
+                            <property name="isVisible">false</property>
+                        </structure>
+                        <structure>
+                            <property name="name">719.売上データ.width</property>
+                            <property name="type">integer</property>
+                            <property name="isVisible">false</property>
+                        </structure>
+                        <structure>
+                            <property name="name">719.売上データ.height</property>
+                            <property name="type">integer</property>
+                            <property name="isVisible">false</property>
+                        </structure>
+                        <structure>
+                            <property name="name">719.顧客マスタ.x</property>
+                            <property name="type">integer</property>
+                            <property name="isVisible">false</property>
+                        </structure>
+                        <structure>
+                            <property name="name">719.顧客マスタ.y</property>
+                            <property name="type">integer</property>
+                            <property name="isVisible">false</property>
+                        </structure>
+                        <structure>
+                            <property name="name">719.顧客マスタ.width</property>
+                            <property name="type">integer</property>
+                            <property name="isVisible">false</property>
+                        </structure>
+                        <structure>
+                            <property name="name">719.顧客マスタ.height</property>
+                            <property name="type">integer</property>
+                            <property name="isVisible">false</property>
+                        </structure>
+                        <structure>
+                            <property name="name">719.商品マスタ.x</property>
+                            <property name="type">integer</property>
+                            <property name="isVisible">false</property>
+                        </structure>
+                        <structure>
+                            <property name="name">719.商品マスタ.y</property>
+                            <property name="type">integer</property>
+                            <property name="isVisible">false</property>
+                        </structure>
+                        <structure>
+                            <property name="name">719.商品マスタ.width</property>
+                            <property name="type">integer</property>
+                            <property name="isVisible">false</property>
+                        </structure>
+                        <structure>
+                            <property name="name">719.商品マスタ.height</property>
+                            <property name="type">integer</property>
+                            <property name="isVisible">false</property>
+                        </structure>
+                        <structure>
+                            <property name="name">売上分析データキューブ.売上分析データセット.x</property>
+                            <property name="type">integer</property>
+                            <property name="isVisible">false</property>
+                        </structure>
+                        <structure>
+                            <property name="name">売上分析データキューブ.売上分析データセット.y</property>
+                            <property name="type">integer</property>
+                            <property name="isVisible">false</property>
+                        </structure>
+                    </list-property>
+                    <property name="719.マンスリーレポート.x">599</property>
+                    <property name="719.マンスリーレポート.y">234</property>
+                    <property name="719.マンスリーレポート.width">150</property>
+                    <property name="719.マンスリーレポート.height">200</property>
+                    <property name="719.売上データ.x">259</property>
+                    <property name="719.売上データ.y">108</property>
+                    <property name="719.売上データ.width">150</property>
+                    <property name="719.売上データ.height">200</property>
+                    <property name="719.顧客マスタ.x">558</property>
+                    <property name="719.顧客マスタ.y">192</property>
+                    <property name="719.顧客マスタ.width">150</property>
+                    <property name="719.顧客マスタ.height">200</property>
+                    <property name="719.商品マスタ.x">13</property>
+                    <property name="719.商品マスタ.y">237</property>
+                    <property name="719.商品マスタ.width">150</property>
+                    <property name="719.商品マスタ.height">200</property>
+                    <property name="売上分析データキューブ.売上分析データセット.x">135</property>
+                    <property name="売上分析データキューブ.売上分析データセット.y">80</property>
+                    <data-sources>
+                        <oda-data-source extensionID="org.eclipse.datatools.connectivity.oda.flatfile" name="データソース" id="137">
+                            <property name="HOME">C:\A11Demo</property>
+                            <property name="DELIMTYPE">COMMA</property>
+                            <property name="CHARSET">Shift_JIS</property>
+                            <property name="INCLCOLUMNNAME">YES</property>
+                            <property name="INCLTYPELINE">YES</property>
+                        </oda-data-source>
+                    </data-sources>
+                    <data-sets>
+                        <oda-data-set extensionID="org.eclipse.datatools.connectivity.oda.flatfile.dataSet" name="セールスデータ" id="718">
+                            <structure name="cachedMetaData">
+                                <list-property name="resultSet">
+                                    <structure>
+                                        <property name="position">1</property>
+                                        <property name="name">地域</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">2</property>
+                                        <property name="name">代理店</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">3</property>
+                                        <property name="name">販売員名</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">4</property>
+                                        <property name="name">販売実績</property>
+                                        <property name="dataType">integer</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">5</property>
+                                        <property name="name">計画値</property>
+                                        <property name="dataType">integer</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">6</property>
+                                        <property name="name">達成率</property>
+                                        <property name="dataType">float</property>
+                                    </structure>
+                                </list-property>
+                            </structure>
+                            <property name="dataSource">データソース</property>
+                            <list-property name="resultSet">
+                                <structure>
+                                    <property name="position">1</property>
+                                    <property name="name">地域</property>
+                                    <property name="nativeName">地域</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">2</property>
+                                    <property name="name">代理店</property>
+                                    <property name="nativeName">代理店</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">3</property>
+                                    <property name="name">販売員名</property>
+                                    <property name="nativeName">販売員名</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">4</property>
+                                    <property name="name">販売実績</property>
+                                    <property name="nativeName">販売実績</property>
+                                    <property name="dataType">integer</property>
+                                    <property name="nativeDataType">4</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">5</property>
+                                    <property name="name">計画値</property>
+                                    <property name="nativeName">計画値</property>
+                                    <property name="dataType">integer</property>
+                                    <property name="nativeDataType">4</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">6</property>
+                                    <property name="name">達成率</property>
+                                    <property name="nativeName">達成率</property>
+                                    <property name="dataType">float</property>
+                                    <property name="nativeDataType">8</property>
+                                </structure>
+                            </list-property>
+                            <xml-property name="queryText"><![CDATA[select "地域", "代理店", "販売員名", "販売実績", "計画値", "達成率" from セールスレポート用データ.csv : {"地域","地域",STRING;"代理店","代理店",STRING;"販売員名","販売員名",STRING;"販売実績","販売実績",INT;"計画値","計画値",INT;"達成率","達成率",DOUBLE}]]></xml-property>
+                            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>1.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>地域</design:name>
+            <design:position>1</design:position>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>地域</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>代理店</design:name>
+            <design:position>2</design:position>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>代理店</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>販売員名</design:name>
+            <design:position>3</design:position>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>販売員名</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>販売実績</design:name>
+            <design:position>4</design:position>
+            <design:nativeDataTypeCode>4</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>販売実績</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>計画値</design:name>
+            <design:position>5</design:position>
+            <design:nativeDataTypeCode>4</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>計画値</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>達成率</design:name>
+            <design:position>6</design:position>
+            <design:nativeDataTypeCode>8</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>達成率</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+                        </oda-data-set>
+                        <oda-data-set extensionID="org.eclipse.datatools.connectivity.oda.flatfile.dataSet" name="顧客マスタ" id="139">
+                            <structure name="cachedMetaData">
+                                <list-property name="resultSet">
+                                    <structure>
+                                        <property name="position">1</property>
+                                        <property name="name">顧客ID</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">2</property>
+                                        <property name="name">顧客名</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">3</property>
+                                        <property name="name">顧客名カナ</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">4</property>
+                                        <property name="name">性別</property>
+                                        <property name="dataType">integer</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">5</property>
+                                        <property name="name">生年月日</property>
+                                        <property name="dataType">date</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">6</property>
+                                        <property name="name">既未婚</property>
+                                        <property name="dataType">integer</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">7</property>
+                                        <property name="name">都道府県ID</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">8</property>
+                                        <property name="name">都道府県</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">9</property>
+                                        <property name="name">地方</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">10</property>
+                                        <property name="name">職業</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                </list-property>
+                            </structure>
+                            <property name="dataSource">データソース</property>
+                            <list-property name="resultSet">
+                                <structure>
+                                    <property name="position">1</property>
+                                    <property name="name">顧客ID</property>
+                                    <property name="nativeName">顧客ID</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">2</property>
+                                    <property name="name">顧客名</property>
+                                    <property name="nativeName">顧客名</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">3</property>
+                                    <property name="name">顧客名カナ</property>
+                                    <property name="nativeName">顧客名カナ</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">4</property>
+                                    <property name="name">性別</property>
+                                    <property name="nativeName">性別</property>
+                                    <property name="dataType">integer</property>
+                                    <property name="nativeDataType">4</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">5</property>
+                                    <property name="name">生年月日</property>
+                                    <property name="nativeName">生年月日</property>
+                                    <property name="dataType">date</property>
+                                    <property name="nativeDataType">91</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">6</property>
+                                    <property name="name">既未婚</property>
+                                    <property name="nativeName">既未婚</property>
+                                    <property name="dataType">integer</property>
+                                    <property name="nativeDataType">4</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">7</property>
+                                    <property name="name">都道府県ID</property>
+                                    <property name="nativeName">都道府県ID</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">8</property>
+                                    <property name="name">都道府県</property>
+                                    <property name="nativeName">都道府県</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">9</property>
+                                    <property name="name">地方</property>
+                                    <property name="nativeName">地方</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">10</property>
+                                    <property name="name">職業</property>
+                                    <property name="nativeName">職業</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                            </list-property>
+                            <xml-property name="queryText"><![CDATA[select "顧客ID", "顧客名", "顧客名カナ", "性別", "生年月日", "既未婚", "都道府県ID", "都道府県", "地方", "職業" from 顧客マスタ.csv : {"顧客ID","顧客ID",STRING;"顧客名","顧客名",STRING;"顧客名カナ","顧客名カナ",STRING;"性別","性別",INT;"生年月日","生年月日",DATE;"既未婚","既未婚",INT;"都道府県ID","都道府県ID",STRING;"都道府県","都道府県",STRING;"地方","地方",STRING;"職業","職業",STRING}]]></xml-property>
+                            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>1.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>顧客ID</design:name>
+            <design:position>1</design:position>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>顧客ID</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>顧客名</design:name>
+            <design:position>2</design:position>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>顧客名</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>顧客名カナ</design:name>
+            <design:position>3</design:position>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>顧客名カナ</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>性別</design:name>
+            <design:position>4</design:position>
+            <design:nativeDataTypeCode>4</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>性別</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>生年月日</design:name>
+            <design:position>5</design:position>
+            <design:nativeDataTypeCode>91</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>生年月日</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>既未婚</design:name>
+            <design:position>6</design:position>
+            <design:nativeDataTypeCode>4</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>既未婚</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>都道府県ID</design:name>
+            <design:position>7</design:position>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>都道府県ID</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>都道府県</design:name>
+            <design:position>8</design:position>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>都道府県</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>地方</design:name>
+            <design:position>9</design:position>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>地方</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>職業</design:name>
+            <design:position>10</design:position>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>職業</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+                        </oda-data-set>
+                        <oda-data-set extensionID="org.eclipse.datatools.connectivity.oda.flatfile.dataSet" name="商品マスタ" id="140">
+                            <structure name="cachedMetaData">
+                                <list-property name="resultSet">
+                                    <structure>
+                                        <property name="position">1</property>
+                                        <property name="name">商品ID</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">2</property>
+                                        <property name="name">商品カテゴリ</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">3</property>
+                                        <property name="name">商品名</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                </list-property>
+                            </structure>
+                            <property name="dataSource">データソース</property>
+                            <list-property name="resultSet">
+                                <structure>
+                                    <property name="position">1</property>
+                                    <property name="name">商品ID</property>
+                                    <property name="nativeName">商品ID</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">2</property>
+                                    <property name="name">商品カテゴリ</property>
+                                    <property name="nativeName">商品カテゴリ</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">3</property>
+                                    <property name="name">商品名</property>
+                                    <property name="nativeName">商品名</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                            </list-property>
+                            <xml-property name="queryText"><![CDATA[select "商品ID", "商品カテゴリ", "商品名" from 商品マスタ.csv : {"商品ID","商品ID",STRING;"商品カテゴリ","商品カテゴリ",STRING;"商品名","商品名",STRING}]]></xml-property>
+                            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>1.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>商品ID</design:name>
+            <design:position>1</design:position>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>商品ID</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>商品カテゴリ</design:name>
+            <design:position>2</design:position>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>商品カテゴリ</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>商品名</design:name>
+            <design:position>3</design:position>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>商品名</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+                        </oda-data-set>
+                        <oda-data-set extensionID="org.eclipse.datatools.connectivity.oda.flatfile.dataSet" name="売上データ" id="138">
+                            <structure name="cachedMetaData">
+                                <list-property name="resultSet">
+                                    <structure>
+                                        <property name="position">1</property>
+                                        <property name="name">年</property>
+                                        <property name="dataType">integer</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">2</property>
+                                        <property name="name">四半期</property>
+                                        <property name="dataType">integer</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">3</property>
+                                        <property name="name">地域</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">4</property>
+                                        <property name="name">代理店</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">5</property>
+                                        <property name="name">営業担当</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">6</property>
+                                        <property name="name">顧客ID</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">7</property>
+                                        <property name="name">商品ID</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">8</property>
+                                        <property name="name">売上</property>
+                                        <property name="dataType">integer</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">9</property>
+                                        <property name="name">計画値</property>
+                                        <property name="dataType">integer</property>
+                                    </structure>
+                                </list-property>
+                            </structure>
+                            <property name="dataSource">データソース</property>
+                            <list-property name="resultSet">
+                                <structure>
+                                    <property name="position">1</property>
+                                    <property name="name">年</property>
+                                    <property name="nativeName">年</property>
+                                    <property name="dataType">integer</property>
+                                    <property name="nativeDataType">4</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">2</property>
+                                    <property name="name">四半期</property>
+                                    <property name="nativeName">四半期</property>
+                                    <property name="dataType">integer</property>
+                                    <property name="nativeDataType">4</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">3</property>
+                                    <property name="name">地域</property>
+                                    <property name="nativeName">地域</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">4</property>
+                                    <property name="name">代理店</property>
+                                    <property name="nativeName">代理店</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">5</property>
+                                    <property name="name">営業担当</property>
+                                    <property name="nativeName">営業担当</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">6</property>
+                                    <property name="name">顧客ID</property>
+                                    <property name="nativeName">顧客ID</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">7</property>
+                                    <property name="name">商品ID</property>
+                                    <property name="nativeName">商品ID</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">8</property>
+                                    <property name="name">売上</property>
+                                    <property name="nativeName">売上</property>
+                                    <property name="dataType">integer</property>
+                                    <property name="nativeDataType">4</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">9</property>
+                                    <property name="name">計画値</property>
+                                    <property name="nativeName">計画値</property>
+                                    <property name="dataType">integer</property>
+                                    <property name="nativeDataType">4</property>
+                                </structure>
+                            </list-property>
+                            <xml-property name="queryText"><![CDATA[select "年", "四半期", "地域", "代理店", "営業担当", "顧客ID", "商品ID", "売上", "計画値" from 売上データ.csv : {"年","年",INT;"四半期","四半期",INT;"地域","地域",STRING;"代理店","代理店",STRING;"営業担当","営業担当",STRING;"顧客ID","顧客ID",STRING;"商品ID","商品ID",STRING;"売上","売上",INT;"計画値","計画値",INT}]]></xml-property>
+                            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>1.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>年</design:name>
+            <design:position>1</design:position>
+            <design:nativeDataTypeCode>4</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>年</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>四半期</design:name>
+            <design:position>2</design:position>
+            <design:nativeDataTypeCode>4</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>四半期</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>地域</design:name>
+            <design:position>3</design:position>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>地域</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>代理店</design:name>
+            <design:position>4</design:position>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>代理店</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>営業担当</design:name>
+            <design:position>5</design:position>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>営業担当</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>顧客ID</design:name>
+            <design:position>6</design:position>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>顧客ID</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>商品ID</design:name>
+            <design:position>7</design:position>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>商品ID</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>売上</design:name>
+            <design:position>8</design:position>
+            <design:nativeDataTypeCode>4</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>売上</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>計画値</design:name>
+            <design:position>9</design:position>
+            <design:nativeDataTypeCode>4</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>計画値</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+                        </oda-data-set>
+                        <derived-data-set extensionID="com.actuate.birt.data.join" name="売上分析データセット" id="141">
+                            <structure name="cachedMetaData">
+                                <list-property name="resultSet">
+                                    <structure>
+                                        <property name="position">1</property>
+                                        <property name="name">顧客名</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">2</property>
+                                        <property name="name">顧客名カナ</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">3</property>
+                                        <property name="name">性別</property>
+                                        <property name="dataType">integer</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">4</property>
+                                        <property name="name">生年月日</property>
+                                        <property name="dataType">date</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">5</property>
+                                        <property name="name">既未婚</property>
+                                        <property name="dataType">integer</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">6</property>
+                                        <property name="name">都道府県ID</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">7</property>
+                                        <property name="name">都道府県</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">8</property>
+                                        <property name="name">地方</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">9</property>
+                                        <property name="name">職業</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">10</property>
+                                        <property name="name">年</property>
+                                        <property name="dataType">integer</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">11</property>
+                                        <property name="name">四半期</property>
+                                        <property name="dataType">integer</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">12</property>
+                                        <property name="name">地域</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">13</property>
+                                        <property name="name">代理店</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">14</property>
+                                        <property name="name">営業担当</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">15</property>
+                                        <property name="name">売上</property>
+                                        <property name="dataType">integer</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">16</property>
+                                        <property name="name">計画値</property>
+                                        <property name="dataType">integer</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">17</property>
+                                        <property name="name">商品ID</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">18</property>
+                                        <property name="name">商品カテゴリ</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">19</property>
+                                        <property name="name">商品名</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                </list-property>
+                            </structure>
+                            <simple-property-list name="inputDataSets">
+                                <value>顧客マスタ</value>
+                                <value>売上データ</value>
+                                <value>商品マスタ</value>
+                            </simple-property-list>
+                            <xml-property name="queryText"><![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<tns:joinedDataSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.actuate.com/birt/dataset_join.xsd" xmlns:tns="http://schemas.actuate.com/birt/dataset_join.xsd">
+<tns:selectColumns>
+<tns:Column>顧客マスタ::顧客名</tns:Column>
+<tns:Column>顧客マスタ::顧客名カナ</tns:Column>
+<tns:Column>顧客マスタ::性別</tns:Column>
+<tns:Column>顧客マスタ::生年月日</tns:Column>
+<tns:Column>顧客マスタ::既未婚</tns:Column>
+<tns:Column>顧客マスタ::都道府県ID</tns:Column>
+<tns:Column>顧客マスタ::都道府県</tns:Column>
+<tns:Column>顧客マスタ::地方</tns:Column>
+<tns:Column>顧客マスタ::職業</tns:Column>
+<tns:Column>売上データ::年</tns:Column>
+<tns:Column>売上データ::四半期</tns:Column>
+<tns:Column>売上データ::地域</tns:Column>
+<tns:Column>売上データ::代理店</tns:Column>
+<tns:Column>売上データ::営業担当</tns:Column>
+<tns:Column>売上データ::売上</tns:Column>
+<tns:Column>売上データ::計画値</tns:Column>
+<tns:Column>商品マスタ::商品ID</tns:Column>
+<tns:Column>商品マスタ::商品カテゴリ</tns:Column>
+<tns:Column>商品マスタ::商品名</tns:Column>
+</tns:selectColumns>
+<tns:joins>
+<tns:startingDataSet name="顧客マスタ"/>
+<tns:join>
+<tns:type>inner</tns:type>
+<tns:dataSet name="売上データ"/>
+<tns:on>
+<tns:condition>
+<tns:leftColumn>顧客マスタ::顧客ID</tns:leftColumn>
+<tns:rightColumn>売上データ::顧客ID</tns:rightColumn>
+<tns:operator>eq</tns:operator>
+</tns:condition>
+</tns:on>
+</tns:join>
+<tns:join>
+<tns:type>inner</tns:type>
+<tns:dataSet name="商品マスタ"/>
+<tns:on>
+<tns:condition>
+<tns:leftColumn>売上データ::商品ID</tns:leftColumn>
+<tns:rightColumn>商品マスタ::商品ID</tns:rightColumn>
+<tns:operator>eq</tns:operator>
+</tns:condition>
+</tns:on>
+</tns:join>
+</tns:joins>
+</tns:joinedDataSet>]]></xml-property>
+                        </derived-data-set>
+                        <oda-data-set extensionID="org.eclipse.datatools.connectivity.oda.flatfile.dataSet" name="マンスリーレポート" id="201">
+                            <structure name="cachedMetaData">
+                                <list-property name="resultSet">
+                                    <structure>
+                                        <property name="position">1</property>
+                                        <property name="name">年</property>
+                                        <property name="dataType">integer</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">2</property>
+                                        <property name="name">四半期</property>
+                                        <property name="dataType">integer</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">3</property>
+                                        <property name="name">売上</property>
+                                        <property name="dataType">integer</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">4</property>
+                                        <property name="name">計画値</property>
+                                        <property name="dataType">integer</property>
+                                    </structure>
+                                </list-property>
+                            </structure>
+                            <property name="dataSource">データソース</property>
+                            <list-property name="resultSet">
+                                <structure>
+                                    <property name="position">1</property>
+                                    <property name="name">年</property>
+                                    <property name="nativeName">年</property>
+                                    <property name="dataType">integer</property>
+                                    <property name="nativeDataType">4</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">2</property>
+                                    <property name="name">四半期</property>
+                                    <property name="nativeName">四半期</property>
+                                    <property name="dataType">integer</property>
+                                    <property name="nativeDataType">4</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">3</property>
+                                    <property name="name">売上</property>
+                                    <property name="nativeName">売上</property>
+                                    <property name="dataType">integer</property>
+                                    <property name="nativeDataType">4</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">4</property>
+                                    <property name="name">計画値</property>
+                                    <property name="nativeName">計画値</property>
+                                    <property name="dataType">integer</property>
+                                    <property name="nativeDataType">4</property>
+                                </structure>
+                            </list-property>
+                            <xml-property name="queryText"><![CDATA[select "年", "四半期", "売上", "計画値" from 売上データ.csv : {"年","年",INT;"四半期","四半期",INT;"売上","売上",INT;"計画値","計画値",INT}]]></xml-property>
+                            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>1.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>年</design:name>
+            <design:position>1</design:position>
+            <design:nativeDataTypeCode>4</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>年</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>四半期</design:name>
+            <design:position>2</design:position>
+            <design:nativeDataTypeCode>4</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>四半期</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>売上</design:name>
+            <design:position>3</design:position>
+            <design:nativeDataTypeCode>4</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>売上</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:name>計画値</design:name>
+            <design:position>4</design:position>
+            <design:nativeDataTypeCode>4</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>計画値</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+                        </oda-data-set>
+                    </data-sets>
+                    <cubes>
+                        <tabular-cube name="売上分析データキューブ" id="142">
+                            <property name="dimensions">
+                                <tabular-dimension name="時間ディメンジョン" id="143">
+                                    <property name="defaultHierarchy">新規テーブル形式の階層</property>
+                                    <property name="hierarchies">
+                                        <tabular-hierarchy name="新規テーブル形式の階層" id="144">
+                                            <property name="levels">
+                                                <tabular-level name="年" id="145">
+                                                    <property name="dataType">integer</property>
+                                                    <property name="columnName">年</property>
+                                                </tabular-level>
+                                                <tabular-level name="四半期" id="146">
+                                                    <property name="dataType">integer</property>
+                                                    <property name="columnName">四半期</property>
+                                                </tabular-level>
+                                            </property>
+                                        </tabular-hierarchy>
+                                    </property>
+                                </tabular-dimension>
+                                <tabular-dimension name="商品ディメンジョン" id="147">
+                                    <property name="defaultHierarchy">新規テーブル形式の階層1</property>
+                                    <property name="hierarchies">
+                                        <tabular-hierarchy name="新規テーブル形式の階層1" id="148">
+                                            <property name="levels">
+                                                <tabular-level name="商品カテゴリ" id="149">
+                                                    <property name="dataType">string</property>
+                                                    <property name="columnName">商品カテゴリ</property>
+                                                </tabular-level>
+                                                <tabular-level name="商品名" id="150">
+                                                    <property name="dataType">string</property>
+                                                    <property name="columnName">商品名</property>
+                                                </tabular-level>
+                                            </property>
+                                        </tabular-hierarchy>
+                                    </property>
+                                </tabular-dimension>
+                                <tabular-dimension name="顧客ディメンジョン" id="151">
+                                    <property name="defaultHierarchy">新規テーブル形式の階層2</property>
+                                    <property name="hierarchies">
+                                        <tabular-hierarchy name="新規テーブル形式の階層2" id="152">
+                                            <property name="levels">
+                                                <tabular-level name="地方" id="153">
+                                                    <property name="dataType">string</property>
+                                                    <property name="columnName">地方</property>
+                                                </tabular-level>
+                                                <tabular-level name="都道府県" id="154">
+                                                    <property name="dataType">string</property>
+                                                    <property name="columnName">都道府県</property>
+                                                </tabular-level>
+                                                <tabular-level name="職業" id="155">
+                                                    <property name="dataType">string</property>
+                                                    <property name="columnName">職業</property>
+                                                </tabular-level>
+                                                <tabular-level name="顧客名" id="156">
+                                                    <property name="dataType">string</property>
+                                                    <property name="columnName">顧客名</property>
+                                                </tabular-level>
+                                            </property>
+                                        </tabular-hierarchy>
+                                    </property>
+                                </tabular-dimension>
+                            </property>
+                            <property name="measureGroups">
+                                <tabular-measure-group name="サマリフィールド" id="157">
+                                    <property name="measures">
+                                        <tabular-measure name="売上" id="158">
+                                            <expression name="measureExpression">dataSetRow["売上"]</expression>
+                                            <property name="dataType">integer</property>
+                                        </tabular-measure>
+                                        <tabular-measure name="計画値" id="159">
+                                            <expression name="measureExpression">dataSetRow["計画値"]</expression>
+                                            <property name="dataType">integer</property>
+                                        </tabular-measure>
+                                    </property>
+                                </tabular-measure-group>
+                            </property>
+                            <property name="dataSet">売上分析データセット</property>
+                        </tabular-cube>
+                    </cubes>
+                    <property name="linkedDataModels">
+                        <linked-data-model name="売上データモデル" id="719">
+                            <property name="aliasDataSets">
+                                <alias-data-set name="セールスデータ" id="777">
+                                    <property name="originDataSet">セールスデータ</property>
+                                </alias-data-set>
+                                <alias-data-set name="顧客マスタ" id="778">
+                                    <property name="originDataSet">顧客マスタ</property>
+                                </alias-data-set>
+                                <alias-data-set name="商品マスタ" id="779">
+                                    <property name="originDataSet">商品マスタ</property>
+                                </alias-data-set>
+                                <alias-data-set name="売上データ" id="780">
+                                    <property name="originDataSet">売上データ</property>
+                                </alias-data-set>
+                            </property>
+                            <property name="columnLinks">
+                                <column-link id="783">
+                                    <structure name="leftColumn">
+                                        <property name="position">6</property>
+                                        <property name="name">顧客ID</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure name="rightColumn">
+                                        <property name="position">1</property>
+                                        <property name="name">顧客ID</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <property name="leftAliasDataSet">売上データモデル/売上データ</property>
+                                    <property name="rightAliasDataSet">売上データモデル/顧客マスタ</property>
+                                    <property name="allowPushdown">false</property>
+                                </column-link>
+                                <column-link id="784">
+                                    <structure name="leftColumn">
+                                        <property name="position">1</property>
+                                        <property name="name">商品ID</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure name="rightColumn">
+                                        <property name="position">7</property>
+                                        <property name="name">商品ID</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <property name="leftAliasDataSet">売上データモデル/商品マスタ</property>
+                                    <property name="rightAliasDataSet">売上データモデル/売上データ</property>
+                                    <property name="allowPushdown">false</property>
+                                </column-link>
+                                <column-link id="785">
+                                    <structure name="leftColumn">
+                                        <property name="position">3</property>
+                                        <property name="name">販売員名</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure name="rightColumn">
+                                        <property name="position">5</property>
+                                        <property name="name">営業担当</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <property name="leftAliasDataSet">売上データモデル/セールスデータ</property>
+                                    <property name="rightAliasDataSet">売上データモデル/売上データ</property>
+                                    <property name="allowPushdown">false</property>
+                                </column-link>
+                            </property>
+                            <property name="categories">
+                                <category name="セールスデータ" id="720">
+                                    <property name="categoryColumns">
+                                        <category-column name="地域" id="721">
+                                            <property name="aliasDataSet">売上データモデル/セールスデータ</property>
+                                            <property name="resultSetColumnName">地域</property>
+                                        </category-column>
+                                        <category-column name="代理店" id="722">
+                                            <property name="aliasDataSet">売上データモデル/セールスデータ</property>
+                                            <property name="resultSetColumnName">代理店</property>
+                                        </category-column>
+                                        <category-column name="販売員名" id="723">
+                                            <property name="aliasDataSet">売上データモデル/セールスデータ</property>
+                                            <property name="resultSetColumnName">販売員名</property>
+                                        </category-column>
+                                        <category-column name="販売実績" id="724">
+                                            <property name="aliasDataSet">売上データモデル/セールスデータ</property>
+                                            <property name="resultSetColumnName">販売実績</property>
+                                        </category-column>
+                                        <category-column name="計画値" id="725">
+                                            <property name="aliasDataSet">売上データモデル/セールスデータ</property>
+                                            <property name="resultSetColumnName">計画値</property>
+                                        </category-column>
+                                        <category-column name="達成率" id="726">
+                                            <property name="aliasDataSet">売上データモデル/セールスデータ</property>
+                                            <property name="resultSetColumnName">達成率</property>
+                                        </category-column>
+                                    </property>
+                                </category>
+                                <category name="顧客マスタ" id="727">
+                                    <property name="categoryColumns">
+                                        <category-column name="顧客ID" id="728">
+                                            <property name="aliasDataSet">売上データモデル/顧客マスタ</property>
+                                            <property name="resultSetColumnName">顧客ID</property>
+                                        </category-column>
+                                        <category-column name="顧客名" id="729">
+                                            <property name="aliasDataSet">売上データモデル/顧客マスタ</property>
+                                            <property name="resultSetColumnName">顧客名</property>
+                                        </category-column>
+                                        <category-column name="顧客名カナ" id="730">
+                                            <property name="aliasDataSet">売上データモデル/顧客マスタ</property>
+                                            <property name="resultSetColumnName">顧客名カナ</property>
+                                        </category-column>
+                                        <category-column name="性別" id="731">
+                                            <property name="aliasDataSet">売上データモデル/顧客マスタ</property>
+                                            <property name="resultSetColumnName">性別</property>
+                                        </category-column>
+                                        <category-column name="生年月日" id="732">
+                                            <property name="aliasDataSet">売上データモデル/顧客マスタ</property>
+                                            <property name="resultSetColumnName">生年月日</property>
+                                        </category-column>
+                                        <category-column name="既未婚" id="733">
+                                            <property name="aliasDataSet">売上データモデル/顧客マスタ</property>
+                                            <property name="resultSetColumnName">既未婚</property>
+                                        </category-column>
+                                        <category-column name="都道府県ID" id="734">
+                                            <property name="aliasDataSet">売上データモデル/顧客マスタ</property>
+                                            <property name="resultSetColumnName">都道府県ID</property>
+                                        </category-column>
+                                        <category-column name="都道府県" id="735">
+                                            <property name="aliasDataSet">売上データモデル/顧客マスタ</property>
+                                            <property name="resultSetColumnName">都道府県</property>
+                                        </category-column>
+                                        <category-column name="地方" id="736">
+                                            <property name="aliasDataSet">売上データモデル/顧客マスタ</property>
+                                            <property name="resultSetColumnName">地方</property>
+                                        </category-column>
+                                        <category-column name="職業" id="737">
+                                            <property name="aliasDataSet">売上データモデル/顧客マスタ</property>
+                                            <property name="resultSetColumnName">職業</property>
+                                        </category-column>
+                                    </property>
+                                </category>
+                                <category name="商品マスタ" id="738">
+                                    <property name="categoryColumns">
+                                        <category-column name="商品ID" id="739">
+                                            <property name="aliasDataSet">売上データモデル/商品マスタ</property>
+                                            <property name="resultSetColumnName">商品ID</property>
+                                        </category-column>
+                                        <category-column name="商品カテゴリ" id="740">
+                                            <property name="aliasDataSet">売上データモデル/商品マスタ</property>
+                                            <property name="resultSetColumnName">商品カテゴリ</property>
+                                        </category-column>
+                                        <category-column name="商品名" id="741">
+                                            <property name="aliasDataSet">売上データモデル/商品マスタ</property>
+                                            <property name="resultSetColumnName">商品名</property>
+                                        </category-column>
+                                    </property>
+                                </category>
+                                <category name="売上データ" id="742">
+                                    <property name="categoryColumns">
+                                        <category-column name="年" id="743">
+                                            <property name="aliasDataSet">売上データモデル/売上データ</property>
+                                            <property name="resultSetColumnName">年</property>
+                                        </category-column>
+                                        <category-column name="四半期" id="744">
+                                            <property name="aliasDataSet">売上データモデル/売上データ</property>
+                                            <property name="resultSetColumnName">四半期</property>
+                                        </category-column>
+                                        <category-column name="地域1" id="745">
+                                            <property name="aliasDataSet">売上データモデル/売上データ</property>
+                                            <property name="resultSetColumnName">地域</property>
+                                        </category-column>
+                                        <category-column name="代理店1" id="746">
+                                            <property name="aliasDataSet">売上データモデル/売上データ</property>
+                                            <property name="resultSetColumnName">代理店</property>
+                                        </category-column>
+                                        <category-column name="営業担当" id="747">
+                                            <property name="aliasDataSet">売上データモデル/売上データ</property>
+                                            <property name="resultSetColumnName">営業担当</property>
+                                        </category-column>
+                                        <category-column name="顧客ID1" id="748">
+                                            <property name="aliasDataSet">売上データモデル/売上データ</property>
+                                            <property name="resultSetColumnName">顧客ID</property>
+                                        </category-column>
+                                        <category-column name="商品ID1" id="749">
+                                            <property name="aliasDataSet">売上データモデル/売上データ</property>
+                                            <property name="resultSetColumnName">商品ID</property>
+                                        </category-column>
+                                        <category-column name="売上" id="750">
+                                            <property name="aliasDataSet">売上データモデル/売上データ</property>
+                                            <property name="resultSetColumnName">売上</property>
+                                        </category-column>
+                                        <category-column name="計画値1" id="751">
+                                            <property name="aliasDataSet">売上データモデル/売上データ</property>
+                                            <property name="resultSetColumnName">計画値</property>
+                                        </category-column>
+                                    </property>
+                                </category>
+                            </property>
+                            <property name="pushDown">true</property>
+                        </linked-data-model>
+                    </property>
+                </datamart>
+            </datamart-node>
+        </external-datamarts>
+    </xml-property>
+    <property name="units">in</property>
+    <property name="theme">defaultTheme</property>
+    <parameters>
+        <scalar-parameter name="PrmYear" id="568">
+            <property name="hidden">false</property>
+            <text-property name="promptText">年</text-property>
+            <property name="valueType">dynamic</property>
+            <property name="dataSetName">売上データ</property>
+            <expression name="valueExpr" type="javascript">dataSetRow["年"]</expression>
+            <expression name="labelExpr" type="javascript">dataSetRow["年"]</expression>
+            <property name="dataType">integer</property>
+            <property name="distinct">true</property>
+            <simple-property-list name="defaultValue">
+                <value type="constant">2011</value>
+            </simple-property-list>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">list-box</property>
+            <property name="mustMatch">true</property>
+            <property name="fixedOrder">true</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="PrmQtr" id="569">
+            <property name="hidden">false</property>
+            <text-property name="promptText">四半期</text-property>
+            <property name="valueType">dynamic</property>
+            <property name="dataSetName">売上データ</property>
+            <expression name="valueExpr" type="javascript">dataSetRow["四半期"]</expression>
+            <expression name="labelExpr" type="javascript">dataSetRow["四半期"]</expression>
+            <property name="dataType">integer</property>
+            <property name="distinct">true</property>
+            <simple-property-list name="defaultValue">
+                <value type="constant">1</value>
+            </simple-property-list>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">list-box</property>
+            <property name="mustMatch">true</property>
+            <property name="fixedOrder">true</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="PrmProd" id="574">
+            <text-property name="promptText">商品</text-property>
+            <property name="valueType">dynamic</property>
+            <property name="dataSetName">商品マスタ</property>
+            <expression name="valueExpr" type="javascript">dataSetRow["商品名"]</expression>
+            <expression name="labelExpr" type="javascript">dataSetRow["商品名"]</expression>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <simple-property-list name="defaultValue">
+                <value type="constant">11 国内株式</value>
+            </simple-property-list>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">list-box</property>
+            <property name="mustMatch">true</property>
+            <property name="fixedOrder">true</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+    </parameters>
+    <data-sources>
+        <data-mart-data-source name="ajdemo" id="5">
+            <property name="datamartURL">データオブジェクト/ajdemo</property>
+            <property name="accessType">latest</property>
+        </data-mart-data-source>
+    </data-sources>
+    <data-sets>
+        <data-mart-data-set name="セールスデータ" id="6">
+            <list-property name="columnHints"/>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">地域</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">代理店</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">販売員名</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">販売実績</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">計画値</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">6</property>
+                        <property name="name">達成率</property>
+                        <property name="dataType">float</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">ajdemo</property>
+            <property name="dataObject">セールスデータ</property>
+            <list-property name="selectedColumns">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">地域</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">代理店</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">販売員名</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">販売実績</property>
+                    <property name="dataType">integer</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">計画値</property>
+                    <property name="dataType">integer</property>
+                </structure>
+                <structure>
+                    <property name="position">6</property>
+                    <property name="name">達成率</property>
+                    <property name="dataType">float</property>
+                </structure>
+            </list-property>
+        </data-mart-data-set>
+        <data-mart-data-set name="顧客マスタ" id="786">
+            <list-property name="columnHints"/>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">顧客ID</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">顧客名</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">顧客名カナ</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">性別</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">生年月日</property>
+                        <property name="dataType">date</property>
+                    </structure>
+                    <structure>
+                        <property name="position">6</property>
+                        <property name="name">既未婚</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">7</property>
+                        <property name="name">都道府県ID</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">8</property>
+                        <property name="name">都道府県</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">9</property>
+                        <property name="name">地方</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">10</property>
+                        <property name="name">職業</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">ajdemo</property>
+            <property name="dataObject">顧客マスタ</property>
+            <list-property name="selectedColumns">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">顧客ID</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">顧客名</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">顧客名カナ</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">性別</property>
+                    <property name="dataType">integer</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">生年月日</property>
+                    <property name="dataType">date</property>
+                </structure>
+                <structure>
+                    <property name="position">6</property>
+                    <property name="name">既未婚</property>
+                    <property name="dataType">integer</property>
+                </structure>
+                <structure>
+                    <property name="position">7</property>
+                    <property name="name">都道府県ID</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">8</property>
+                    <property name="name">都道府県</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">9</property>
+                    <property name="name">地方</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">10</property>
+                    <property name="name">職業</property>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+        </data-mart-data-set>
+        <data-mart-data-set name="商品マスタ" id="787">
+            <list-property name="columnHints"/>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">商品ID</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">商品カテゴリ</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">商品名</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">ajdemo</property>
+            <property name="dataObject">商品マスタ</property>
+            <list-property name="selectedColumns">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">商品ID</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">商品カテゴリ</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">商品名</property>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+        </data-mart-data-set>
+        <data-mart-data-set name="売上データ" id="788">
+            <list-property name="columnHints"/>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">年</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">四半期</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">地域</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">代理店</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">営業担当</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">6</property>
+                        <property name="name">顧客ID</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">7</property>
+                        <property name="name">商品ID</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">8</property>
+                        <property name="name">売上</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">9</property>
+                        <property name="name">計画値</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">ajdemo</property>
+            <property name="dataObject">売上データ</property>
+            <list-property name="selectedColumns">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">年</property>
+                    <property name="dataType">integer</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">四半期</property>
+                    <property name="dataType">integer</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">地域</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">代理店</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">営業担当</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">6</property>
+                    <property name="name">顧客ID</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">7</property>
+                    <property name="name">商品ID</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">8</property>
+                    <property name="name">売上</property>
+                    <property name="dataType">integer</property>
+                </structure>
+                <structure>
+                    <property name="position">9</property>
+                    <property name="name">計画値</property>
+                    <property name="dataType">integer</property>
+                </structure>
+            </list-property>
+        </data-mart-data-set>
+        <data-mart-data-set name="売上分析データセット" id="789">
+            <list-property name="columnHints"/>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">顧客名</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">顧客名カナ</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">性別</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">生年月日</property>
+                        <property name="dataType">date</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">既未婚</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">6</property>
+                        <property name="name">都道府県ID</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">7</property>
+                        <property name="name">都道府県</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">8</property>
+                        <property name="name">地方</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">9</property>
+                        <property name="name">職業</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">10</property>
+                        <property name="name">年</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">11</property>
+                        <property name="name">四半期</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">12</property>
+                        <property name="name">地域</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">13</property>
+                        <property name="name">代理店</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">14</property>
+                        <property name="name">営業担当</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">15</property>
+                        <property name="name">売上</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">16</property>
+                        <property name="name">計画値</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">17</property>
+                        <property name="name">商品ID</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">18</property>
+                        <property name="name">商品カテゴリ</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">19</property>
+                        <property name="name">商品名</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">ajdemo</property>
+            <property name="dataObject">売上分析データセット</property>
+            <list-property name="selectedColumns">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">顧客名</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">顧客名カナ</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">性別</property>
+                    <property name="dataType">integer</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">生年月日</property>
+                    <property name="dataType">date</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">既未婚</property>
+                    <property name="dataType">integer</property>
+                </structure>
+                <structure>
+                    <property name="position">6</property>
+                    <property name="name">都道府県ID</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">7</property>
+                    <property name="name">都道府県</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">8</property>
+                    <property name="name">地方</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">9</property>
+                    <property name="name">職業</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">10</property>
+                    <property name="name">年</property>
+                    <property name="dataType">integer</property>
+                </structure>
+                <structure>
+                    <property name="position">11</property>
+                    <property name="name">四半期</property>
+                    <property name="dataType">integer</property>
+                </structure>
+                <structure>
+                    <property name="position">12</property>
+                    <property name="name">地域</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">13</property>
+                    <property name="name">代理店</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">14</property>
+                    <property name="name">営業担当</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">15</property>
+                    <property name="name">売上</property>
+                    <property name="dataType">integer</property>
+                </structure>
+                <structure>
+                    <property name="position">16</property>
+                    <property name="name">計画値</property>
+                    <property name="dataType">integer</property>
+                </structure>
+                <structure>
+                    <property name="position">17</property>
+                    <property name="name">商品ID</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">18</property>
+                    <property name="name">商品カテゴリ</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">19</property>
+                    <property name="name">商品名</property>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+        </data-mart-data-set>
+        <data-mart-data-set name="マンスリーレポート" id="790">
+            <list-property name="columnHints"/>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">年</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">四半期</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">売上</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">計画値</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">ajdemo</property>
+            <property name="dataObject">マンスリーレポート</property>
+            <list-property name="selectedColumns">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">年</property>
+                    <property name="dataType">integer</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">四半期</property>
+                    <property name="dataType">integer</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">売上</property>
+                    <property name="dataType">integer</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">計画値</property>
+                    <property name="dataType">integer</property>
+                </structure>
+            </list-property>
+        </data-mart-data-set>
+    </data-sets>
+    <cubes>
+        <data-mart-cube name="売上分析データキューブ" id="794">
+            <property name="dataSource">ajdemo</property>
+            <property name="dataObject">売上分析データキューブ</property>
+        </data-mart-cube>
+    </cubes>
+    <themes>
+        <theme name="defaultTheme" id="4"/>
+    </themes>
+    <page-setup>
+        <simple-master-page name="NewSimpleMasterPage" id="3"/>
+    </page-setup>
+    <property name="linkedDataModels">
+        <data-mart-linked-data-model name="売上データモデル" id="793">
+            <property name="dataSource">ajdemo</property>
+            <property name="dataObject">売上データモデル</property>
+        </data-mart-linked-data-model>
+    </property>
+</library>

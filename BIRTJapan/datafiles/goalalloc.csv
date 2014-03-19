@@ -1,0 +1,13 @@
+Customer,Goal,Percent
+STRING,STRING,STRING
+A,リタイア,50
+A,別荘,14
+A,コテージ,10
+A,ボート,9
+A,キャンピングカー,2
+A,世界旅行,10
+A,結婚式,5
+B,リタイア,60
+B,車,1
+B,世界旅行,9
+B,資産,30

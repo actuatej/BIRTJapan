@@ -1,0 +1,2307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+    <property name="createdBy">Eclipse BIRT Designer バージョン 4.2.3.v20131216-0430 ビルド &lt;4.2.3.v20131216-0430></property>
+    <xml-property name="externalMetadata">
+        <external-datamarts>
+            <datamart-node location="file:/C:/local/ws/ws3/ajsfw/データオブジェクト/wm.data">
+                <reference-elements>wm;</reference-elements>
+                <datamart xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+                    <property name="createdBy">Eclipse BIRT Designer バージョン 4.2.3.v20131216-0430 ビルド &lt;4.2.3.v20131216-0430></property>
+                    <data-sources>
+                        <oda-data-source extensionID="org.eclipse.datatools.connectivity.oda.flatfile" name="csv" id="51">
+                            <property name="HOME">C:\data</property>
+                            <property name="DELIMTYPE">COMMA</property>
+                            <property name="CHARSET">UTF-8</property>
+                            <property name="INCLCOLUMNNAME">YES</property>
+                            <property name="INCLTYPELINE">YES</property>
+                        </oda-data-source>
+                    </data-sources>
+                    <data-sets>
+                        <oda-data-set extensionID="org.eclipse.datatools.connectivity.oda.flatfile.dataSet" name="ratio" id="52">
+                            <list-property name="columnHints">
+                                <structure>
+                                    <property name="columnName">Cust</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="heading">Cust</text-property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">L</property>
+                                    <property name="analysis">measure</property>
+                                    <text-property name="heading">L</text-property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">A</property>
+                                    <property name="analysis">measure</property>
+                                    <text-property name="heading">A</text-property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">Me</property>
+                                    <property name="analysis">measure</property>
+                                    <text-property name="heading">Me</text-property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">dummy</property>
+                                    <property name="analysis">measure</property>
+                                    <text-property name="heading">dummy</text-property>
+                                </structure>
+                            </list-property>
+                            <list-property name="filter"/>
+                            <list-property name="parameters"/>
+                            <structure name="cachedMetaData">
+                                <list-property name="resultSet">
+                                    <structure>
+                                        <property name="position">1</property>
+                                        <property name="name">Cust</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">2</property>
+                                        <property name="name">L</property>
+                                        <property name="dataType">float</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">3</property>
+                                        <property name="name">A</property>
+                                        <property name="dataType">float</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">4</property>
+                                        <property name="name">Me</property>
+                                        <property name="dataType">float</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">5</property>
+                                        <property name="name">dummy</property>
+                                        <property name="dataType">float</property>
+                                    </structure>
+                                </list-property>
+                            </structure>
+                            <property name="dataSource">csv</property>
+                            <list-property name="resultSet">
+                                <structure>
+                                    <property name="position">1</property>
+                                    <property name="name">Cust</property>
+                                    <property name="nativeName">Cust</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">2</property>
+                                    <property name="name">L</property>
+                                    <property name="nativeName">L</property>
+                                    <property name="dataType">float</property>
+                                    <property name="nativeDataType">8</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">3</property>
+                                    <property name="name">A</property>
+                                    <property name="nativeName">A</property>
+                                    <property name="dataType">float</property>
+                                    <property name="nativeDataType">8</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">4</property>
+                                    <property name="name">Me</property>
+                                    <property name="nativeName">Me</property>
+                                    <property name="dataType">float</property>
+                                    <property name="nativeDataType">8</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">5</property>
+                                    <property name="name">dummy</property>
+                                    <property name="nativeName">dummy</property>
+                                    <property name="dataType">float</property>
+                                    <property name="nativeDataType">8</property>
+                                </structure>
+                            </list-property>
+                            <xml-property name="queryText"><![CDATA[select "Cust", "L", "A", "Me", "dummy" from "ratio.csv" : {"Cust","Cust",STRING;"L","L",DOUBLE;"A","A",DOUBLE;"Me","Me",DOUBLE;"dummy","dummy",DOUBLE}]]></xml-property>
+                            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>State_Abbr</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>State_Abbr</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Per_capita_income</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>8</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Per_capita_income</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+                        </oda-data-set>
+                        <oda-data-set extensionID="org.eclipse.datatools.connectivity.oda.flatfile.dataSet" name="retirement" id="79">
+                            <list-property name="columnHints">
+                                <structure>
+                                    <property name="columnName">Customer</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="heading">Customer</text-property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">Total</property>
+                                    <property name="analysis">measure</property>
+                                    <text-property name="heading">Total</text-property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">sortkey</property>
+                                    <property name="analysis">measure</property>
+                                    <text-property name="heading">sortkey</text-property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                            </list-property>
+                            <list-property name="parameters"/>
+                            <structure name="cachedMetaData">
+                                <list-property name="resultSet">
+                                    <structure>
+                                        <property name="position">1</property>
+                                        <property name="name">Customer</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">2</property>
+                                        <property name="name">Total</property>
+                                        <property name="dataType">float</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">3</property>
+                                        <property name="name">sortkey</property>
+                                        <property name="dataType">float</property>
+                                    </structure>
+                                </list-property>
+                            </structure>
+                            <property name="dataSource">csv</property>
+                            <list-property name="resultSet">
+                                <structure>
+                                    <property name="position">1</property>
+                                    <property name="name">Customer</property>
+                                    <property name="nativeName">Customer</property>
+                                    <property name="dataType">string</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">2</property>
+                                    <property name="name">Total</property>
+                                    <property name="nativeName">Total</property>
+                                    <property name="dataType">float</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">3</property>
+                                    <property name="name">sortkey</property>
+                                    <property name="nativeName">sortkey</property>
+                                    <property name="dataType">float</property>
+                                </structure>
+                            </list-property>
+                            <xml-property name="queryText"><![CDATA[select "Customer", "Total", "sortkey" from "retirement.csv" : {"Customer","Customer",STRING;"Total","Total",DOUBLE;"sortkey","sortkey",DOUBLE}]]></xml-property>
+                            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>State_Abbr</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>State_Abbr</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Per_capita_income</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>8</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Per_capita_income</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+                        </oda-data-set>
+                        <oda-data-set extensionID="org.eclipse.datatools.connectivity.oda.flatfile.dataSet" name="households" id="81">
+                            <list-property name="columnHints">
+                                <structure>
+                                    <property name="columnName">CustID</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="heading">CustID</text-property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">Customer</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="heading">Customer</text-property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">Total</property>
+                                    <property name="analysis">measure</property>
+                                    <text-property name="heading">Total</text-property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">sortkey</property>
+                                    <property name="analysis">measure</property>
+                                    <text-property name="heading">sortkey</text-property>
+                                </structure>
+                            </list-property>
+                            <list-property name="filter"/>
+                            <list-property name="parameters"/>
+                            <structure name="cachedMetaData">
+                                <list-property name="resultSet">
+                                    <structure>
+                                        <property name="position">1</property>
+                                        <property name="name">CustID</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">2</property>
+                                        <property name="name">Customer</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">3</property>
+                                        <property name="name">Total</property>
+                                        <property name="dataType">float</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">4</property>
+                                        <property name="name">sortkey</property>
+                                        <property name="dataType">float</property>
+                                    </structure>
+                                </list-property>
+                            </structure>
+                            <property name="dataSource">csv</property>
+                            <list-property name="resultSet">
+                                <structure>
+                                    <property name="position">1</property>
+                                    <property name="name">CustID</property>
+                                    <property name="nativeName">CustID</property>
+                                    <property name="dataType">string</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">2</property>
+                                    <property name="name">Customer</property>
+                                    <property name="nativeName">Customer</property>
+                                    <property name="dataType">string</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">3</property>
+                                    <property name="name">Total</property>
+                                    <property name="nativeName">Total</property>
+                                    <property name="dataType">float</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">4</property>
+                                    <property name="name">sortkey</property>
+                                    <property name="nativeName">sortkey</property>
+                                    <property name="dataType">float</property>
+                                </structure>
+                            </list-property>
+                            <xml-property name="queryText"><![CDATA[select "CustID", "Customer", "Total", "sortkey" from "households.csv" : {"CustID","CustID",STRING;"Customer","Customer",STRING;"Total","Total",DOUBLE;"sortkey","sortkey",DOUBLE}]]></xml-property>
+                            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>State_Abbr</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>State_Abbr</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Per_capita_income</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>8</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Per_capita_income</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+                        </oda-data-set>
+                        <oda-data-set extensionID="org.eclipse.datatools.connectivity.oda.flatfile.dataSet" name="age" id="84">
+                            <list-property name="columnHints">
+                                <structure>
+                                    <property name="columnName">Customer</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="heading">Customer</text-property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">Total</property>
+                                    <property name="analysis">measure</property>
+                                    <text-property name="heading">Total</text-property>
+                                </structure>
+                            </list-property>
+                            <list-property name="filter"/>
+                            <list-property name="parameters"/>
+                            <structure name="cachedMetaData">
+                                <list-property name="resultSet">
+                                    <structure>
+                                        <property name="position">1</property>
+                                        <property name="name">Customer</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">2</property>
+                                        <property name="name">Total</property>
+                                        <property name="dataType">float</property>
+                                    </structure>
+                                </list-property>
+                            </structure>
+                            <property name="dataSource">csv</property>
+                            <list-property name="resultSet">
+                                <structure>
+                                    <property name="position">1</property>
+                                    <property name="name">Customer</property>
+                                    <property name="nativeName">Customer</property>
+                                    <property name="dataType">string</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">2</property>
+                                    <property name="name">Total</property>
+                                    <property name="nativeName">Total</property>
+                                    <property name="dataType">float</property>
+                                </structure>
+                            </list-property>
+                            <xml-property name="queryText"><![CDATA[select "Customer", "Total" from "age.csv" : {"Customer","Customer",STRING;"Total","Total",DOUBLE}]]></xml-property>
+                            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>State_Abbr</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>State_Abbr</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Per_capita_income</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>8</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Per_capita_income</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+                        </oda-data-set>
+                        <oda-data-set extensionID="org.eclipse.datatools.connectivity.oda.flatfile.dataSet" name="Asset_csv" id="622">
+                            <list-property name="columnHints">
+                                <structure>
+                                    <property name="columnName">Accounts</property>
+                                    <property name="analysis">attribute</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">Current Qty</property>
+                                    <property name="analysis">measure</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">Original Qty</property>
+                                    <property name="analysis">measure</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">Original Value</property>
+                                    <property name="analysis">measure</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">Value</property>
+                                    <property name="analysis">measure</property>
+                                </structure>
+                            </list-property>
+                            <list-property name="parameters"/>
+                            <structure name="cachedMetaData">
+                                <list-property name="resultSet">
+                                    <structure>
+                                        <property name="position">1</property>
+                                        <property name="name">Accounts</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">2</property>
+                                        <property name="name">Current Qty</property>
+                                        <property name="dataType">float</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">3</property>
+                                        <property name="name">Original Qty</property>
+                                        <property name="dataType">float</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">4</property>
+                                        <property name="name">Original Value</property>
+                                        <property name="dataType">float</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">5</property>
+                                        <property name="name">Value</property>
+                                        <property name="dataType">float</property>
+                                    </structure>
+                                </list-property>
+                            </structure>
+                            <property name="dataSource">csv</property>
+                            <list-property name="resultSet">
+                                <structure>
+                                    <property name="position">1</property>
+                                    <property name="name">Accounts</property>
+                                    <property name="nativeName">Accounts</property>
+                                    <property name="dataType">string</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">2</property>
+                                    <property name="name">Current Qty</property>
+                                    <property name="nativeName">Current Qty</property>
+                                    <property name="dataType">float</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">3</property>
+                                    <property name="name">Original Qty</property>
+                                    <property name="nativeName">Original Qty</property>
+                                    <property name="dataType">float</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">4</property>
+                                    <property name="name">Original Value</property>
+                                    <property name="nativeName">Original Value</property>
+                                    <property name="dataType">float</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">5</property>
+                                    <property name="name">Value</property>
+                                    <property name="nativeName">Value</property>
+                                    <property name="dataType">float</property>
+                                </structure>
+                            </list-property>
+                            <xml-property name="queryText"><![CDATA[select "Accounts", "Current Qty", "Original Qty", "Original Value", "Value" from "assetalloc.csv" : {"Accounts","Accounts",STRING;"Current Qty","Current Qty",DOUBLE;"Original Qty","Original Qty",DOUBLE;"Original Value","Original Value",DOUBLE;"Value","Value",DOUBLE}]]></xml-property>
+                            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Accounts</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Accounts</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Current Qty</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>8</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Current Qty</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Original Qty</design:name>
+              <design:position>3</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>8</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Original Qty</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Original Value</design:name>
+              <design:position>4</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>8</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Original Value</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Value</design:name>
+              <design:position>5</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>8</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Value</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+                        </oda-data-set>
+                        <oda-data-set extensionID="org.eclipse.datatools.connectivity.oda.flatfile.dataSet" name="Finances_csv" id="623">
+                            <list-property name="columnHints">
+                                <structure>
+                                    <property name="columnName">Account Categories</property>
+                                    <property name="analysis">attribute</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">Current Value</property>
+                                    <property name="analysis">measure</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">Original Value</property>
+                                    <property name="analysis">measure</property>
+                                </structure>
+                            </list-property>
+                            <list-property name="parameters"/>
+                            <structure name="cachedMetaData">
+                                <list-property name="resultSet">
+                                    <structure>
+                                        <property name="position">1</property>
+                                        <property name="name">Account Categories</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">2</property>
+                                        <property name="name">Current Value</property>
+                                        <property name="dataType">float</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">3</property>
+                                        <property name="name">Original Value</property>
+                                        <property name="dataType">float</property>
+                                    </structure>
+                                </list-property>
+                            </structure>
+                            <property name="dataSource">csv</property>
+                            <list-property name="resultSet">
+                                <structure>
+                                    <property name="position">1</property>
+                                    <property name="name">Account Categories</property>
+                                    <property name="nativeName">Account Categories</property>
+                                    <property name="dataType">string</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">2</property>
+                                    <property name="name">Current Value</property>
+                                    <property name="nativeName">Current Value</property>
+                                    <property name="dataType">float</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">3</property>
+                                    <property name="name">Original Value</property>
+                                    <property name="nativeName">Original Value</property>
+                                    <property name="dataType">float</property>
+                                </structure>
+                            </list-property>
+                            <xml-property name="queryText"><![CDATA[select "Account Categories", "Current Value", "Original Value" from "acctcatperf.csv" : {"Account Categories","Account Categories",STRING;"Current Value","Current Value",DOUBLE;"Original Value","Original Value",DOUBLE}]]></xml-property>
+                            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Account Categories</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Account Categories</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Current Value</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>8</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Current Value</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Original Value</design:name>
+              <design:position>3</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>8</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Original Value</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+                        </oda-data-set>
+                        <oda-data-set extensionID="org.eclipse.datatools.connectivity.oda.flatfile.dataSet" name="Portfolio_csv" id="624">
+                            <list-property name="columnHints">
+                                <structure>
+                                    <property name="columnName">%Change</property>
+                                    <property name="analysis">measure</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">Asset Class</property>
+                                    <property name="analysis">attribute</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">Aggregation</property>
+                                    <property name="analysis">measure</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">Current Price</property>
+                                    <property name="analysis">measure</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">Current Value</property>
+                                    <property name="analysis">measure</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">Current Volume</property>
+                                    <property name="analysis">measure</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">grandtotal</property>
+                                    <property name="analysis">measure</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">LineTotal</property>
+                                    <property name="analysis">measure</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">Original Purchase Cost</property>
+                                    <property name="analysis">measure</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">PercentChg</property>
+                                    <property name="analysis">measure</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">Stock Name</property>
+                                    <property name="analysis">attribute</property>
+                                </structure>
+                            </list-property>
+                            <list-property name="parameters"/>
+                            <structure name="cachedMetaData">
+                                <list-property name="resultSet">
+                                    <structure>
+                                        <property name="position">1</property>
+                                        <property name="name">%Change</property>
+                                        <property name="dataType">float</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">2</property>
+                                        <property name="name">Asset Class</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">3</property>
+                                        <property name="name">Aggregation</property>
+                                        <property name="dataType">float</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">4</property>
+                                        <property name="name">Current Price</property>
+                                        <property name="dataType">float</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">5</property>
+                                        <property name="name">Current Value</property>
+                                        <property name="dataType">float</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">6</property>
+                                        <property name="name">Current Volume</property>
+                                        <property name="dataType">float</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">7</property>
+                                        <property name="name">grandtotal</property>
+                                        <property name="dataType">float</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">8</property>
+                                        <property name="name">LineTotal</property>
+                                        <property name="dataType">float</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">9</property>
+                                        <property name="name">Original Purchase Cost</property>
+                                        <property name="dataType">float</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">10</property>
+                                        <property name="name">PercentChg</property>
+                                        <property name="dataType">float</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">11</property>
+                                        <property name="name">Stock Name</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                </list-property>
+                            </structure>
+                            <property name="dataSource">csv</property>
+                            <list-property name="resultSet">
+                                <structure>
+                                    <property name="position">1</property>
+                                    <property name="name">%Change</property>
+                                    <property name="nativeName">%Change</property>
+                                    <property name="dataType">float</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">2</property>
+                                    <property name="name">Asset Class</property>
+                                    <property name="nativeName">Asset Class</property>
+                                    <property name="dataType">string</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">3</property>
+                                    <property name="name">Aggregation</property>
+                                    <property name="nativeName">Aggregation</property>
+                                    <property name="dataType">float</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">4</property>
+                                    <property name="name">Current Price</property>
+                                    <property name="nativeName">Current Price</property>
+                                    <property name="dataType">float</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">5</property>
+                                    <property name="name">Current Value</property>
+                                    <property name="nativeName">Current Value</property>
+                                    <property name="dataType">float</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">6</property>
+                                    <property name="name">Current Volume</property>
+                                    <property name="nativeName">Current Volume</property>
+                                    <property name="dataType">float</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">7</property>
+                                    <property name="name">grandtotal</property>
+                                    <property name="nativeName">grandtotal</property>
+                                    <property name="dataType">float</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">8</property>
+                                    <property name="name">LineTotal</property>
+                                    <property name="nativeName">LineTotal</property>
+                                    <property name="dataType">float</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">9</property>
+                                    <property name="name">Original Purchase Cost</property>
+                                    <property name="nativeName">Original Purchase Cost</property>
+                                    <property name="dataType">float</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">10</property>
+                                    <property name="name">PercentChg</property>
+                                    <property name="nativeName">PercentChg</property>
+                                    <property name="dataType">float</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">11</property>
+                                    <property name="name">Stock Name</property>
+                                    <property name="nativeName">Stock Name</property>
+                                    <property name="dataType">string</property>
+                                </structure>
+                            </list-property>
+                            <xml-property name="queryText"><![CDATA[select "%Change", "Asset Class", "Aggregation", "Current Price", "Current Value", "Current Volume", "grandtotal", "LineTotal", "Original Purchase Cost", "PercentChg", "Stock Name" from "portfolio.csv" : {"%Change","%Change",DOUBLE;"Asset Class","Asset Class",STRING;"Aggregation","Aggregation",DOUBLE;"Current Price","Current Price",DOUBLE;"Current Value","Current Value",DOUBLE;"Current Volume","Current Volume",DOUBLE;"grandtotal","grandtotal",DOUBLE;"LineTotal","LineTotal",DOUBLE;"Original Purchase Cost","Original Purchase Cost",DOUBLE;"PercentChg","PercentChg",DOUBLE;"Stock Name","Stock Name",STRING}]]></xml-property>
+                            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>%Change</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>8</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>%%Change</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Asset Class</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Asset Class</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Aggregation</design:name>
+              <design:position>3</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>8</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Aggregation</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Current Price</design:name>
+              <design:position>4</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>8</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Current Price</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Current Value</design:name>
+              <design:position>5</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>8</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Current Value</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Current Volume</design:name>
+              <design:position>6</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>8</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Current Volume</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>grandtotal</design:name>
+              <design:position>7</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>8</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>grandtotal</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>LineTotal</design:name>
+              <design:position>8</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>8</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>LineTotal</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Original Purchase Cost</design:name>
+              <design:position>9</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>8</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Original Purchase Cost</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>PercentChg</design:name>
+              <design:position>10</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>8</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>PercentChg</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Stock Name</design:name>
+              <design:position>11</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Stock Name</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+                        </oda-data-set>
+                        <oda-data-set extensionID="org.eclipse.datatools.connectivity.oda.flatfile.dataSet" name="map" id="626">
+                            <list-property name="columnHints">
+                                <structure>
+                                    <property name="columnName">State_Abbr</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="heading">State_Abbr</text-property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">Per_capita_income</property>
+                                    <property name="analysis">measure</property>
+                                    <text-property name="heading">Per_capita_income</text-property>
+                                </structure>
+                            </list-property>
+                            <list-property name="parameters"/>
+                            <structure name="cachedMetaData">
+                                <list-property name="resultSet">
+                                    <structure>
+                                        <property name="position">1</property>
+                                        <property name="name">State_Abbr</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">2</property>
+                                        <property name="name">Per_capita_income</property>
+                                        <property name="dataType">float</property>
+                                    </structure>
+                                </list-property>
+                            </structure>
+                            <property name="dataSource">csv</property>
+                            <list-property name="resultSet">
+                                <structure>
+                                    <property name="position">1</property>
+                                    <property name="name">State_Abbr</property>
+                                    <property name="nativeName">State_Abbr</property>
+                                    <property name="dataType">string</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">2</property>
+                                    <property name="name">Per_capita_income</property>
+                                    <property name="nativeName">Per_capita_income</property>
+                                    <property name="dataType">float</property>
+                                </structure>
+                            </list-property>
+                            <xml-property name="queryText"><![CDATA[select "State_Abbr", "Per_capita_income" from "StateAvgs.csv" : {"State_Abbr","State_Abbr",STRING;"Per_capita_income","Per_capita_income",DOUBLE}]]></xml-property>
+                            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>State_Abbr</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>State_Abbr</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Per_capita_income</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>8</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Per_capita_income</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+                        </oda-data-set>
+                        <oda-data-set extensionID="org.eclipse.datatools.connectivity.oda.flatfile.dataSet" name="funnel" id="627">
+                            <list-property name="columnHints">
+                                <structure>
+                                    <property name="columnName">Customer</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="heading">Customer</text-property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">Goal</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="heading">Goal</text-property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">Percent</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="heading">Percent</text-property>
+                                </structure>
+                            </list-property>
+                            <list-property name="filter"/>
+                            <list-property name="parameters"/>
+                            <structure name="cachedMetaData">
+                                <list-property name="resultSet">
+                                    <structure>
+                                        <property name="position">1</property>
+                                        <property name="name">Customer</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">2</property>
+                                        <property name="name">Goal</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">3</property>
+                                        <property name="name">Percent</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                </list-property>
+                            </structure>
+                            <property name="dataSource">csv</property>
+                            <list-property name="resultSet">
+                                <structure>
+                                    <property name="position">1</property>
+                                    <property name="name">Customer</property>
+                                    <property name="nativeName">Customer</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">2</property>
+                                    <property name="name">Goal</property>
+                                    <property name="nativeName">Goal</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">3</property>
+                                    <property name="name">Percent</property>
+                                    <property name="nativeName">Percent</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                            </list-property>
+                            <xml-property name="queryText"><![CDATA[select "Customer", "Goal", "Percent" from "goalalloc.csv" : {"Customer","Customer",STRING;"Goal","Goal",STRING;"Percent","Percent",STRING}]]></xml-property>
+                            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Division</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Division</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Expense</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>4</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Expense</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+                        </oda-data-set>
+                        <oda-data-set extensionID="org.eclipse.datatools.connectivity.oda.flatfile.dataSet" name="qtygoals" id="628">
+                            <list-property name="columnHints">
+                                <structure>
+                                    <property name="columnName">Customer</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="heading">Customer</text-property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">Number_of_Goals</property>
+                                    <property name="analysis">measure</property>
+                                    <text-property name="heading">Number_of_Goals</text-property>
+                                </structure>
+                            </list-property>
+                            <list-property name="filter"/>
+                            <list-property name="parameters"/>
+                            <structure name="cachedMetaData">
+                                <list-property name="resultSet">
+                                    <structure>
+                                        <property name="position">1</property>
+                                        <property name="name">Customer</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">2</property>
+                                        <property name="name">Number_of_Goals</property>
+                                        <property name="dataType">float</property>
+                                    </structure>
+                                </list-property>
+                            </structure>
+                            <property name="dataSource">csv</property>
+                            <list-property name="resultSet">
+                                <structure>
+                                    <property name="position">1</property>
+                                    <property name="name">Customer</property>
+                                    <property name="nativeName">Customer</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">2</property>
+                                    <property name="name">Number_of_Goals</property>
+                                    <property name="nativeName">Number_of_Goals</property>
+                                    <property name="dataType">float</property>
+                                    <property name="nativeDataType">8</property>
+                                </structure>
+                            </list-property>
+                            <xml-property name="queryText"><![CDATA[select "Customer", "Number_of_Goals" from "QTYOFgoals.csv" : {"Customer","Customer",STRING;"Number_of_Goals","Number_of_Goals",DOUBLE}]]></xml-property>
+                            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>State_Abbr</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>State_Abbr</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Per_capita_income</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>8</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Per_capita_income</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+                        </oda-data-set>
+                        <oda-data-set extensionID="org.eclipse.datatools.connectivity.oda.flatfile.dataSet" name="WorldTrip" id="629">
+                            <list-property name="columnHints">
+                                <structure>
+                                    <property name="columnName">Customer</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="heading">Customer</text-property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">Country_Abbr</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="heading">Country_Abbr</text-property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">highlite</property>
+                                    <property name="analysis">measure</property>
+                                    <text-property name="heading">highlite</text-property>
+                                </structure>
+                            </list-property>
+                            <list-property name="parameters"/>
+                            <structure name="cachedMetaData">
+                                <list-property name="resultSet">
+                                    <structure>
+                                        <property name="position">1</property>
+                                        <property name="name">Customer</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">2</property>
+                                        <property name="name">Country_Abbr</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">3</property>
+                                        <property name="name">highlite</property>
+                                        <property name="dataType">float</property>
+                                    </structure>
+                                </list-property>
+                            </structure>
+                            <property name="dataSource">csv</property>
+                            <list-property name="resultSet">
+                                <structure>
+                                    <property name="position">1</property>
+                                    <property name="name">Customer</property>
+                                    <property name="nativeName">Customer</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">2</property>
+                                    <property name="name">Country_Abbr</property>
+                                    <property name="nativeName">Country_Abbr</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">3</property>
+                                    <property name="name">highlite</property>
+                                    <property name="nativeName">highlite</property>
+                                    <property name="dataType">float</property>
+                                    <property name="nativeDataType">8</property>
+                                </structure>
+                            </list-property>
+                            <xml-property name="queryText"><![CDATA[select "Customer", "Country_Abbr", "highlite" from "world.csv" : {"Customer","Customer",STRING;"Country_Abbr","Country_Abbr",STRING;"highlite","highlite",DOUBLE}]]></xml-property>
+                            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>State_Abbr</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>State_Abbr</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Per_capita_income</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>8</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Per_capita_income</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+                        </oda-data-set>
+                        <oda-data-set extensionID="org.eclipse.datatools.connectivity.oda.flatfile.dataSet" name="pyr" id="630">
+                            <list-property name="columnHints">
+                                <structure>
+                                    <property name="columnName">Customer</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="heading">Customer</text-property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">Goal</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="heading">Goal</text-property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">Cost</property>
+                                    <property name="analysis">measure</property>
+                                    <text-property name="heading">Cost</text-property>
+                                </structure>
+                            </list-property>
+                            <list-property name="filter"/>
+                            <list-property name="parameters"/>
+                            <structure name="cachedMetaData">
+                                <list-property name="resultSet">
+                                    <structure>
+                                        <property name="position">1</property>
+                                        <property name="name">Customer</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">2</property>
+                                        <property name="name">Goal</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">3</property>
+                                        <property name="name">Cost</property>
+                                        <property name="dataType">float</property>
+                                    </structure>
+                                </list-property>
+                            </structure>
+                            <property name="dataSource">csv</property>
+                            <list-property name="resultSet">
+                                <structure>
+                                    <property name="position">1</property>
+                                    <property name="name">Customer</property>
+                                    <property name="nativeName">Customer</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">2</property>
+                                    <property name="name">Goal</property>
+                                    <property name="nativeName">Goal</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">3</property>
+                                    <property name="name">Cost</property>
+                                    <property name="nativeName">Cost</property>
+                                    <property name="dataType">float</property>
+                                    <property name="nativeDataType">8</property>
+                                </structure>
+                            </list-property>
+                            <xml-property name="queryText"><![CDATA[select "Customer", "Goal", "Cost" from "goalcost.csv" : {"Customer","Customer",STRING;"Goal","Goal",STRING;"Cost","Cost",DOUBLE}]]></xml-property>
+                            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Division</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Division</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Expense</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>4</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Expense</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+                        </oda-data-set>
+                    </data-sets>
+                </datamart>
+            </datamart-node>
+        </external-datamarts>
+    </xml-property>
+    <property name="units">in</property>
+    <property name="iconFile">/templates/blank_report.gif</property>
+    <property name="layoutPreference">auto layout</property>
+    <property name="bidiLayoutOrientation">ltr</property>
+    <property name="imageDPI">96</property>
+    <list-property name="libraries">
+        <structure>
+            <property name="fileName">/ThemesReportItems3.rptlibrary</property>
+            <property name="namespace">ThemesReportItems3</property>
+        </structure>
+    </list-property>
+    <parameters>
+        <scalar-parameter name="Customer" id="342">
+            <property name="hidden">true</property>
+            <property name="valueType">static</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <simple-property-list name="defaultValue">
+                <value type="constant">A</value>
+            </simple-property-list>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+    </parameters>
+    <data-sources>
+        <data-mart-data-source name="wm" id="340">
+            <property name="datamartURL">データオブジェクト/wm</property>
+            <property name="accessType">latest</property>
+        </data-mart-data-source>
+    </data-sources>
+    <data-sets>
+        <data-mart-data-set name="funnel" id="341">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">Customer</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">Customer</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">Goal</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">Goal</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">Percent</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">Percent</text-property>
+                </structure>
+            </list-property>
+            <list-property name="filter">
+                <structure>
+                    <property name="operator">eq</property>
+                    <expression name="expr" type="javascript">row["Customer"]</expression>
+                    <simple-property-list name="value1">
+                        <value>params["Customer"].value</value>
+                    </simple-property-list>
+                </structure>
+            </list-property>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">Customer</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">Goal</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">Percent</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">wm</property>
+            <property name="dataObject">funnel</property>
+            <list-property name="selectedColumns">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">Customer</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">Goal</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">Percent</property>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+        </data-mart-data-set>
+        <data-mart-data-set name="qtygoals" id="343">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">Customer</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">Customer</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">Number_of_Goals</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="heading">Number_of_Goals</text-property>
+                </structure>
+            </list-property>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">Customer</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">Number_of_Goals</property>
+                        <property name="dataType">float</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">wm</property>
+            <property name="dataObject">qtygoals</property>
+            <list-property name="selectedColumns">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">Customer</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">Number_of_Goals</property>
+                    <property name="dataType">float</property>
+                </structure>
+            </list-property>
+        </data-mart-data-set>
+        <data-mart-data-set name="WorldTrip" id="344">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">Customer</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">Customer</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">Country_Abbr</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">Country_Abbr</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">highlite</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="heading">highlite</text-property>
+                </structure>
+            </list-property>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">Customer</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">Country_Abbr</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">highlite</property>
+                        <property name="dataType">float</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">wm</property>
+            <property name="dataObject">WorldTrip</property>
+            <list-property name="selectedColumns">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">Customer</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">Country_Abbr</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">highlite</property>
+                    <property name="dataType">float</property>
+                </structure>
+            </list-property>
+        </data-mart-data-set>
+        <data-mart-data-set name="pyr" id="354">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">Customer</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">Customer</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">Goal</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">Goal</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">Cost</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="heading">Cost</text-property>
+                </structure>
+            </list-property>
+            <list-property name="filter">
+                <structure>
+                    <property name="operator">eq</property>
+                    <expression name="expr" type="javascript">row["Customer"]</expression>
+                    <simple-property-list name="value1">
+                        <value>params["Customer"].value</value>
+                    </simple-property-list>
+                </structure>
+            </list-property>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">Customer</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">Goal</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">Cost</property>
+                        <property name="dataType">float</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">wm</property>
+            <property name="dataObject">pyr</property>
+            <list-property name="selectedColumns">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">Customer</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">Goal</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">Cost</property>
+                    <property name="dataType">float</property>
+                </structure>
+            </list-property>
+        </data-mart-data-set>
+    </data-sets>
+    <styles>
+        <style name="report" id="4">
+            <property name="fontFamily">sans-serif</property>
+            <property name="fontSize">10pt</property>
+        </style>
+        <style name="crosstab-cell" id="5">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+        <style name="crosstab" id="6">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+    </styles>
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="2">
+            <page-footer>
+                <text id="3">
+                    <property name="contentType">html</property>
+                    <text-property name="content"><![CDATA[<value-of>new Date()</value-of>]]></text-property>
+                </text>
+            </page-footer>
+        </simple-master-page>
+    </page-setup>
+    <body>
+        <grid id="335">
+            <property name="height">1.28125in</property>
+            <property name="width">4.958333333333333in</property>
+            <method name="onCreate"><![CDATA[dataPart2 = "";]]></method>
+            <column id="336">
+                <property name="width">4.958333333333333in</property>
+            </column>
+            <row id="337">
+                <cell id="338">
+                    <table id="42">
+                        <property name="height">0.23958333333333334in</property>
+                        <property name="width">4.458333333333333in</property>
+                        <property name="dataSet">funnel</property>
+                        <list-property name="visibility">
+                            <structure>
+                                <property name="format">all</property>
+                                <expression name="valueExpr">true</expression>
+                            </structure>
+                        </list-property>
+                        <list-property name="boundDataColumns">
+                            <structure>
+                                <property name="name">Customer</property>
+                                <expression name="expression">dataSetRow["Customer"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">Goal</property>
+                                <expression name="expression">dataSetRow["Goal"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">Percent</property>
+                                <expression name="expression">dataSetRow["Percent"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                        </list-property>
+                        <column id="49"/>
+                        <detail>
+                            <row id="45">
+                                <method name="onCreate"><![CDATA[var oneLine = "<set ";
+oneLine = oneLine + "label='" + this.getRowData().getColumnValue("Goal") + "' ";
+oneLine = oneLine + "value='" +  this.getRowData().getColumnValue("Percent") + "'/>";
+
+
+dataPart2 = dataPart2 + oneLine;
+
+reportContext.setPersistentGlobalVariable("g_dataPart2", dataPart2 );]]></method>
+                                <property name="height">0.1in</property>
+                                <cell id="46"/>
+                            </row>
+                        </detail>
+                    </table>
+                    <extended-item extensionName="GeneralFlash" id="339">
+                        <property name="contentType">library</property>
+                        <expression name="contentFile">"/resources/Flash Object Library/Flash Widgets/Funnel.swf"</expression>
+                        <property name="height">2.573in</property>
+                        <property name="width">4.792in</property>
+                        <property name="variables">
+                            <variable-element name="dataXML">
+                                <expression name="value" type="javascript">var g_dataPart2 = reportContext.getPersistentGlobalVariable("g_dataPart2" );&#13;
+&#13;
+"&lt;chart  isSliced='0' streamlinedData='0' showPercentValues='1' isHollow='0' showLabelsAtCenter='0' chartBottomMargin='20'>" + g_dataPart2 + "&lt;styles>&lt;definition>&lt;style type='font' name='captionFont' size='15' color='000000' />&lt;style type='font' name='subCaptionFont' color='555555' />&lt;/definition>&lt;application>&lt;apply toObject='CAPTION' styles='captionFont' />&lt;apply toObject='SUBCAPTION' styles='subCaptionFont' />&lt;/application>&lt;/styles>&lt;/chart>"</expression>
+                            </variable-element>
+                        </property>
+                        <expression name="bookmark" type="javascript">"GoalAlloc"</expression>
+                    </extended-item>
+                </cell>
+            </row>
+        </grid>
+        <grid id="67">
+            <property name="height">2.4166666666666665in</property>
+            <property name="width">4.666666666666667in</property>
+            <column id="68">
+                <property name="width">4.666666666666667in</property>
+            </column>
+            <row id="69">
+                <property name="height">2.4166666666666665in</property>
+                <cell id="70">
+                    <property name="textAlign">center</property>
+                    <property name="verticalAlign">middle</property>
+                    <extended-item extensionName="FlashGadgets" id="85">
+                        <xml-property name="xmlRepresentation"><![CDATA[<ActuateChart version="1.0">
+ <Gadget backgroundColor="FEFEFE" borderColor="c0c0c0" borderThickness="1" borderTransparency="255" colorScheme="1" showBorder="true" showGaugeLabels="false" showValueAboveNeedle="false" subType="" turnOffAnimation="false" turnOffDefaultAnimination="false" type="Meter" version="1.0.0">
+  <gadgetPartsSupportingEffects _body="background"/>
+  <gadgetPartsSupportingEffects _body="dial"/>
+  <gadgetPartsSupportingEffects _body="gauge"/>
+  <gadgetPartsSupportingEffects _body="pivot"/>
+  <gadgetPartsSupportingEffects _body="value"/>
+  <gadgetPartsSupportingEffects _body="tickmarks"/>
+  <gadgetPartsSupportingEffects _body="tickvalues"/>
+  <gadgetPartsSupportingEffects _body="limitvalues"/>
+  <gadgetPartsSupportingEffects _body="trendpoints"/>
+  <gadgetPartsSupportingEffects _body="trendvalues"/>
+  <gadgetPartsSupportingEffects _body="trendmarkers"/>
+  <gadgetPartsSupportingEffects _body="tooltip"/>
+  <gadgetPartsSupportingEffects _body="background"/>
+  <gadgetPartsSupportingEffects _body="dial"/>
+  <gadgetPartsSupportingEffects _body="gauge"/>
+  <gadgetPartsSupportingEffects _body="pivot"/>
+  <gadgetPartsSupportingEffects _body="value"/>
+  <gadgetPartsSupportingEffects _body="tickmarks"/>
+  <gadgetPartsSupportingEffects _body="tickvalues"/>
+  <gadgetPartsSupportingEffects _body="limitvalues"/>
+  <gadgetPartsSupportingEffects _body="trendpoints"/>
+  <gadgetPartsSupportingEffects _body="trendvalues"/>
+  <gadgetPartsSupportingEffects _body="trendmarkers"/>
+  <gadgetPartsSupportingEffects _body="tooltip"/>
+  <gadgetPartsSupportingEffects _body="background"/>
+  <gadgetPartsSupportingEffects _body="dial"/>
+  <gadgetPartsSupportingEffects _body="gauge"/>
+  <gadgetPartsSupportingEffects _body="pivot"/>
+  <gadgetPartsSupportingEffects _body="value"/>
+  <gadgetPartsSupportingEffects _body="tickmarks"/>
+  <gadgetPartsSupportingEffects _body="tickvalues"/>
+  <gadgetPartsSupportingEffects _body="limitvalues"/>
+  <gadgetPartsSupportingEffects _body="trendpoints"/>
+  <gadgetPartsSupportingEffects _body="trendvalues"/>
+  <gadgetPartsSupportingEffects _body="trendmarkers"/>
+  <gadgetPartsSupportingEffects _body="tooltip"/>
+  <gadgetPartsSupportingEffects _body="background"/>
+  <gadgetPartsSupportingEffects _body="dial"/>
+  <gadgetPartsSupportingEffects _body="gauge"/>
+  <gadgetPartsSupportingEffects _body="pivot"/>
+  <gadgetPartsSupportingEffects _body="value"/>
+  <gadgetPartsSupportingEffects _body="tickmarks"/>
+  <gadgetPartsSupportingEffects _body="tickvalues"/>
+  <gadgetPartsSupportingEffects _body="limitvalues"/>
+  <gadgetPartsSupportingEffects _body="trendpoints"/>
+  <gadgetPartsSupportingEffects _body="trendvalues"/>
+  <gadgetPartsSupportingEffects _body="trendmarkers"/>
+  <gadgetPartsSupportingEffects _body="tooltip"/>
+  <scale autoAdjustMajorTickMarks="true" majorTickMarksCount="5" max="10" min="0" minorTickMarksCount="4"/>
+  <region endValue="3.0" label="A" startValue="0.0"/>
+  <region endValue="7.0" label="B" startValue="3.0"/>
+  <region endValue="10.0" label="C" startValue="7.0"/>
+  <thresholds isDashed="false" isTrendZone="false" length="40" lineWidth="4" markerRadius="4" showMarker="false" showValueOnTop="true" transparency="255"/>
+  <ticks maxLabel="" minLabel="" placeTicksInside="false" placeValuesInside="false" showLimits="true" showTickMarks="true" showTickValues="true" ticksBelowGauge="true" ticksOnRight="false">
+   <major height="8" width="1"/>
+   <minor height="3" width="1"/>
+  </ticks>
+  <toolTip showToolTip="true"/>
+  <valueDefinition query="row[&quot;Number_of_Goals&quot;]"/>
+  <linearGauge showNeedleAbove="false" showNeedleValue="true" showRoundCorners="true">
+   <needle borderColor="000000" borderTransparency="255" borderWidth="1" fillColor="000000" fillTransparency="255" shape="0" size="10" tooltipShowValue="true"/>
+  </linearGauge>
+  <meter centerX="50" centerY="85" endAngle="0" innerRadius="5" outerRadius="70" showDialValue="true" showValueAboveNeedle="true" startAngle="180">
+   <needles baseWidth="7" rearExtension="10" showValue="true" size="65" topWidth="0"/>
+   <needleBasePivot borderColor="000000" borderThickness="1" borderTransparency="80" fillColor="c0c0c0" showBorder="true" size="5" useGradient="false">
+    <gradient angle="0" endColor="00ff00" pattern="1" startColor="ff0000"/>
+   </needleBasePivot>
+  </meter>
+  <font font="Arial"/>
+  <backgroundGradient angle="270" endColor="f5f5f5" pattern="1" startColor="e5e5e5"/>
+ </Gadget>
+</ActuateChart>
+]]></xml-property>
+                        <property name="inheritColumns">true</property>
+                        <property name="outputFormat">JS</property>
+                        <property name="height">2.573in</property>
+                        <property name="width">4.792in</property>
+                        <expression name="bookmark" type="javascript">"GoalQty"</expression>
+                        <property name="dataSet">qtygoals</property>
+                        <list-property name="boundDataColumns">
+                            <structure>
+                                <property name="name">Customer</property>
+                                <expression name="expression" type="javascript">dataSetRow["Customer"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">Number_of_Goals</property>
+                                <expression name="expression" type="javascript">dataSetRow["Number_of_Goals"]</expression>
+                                <property name="dataType">float</property>
+                            </structure>
+                        </list-property>
+                    </extended-item>
+                </cell>
+            </row>
+        </grid>
+        <grid id="71">
+            <property name="height">2.9791666666666665in</property>
+            <property name="width">4.760416666666667in</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">Column Binding</property>
+                    <property name="dataType">any</property>
+                </structure>
+                <structure>
+                    <property name="name">Column Binding_1</property>
+                    <expression name="expression">reportContext.getGlobalVariable("g_dataPart" );</expression>
+                    <property name="dataType">any</property>
+                </structure>
+            </list-property>
+            <method name="onCreate"><![CDATA[dataPart = "";]]></method>
+            <column id="72">
+                <property name="width">4.760416666666667in</property>
+            </column>
+            <row id="73">
+                <property name="height">0.3020833333333333in</property>
+                <list-property name="visibility">
+                    <structure>
+                        <property name="format">all</property>
+                        <expression name="valueExpr">true</expression>
+                    </structure>
+                </list-property>
+                <cell id="74">
+                    <property name="colSpan">1</property>
+                    <property name="rowSpan">1</property>
+                    <table name="dataPartTable1" id="75">
+                        <property name="marginTop">0pt</property>
+                        <property name="width">100%</property>
+                        <property name="dataSet">WorldTrip</property>
+                        <list-property name="visibility">
+                            <structure>
+                                <property name="format">all</property>
+                                <expression name="valueExpr">true</expression>
+                            </structure>
+                        </list-property>
+                        <list-property name="boundDataColumns">
+                            <structure>
+                                <property name="name">Customer</property>
+                                <expression name="expression">dataSetRow["Customer"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">Country_Abbr</property>
+                                <expression name="expression">dataSetRow["Country_Abbr"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">highlite</property>
+                                <expression name="expression">dataSetRow["highlite"]</expression>
+                                <property name="dataType">float</property>
+                            </structure>
+                        </list-property>
+                        <property name="pageBreakInterval">50</property>
+                        <list-property name="filter">
+                            <structure>
+                                <property name="operator">eq</property>
+                                <expression name="expr">row["Customer"]</expression>
+                                <simple-property-list name="value1">
+                                    <value>params["Customer"].value</value>
+                                </simple-property-list>
+                            </structure>
+                        </list-property>
+                        <column id="78"/>
+                        <detail>
+                            <row id="76">
+                                <method name="onCreate"><![CDATA[var oneLine = "<entity id='" + this.getRowData().getColumnValue("Country_Abbr") + "' value='" + this.getRowData().getColumnValue("highlite") + "' /> ";
+
+dataPart = dataPart + oneLine;
+
+reportContext.setPersistentGlobalVariable("g_dataPart", dataPart );]]></method>
+                                <property name="height">0.3229166666666667in</property>
+                                <cell id="77"/>
+                            </row>
+                        </detail>
+                    </table>
+                </cell>
+            </row>
+            <row id="79">
+                <property name="textAlign">center</property>
+                <cell id="80">
+                    <property name="colSpan">1</property>
+                    <property name="rowSpan">1</property>
+                    <property name="paddingLeft">4pt</property>
+                    <property name="paddingBottom">1pt</property>
+                    <property name="paddingRight">0pt</property>
+                    <extended-item extensionName="GeneralFlash" id="83">
+                        <property name="contentType">library</property>
+                        <expression name="contentFile">"/resources/Flash Object Library/Flash Maps/FCMap_World8.swf"</expression>
+                        <property name="height">2.573in</property>
+                        <property name="width">4.792in</property>
+                        <property name="variables">
+                            <variable-element name="dataXML">
+                                <expression name="value" type="javascript">var g_dataPart = reportContext.getPersistentGlobalVariable("g_dataPart" );&#13;
+&#13;
+"&lt;map animation='1' showShadow='1' includeNameInLabels='1' bgColor='#DDDDFF' showBevel='1' fillColor='F1f1f1' borderColor='000000' baseFont='Verdana' baseFontSize='10' markerBorderColor='000000' markerBgColor='FF5904' markerRadius='6' legendPosition='bottom' useHoverColor='1' hoverColor='F1f1f1' showToolTip='0' showLabels='1'> &lt;data> " +  g_dataPart  + "&lt;/data>&lt;colorRange> &lt;color minValue='0' maxValue='9' displayValue='Keep Investing' color='CFE3FA' /> &lt;color minValue='10' maxValue='100' displayValue='Pack Your Bags!' color='78A22F' /> &lt;/colorRange>&lt;styles>&lt;definition>&lt;style type='animation' name='animX' param='_xscale' start='0' duration='1'/>&lt;style type='animation' name='animY' param='_yscale' start='0' duration='1'/>&lt;/definition>&lt;application>&lt;apply toObject='PLOT' styles='animX,animY'/>&lt;/application>&lt;/styles> &lt;/map>"</expression>
+                            </variable-element>
+                        </property>
+                        <expression name="bookmark" type="javascript">"WorldTrip"</expression>
+                    </extended-item>
+                </cell>
+            </row>
+        </grid>
+        <grid id="345">
+            <property name="height">1.28125in</property>
+            <property name="width">4.947916666666667in</property>
+            <method name="onCreate"><![CDATA[dataPart2 = "";]]></method>
+            <column id="346">
+                <property name="width">4.947916666666667in</property>
+            </column>
+            <row id="347">
+                <cell id="348">
+                    <property name="textAlign">left</property>
+                    <table id="349">
+                        <property name="height">0.23958333333333334in</property>
+                        <property name="width">4.458333333333333in</property>
+                        <property name="dataSet">pyr</property>
+                        <list-property name="visibility">
+                            <structure>
+                                <property name="format">all</property>
+                                <expression name="valueExpr">true</expression>
+                            </structure>
+                        </list-property>
+                        <list-property name="boundDataColumns">
+                            <structure>
+                                <property name="name">Customer</property>
+                                <expression name="expression">dataSetRow["Customer"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">Goal</property>
+                                <expression name="expression">dataSetRow["Goal"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">Cost</property>
+                                <expression name="expression">dataSetRow["Cost"]</expression>
+                                <property name="dataType">float</property>
+                            </structure>
+                        </list-property>
+                        <column id="352"/>
+                        <detail>
+                            <row id="350">
+                                <method name="onCreate"><![CDATA[var oneLine = "<set ";
+oneLine = oneLine + "label='" + this.getRowData().getColumnValue("Goal") + "' ";
+oneLine = oneLine + "value='" +  this.getRowData().getColumnValue("Cost") + "'/>";
+
+
+dataPart2 = dataPart2 + oneLine;
+
+reportContext.setPersistentGlobalVariable("g_dataPart2", dataPart2 );]]></method>
+                                <cell id="351"/>
+                            </row>
+                        </detail>
+                    </table>
+                    <extended-item extensionName="GeneralFlash" id="353">
+                        <property name="contentType">library</property>
+                        <expression name="contentFile">"/resources/Flash Object Library/Flash Widgets/Pyramid.swf"</expression>
+                        <property name="height">2.5729166666666665in</property>
+                        <property name="width">4.792in</property>
+                        <property name="variables">
+                            <variable-element name="dataXML">
+                                <expression name="value">var g_dataPart2 = reportContext.getPersistentGlobalVariable("g_dataPart2" );
+
+"&lt;chart  isSliced='0' streamlinedData='0' isHollow='0' showLabelsAtCenter='0' chartBottomMargin='20'>" + g_dataPart2 + "&lt;styles>&lt;definition>&lt;style type='font' name='captionFont' size='15' color='000000' />&lt;style type='font' name='subCaptionFont' color='555555' />&lt;/definition>&lt;application>&lt;apply toObject='CAPTION' styles='captionFont' />&lt;apply toObject='SUBCAPTION' styles='subCaptionFont' />&lt;/application>&lt;/styles>&lt;/chart>"</expression>
+                            </variable-element>
+                        </property>
+                        <expression name="bookmark" type="javascript">"GoalCost"</expression>
+                    </extended-item>
+                </cell>
+            </row>
+        </grid>
+    </body>
+</report>
